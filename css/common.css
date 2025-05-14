@@ -1,0 +1,197 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+/* font-family: "Pretendard Variable", sans-serif;
+ */
+:root {
+    --pretendard: "Pretendard Variable", sans-serif;
+    --main-color: #2D2D2D;
+    --point-color: #EEB831;
+    --sub-color: #E1DDCE;
+    --navy: #25245E;
+    --brown: #6B4E2E;
+    --light-gray1: #E5E5E5;
+    --light-gray2: #959595;
+    --gray1: #7D7D7D;
+    --gray2: #4C4C4C;
+    --black: #111;
+    --white: #fff;
+    --white-l: #f1f1f1;
+    --red: #D82121;
+
+    /* Heading Sizes */
+    --h2-size: clamp(30px, 4vw, 50px);
+    --h3-size: clamp(26px, 3.2vw, 40px);
+    --h4-size: clamp(20px, 2.2vw, 30px);
+    --h5-size: clamp(18px, 2vw, 26px);
+    --h6-size: clamp(16px, 1.6vw, 20px);
+
+    /* Body Text Sizes */
+    --body1-size: clamp(80px, 5vw, 90px);
+    --body2-size: clamp(70px, 5vw, 80px);
+    --body3-size: clamp(60px, 5vw, 70px);
+    --body4-size: clamp(24px, 3.2vw, 40px);
+    --body5-size: clamp(20px, 2.4vw, 30px);
+    --body6-size: clamp(18px, 2vw, 24px);
+    --body7-size: clamp(16px, 1.6vw, 20px);
+    --body8-size: clamp(14px, 1.4vw, 16px);
+
+    /* Footer Text Sizes */
+    --footer-size: clamp(16px, 2vw, 24px);
+
+    /* Button Text Sizes */
+    --button1-size: clamp(16px, 1.6vw, 20px);
+    --button2-size: clamp(14px, 1.5vw, 18px);
+
+    --space80: clamp(30px, 10vh, 80px);
+    --space60: clamp(26px, 8vw, 60px);
+    --space50: clamp(24px, 5vh, 50px);
+    --space40: clamp(20px, 5vw, 40px);
+    --space30: clamp(18px, 4vw, 30px);
+    --space24: clamp(12px, 3vw, 24px);
+
+    --space20: clamp(12px, 3vw, 20px);
+    --space10: clamp(6px, 1vw, 10px);
+
+
+    --icon30: clamp(18px, 2vw, 30px);
+    --icon34: clamp(20px, 2vw, 34px);
+    --icon24: clamp(16px, 5vw, 24px);
+}
+
+h2 {
+    font-size: var(--h2-size);
+    font-weight: 600;
+    line-height: 150%;
+}
+
+h3 {
+    font-size: var(--h3-size);
+    font-weight: 500;
+    line-height: 130%;
+}
+
+h4 {
+    font-size: var(--h4-size);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+h5 {
+    font-size: var(--h5-size);
+    font-weight: 600;
+    line-height: 130%;
+}
+
+h6 {
+    font-size: var(--h6-size);
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.b1 {
+    font-size: var(--body1-size);
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.b2 {
+    font-size: var(--body2-size);
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.b3 {
+    font-size: var(--body3-size);
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.b4 {
+    font-size: var(--body4-size);
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.b4 {
+    font-size: var(--body4-size);
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.b5 {
+    font-size: var(--body5-size);
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.b6 {
+    font-size: var(--body6-size);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.b6l {
+    font-size: var(--body6-size);
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.b7 {
+    font-size: var(--body7-size);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.b8 {
+    font-size: var(--body8-size);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.bu1 {
+    font-size: var(--button1-size);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.bu2 {
+    font-size: var(--button2-size);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.ft {
+    font-size: var(--footer-size);
+    font-weight: 100;
+    line-height: 130%;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.AppLayout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainContent {
+    flex: 1;
+}
+
+body {
+    font-family: var(--pretendard);
+    color: var(--black);
+    background-color: var(--white-l);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.wrap {
+    padding: 0 clamp(20px, 6vw, 100px);
+}
