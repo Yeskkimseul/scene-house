@@ -26,6 +26,10 @@ main {
 .mainvisual .mainSwiper .mainswsl {
     width: 100%;
     height: 100%;
+}
+.mainvisual .mainSwiper .mainswsl a{
+   width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     position: relative;
