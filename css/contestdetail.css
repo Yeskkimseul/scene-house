@@ -50,3 +50,79 @@ body {
     right: 0;
     top: clamp(8px, 2vw, 16px);
 }
+
+
+.ContestItemDetail {
+  min-height: 4000px; /* 또는 충분히 큰 값 */
+}
+
+.contentBox {
+    width: 100%;
+    display: flex;
+    padding: clamp(40px, 10vw, 88px) 0;
+    gap: clamp(20px, 5vw, 80px);
+    
+}
+
+.contentBox .description {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 8vh, 40px);
+}
+
+.contentBox .description .Topdescription {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 5vh, 30px);
+}
+
+.contentBox .description .Topdescription .title {}
+
+.contentBox .description .Topdescription .title .b4 {
+    margin-bottom: clamp(10px, 2vh, 20px);
+}
+
+.contentBox .description .Topdescription .title .b7 {}
+
+.contentBox .description .iconset {
+    display: flex;
+    justify-content: flex-end;
+    gap: clamp(10px, 1vw, 20px);
+}
+
+.contentBox .description .iconset li {
+    width: 90px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.contentBox .description .iconset li .heart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(24px, 2vw, 28px);
+    height: auto;
+}
+
+.contentBox .description .iconset li:nth-child(1) img {
+    width: clamp(24px, 2vw, 28px);
+}
+
+.contentBox .description .iconset li img {
+    width: clamp(30px, 2vw, 34px);
+}
+
+.contentBox .description .iconset li .b8 {
+    color: var(--navy);
+}
+
+
+.contentBox .description .descriptionText {
+    word-break: keep-all;
+    line-height: 150%;
+}
