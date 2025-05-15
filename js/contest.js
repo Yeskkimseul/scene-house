@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 1400: {
                     slidesPerView: 2.8,
                     spaceBetween: 0,
-                    mousewheel: { /* 이거 왜 적용 안되는거심!!!! */
+                    mousewheel: {
                         forceToAxis: true,
                         sensitivity: 1,
                         releaseOnEdges: true,

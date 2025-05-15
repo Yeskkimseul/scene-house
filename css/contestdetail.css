@@ -62,6 +62,16 @@ body {
     display: flex;
     padding: clamp(40px, 10vw, 88px) 0;
     gap: clamp(20px, 5vw, 80px);
+    background: yellowgreen;
+}
+
+.contentBox .video-container {
+    width: clamp(300px, 80vw, 900px);
+    aspect-ratio: 900 / 506;
+}
+
+.contentBox .video-container img {
+   
 }
 
 .contentBox .description {
@@ -83,6 +93,32 @@ body {
 }
 
 .contentBox .description .Topdescription .title .b7 {}
+
+/* 별점 */
+.star-rating-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.star-rating {
+    display: flex;
+    gap: 4px;
+}
+
+.star-icon {
+    width: clamp(18px, 2vw, 24px);
+    height: auto;
+}
+
+
+.star-score {
+    font-size: 18px;
+    color: var(--gray1);
+    font-weight: 500;
+    line-height: 150%;
+}
+
 
 .contentBox .description .iconset {
     display: flex;
