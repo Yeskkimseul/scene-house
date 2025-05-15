@@ -15,6 +15,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="../js/contestdetail.js"></script>
 </head>
 
 <body>
@@ -66,12 +67,9 @@
             <!-- 콘텐츠 -->
             <div class="ContestItemDetail">
                 <div class="contentBox">
-                    <!-- <Videoplayer /> -->
-                    <div class="video-container" id="videoContainer">
-    
-                    </div>
-
-
+                    <div class="video-container">
+                        <img src="../img/contestfilevideo.png" alt="">
+                    </div><!-- video-container -->
                     <div class="description">
                         <div class="Topdescription">
                             <div class="title">
@@ -82,29 +80,38 @@
                         </div>
                         <ul class="iconset">
                             <li>
-                                <!-- <Heart /> -->
+                                <div class="heart-icon"></div>
                                 <div class="b8">찜하기</div>
                             </li>
                             <li>
-                                <img src="pen.svg" alt="pen" />
+                                <img src="../img/icon/pen.svg" alt="pen" />
                                 <div class="b8">리스트에 추가</div>
                             </li>
                         </ul>
                         <div class="descriptionText">
-                            어느 날, 사고로 기억을 잃은 청년 ‘도겸’은 낯선 도시의 작은 다방에서 눈을 뜬다. 주인 여자는 그가 이곳에 자주 오던 손님이라고 말하지만, 그는 전혀 기억하지
-                            못한다. 방 안엔 이름 없는 사진들과, 찢겨진 편지, 녹음된 음성 파일이 흩어져 있다. 기억 속에서 반복되던 한 여자아이의 웃음소리와 “미안해”라는 말이 퍼즐처럼
-                            끼워지기 시작한다. 그러나 퍼즐이 완성될수록, 그는 자기가 숨기고 싶었던 진실과 마주하게 된다. 과거의 기억을 되찾고 고통을 감수할 것인지, 아니면 지금의 평온한
-                            자신으로 살아갈 것인지. 조각난 기억은 때로, 가장 잔인한 거울이 된다. “기억은 잊혀져도, 진심은 남는다. 그날의 진실을 마주하는 순간, 그의 시간은 다시 흐르기
+                            어느 날, 사고로 기억을 잃은 청년 ‘도겸’은 낯선 도시의 작은 다방에서 눈을 뜬다. 주인 여자는 그가 이곳에 자주 오던 손님이라고 말하지만, 그는 전혀
+                            기억하지
+                            못한다. 방 안엔 이름 없는 사진들과, 찢겨진 편지, 녹음된 음성 파일이 흩어져 있다. 기억 속에서 반복되던 한 여자아이의 웃음소리와 “미안해”라는 말이
+                            퍼즐처럼
+                            끼워지기 시작한다. 그러나 퍼즐이 완성될수록, 그는 자기가 숨기고 싶었던 진실과 마주하게 된다. 과거의 기억을 되찾고 고통을 감수할 것인지, 아니면 지금의
+                            평온한
+                            자신으로 살아갈 것인지. 조각난 기억은 때로, 가장 잔인한 거울이 된다. “기억은 잊혀져도, 진심은 남는다. 그날의 진실을 마주하는 순간, 그의 시간은 다시
+                            흐르기
                             시작했다.
                         </div>
-                    </div>
-                </div>
+                    </div><!-- description -->
 
-                <!-- <Review /> -->
+                </div><!-- contentBox -->
 
-                <!-- <Gallery imgList={[gallery1, gallery1, gallery1, gallery1, gallery1, gallery1]} /> -->
 
-                <!--
+
+            </div><!-- ContestItemDetail -->
+
+            <!-- <Review /> -->
+
+            <!-- <Gallery imgList={[gallery1, gallery1, gallery1, gallery1, gallery1, gallery1]} /> -->
+
+            <!--
   <Cast
     castList={[
       { img: castmember1, name: '정도영', role: '감독' },
@@ -113,7 +120,7 @@
   />
   -->
 
-                <!--
+            <!--
   <VideoSlide
     imgList={[
       { src: vidoslide1, text: '슬라이드 1 설명 텍스트' },
@@ -122,53 +129,53 @@
   />
   -->
 
-                <!-- <Footer /> -->
-            </div>
+            <!-- <Footer /> -->
+    </div>
 
 
-        </main>
+    </main>
 
 
-        <!-- footer -->
-        <footer>
-            <div class="topfooter">
-                <img src="../img/scenelogo.svg" alt="scene house">
-                <ul class="info">
-                    <li><img src="../img/icon/mapicon.svg" alt="location">
-                        <div class="bu1">서울특별시 강남구 역삼로 210,5층</div>
+    <!-- footer -->
+    <footer>
+        <div class="topfooter">
+            <img src="../img/scenelogo.svg" alt="scene house">
+            <ul class="info">
+                <li><img src="../img/icon/mapicon.svg" alt="location">
+                    <div class="bu1">서울특별시 강남구 역삼로 210,5층</div>
+                </li>
+                <li><img src="../img/icon/phoneicon.svg" alt="call">
+                    <div class="bu1">(123)456-7800</div>
+                </li>
+            </ul>
+            <div class="right">
+                <ul class="fnavTop">
+                    <li>
+                        <h6>About us</h6>
                     </li>
-                    <li><img src="../img/icon/phoneicon.svg" alt="call">
-                        <div class="bu1">(123)456-7800</div>
+                    <li>
+                        <h6>Contact us</h6>
+                    </li>
+                    <li>
+                        <h6>Help</h6>
                     </li>
                 </ul>
-                <div class="right">
-                    <ul class="fnavTop">
-                        <li>
-                            <h6>About us</h6>
-                        </li>
-                        <li>
-                            <h6>Contact us</h6>
-                        </li>
-                        <li>
-                            <h6>Help</h6>
-                        </li>
-                    </ul>
-                    <ul class="fnavBot">
-                        <li>
-                            <h6>Privacy Policy</h6>
-                        </li>
-                        <li>
-                            <h6>Disclaimer</h6>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="fnavBot">
+                    <li>
+                        <h6>Privacy Policy</h6>
+                    </li>
+                    <li>
+                        <h6>Disclaimer</h6>
+                    </li>
+                </ul>
             </div>
-            <div class="copy">
-                <div class="ft">
-                    Copyright © 2025 • Scene House
-                </div>
+        </div>
+        <div class="copy">
+            <div class="ft">
+                Copyright © 2025 • Scene House
             </div>
-        </footer>
+        </div>
+    </footer>
     </div>
 </body>
 

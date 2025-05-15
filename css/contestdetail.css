@@ -53,15 +53,15 @@ body {
 
 
 .ContestItemDetail {
-  min-height: 4000px; /* 또는 충분히 큰 값 */
+    width: 100%;
 }
 
-.contentBox {
+.ContestItemDetail .contentBox {
+    margin-top: 100px;
     width: 100%;
     display: flex;
     padding: clamp(40px, 10vw, 88px) 0;
     gap: clamp(20px, 5vw, 80px);
-    
 }
 
 .contentBox .description {
@@ -79,7 +79,7 @@ body {
 .contentBox .description .Topdescription .title {}
 
 .contentBox .description .Topdescription .title .b4 {
-    margin-bottom: clamp(10px, 2vh, 20px);
+    margin-bottom: 2px;
 }
 
 .contentBox .description .Topdescription .title .b7 {}
@@ -117,10 +117,22 @@ body {
     width: clamp(30px, 2vw, 34px);
 }
 
+.heart-icon {
+    position: relative;
+    z-index: 2;
+    width: clamp(20px, 4vw, 34px);
+    height: clamp(20px, 4vw, 34px);
+    cursor: pointer;
+    background: url(../img/icon/heartempty.svg) no-repeat center/cover;
+}
+
+.heart-icon.on {
+    background: url(../img/icon/heartfilled.svg) no-repeat center/cover;
+}
+
 .contentBox .description .iconset li .b8 {
     color: var(--navy);
 }
-
 
 .contentBox .description .descriptionText {
     word-break: keep-all;
