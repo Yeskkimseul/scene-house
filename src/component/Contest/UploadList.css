@@ -1,0 +1,52 @@
+.UploadListWrap {
+    width: 100%;
+    padding: 0 clamp(16px, 50vw, 196px);
+}
+
+.UploadListWrap .list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(18px, 5vw, 32px);
+}
+
+.UploadListWrap .list > li {
+    display: flex;
+    flex-direction: column;
+    width: clamp(280px, 80vw, 640px);
+}
+
+.UploadListWrap .list > li>img {
+    margin-bottom: clamp(16px, 3vw, 24px);
+    cursor: pointer;
+}
+
+.UploadListWrap .list > li .itemcon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.UploadListWrap .list > li .itemcon .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.itemcon .bottom .iconset{
+    display: flex;
+    flex: 1;
+    gap: clamp(12px,6vw,24px);
+}
+
+.itemcon .bottom .iconset > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.itemcon .bottom .iconset > li img{
+    width: var(--icon30);
+    height: var(--icon30);
+}

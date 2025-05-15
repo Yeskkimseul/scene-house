@@ -1,0 +1,103 @@
+@media (max-width: 1740px) {
+
+    .contestlistDetail .member li .pic {
+        width: clamp(20px, 6vw, 120px);
+    }
+
+    .contestlistDetail .explanation li .b8 {
+        width: clamp(320px, 38vw, 780px);
+    }
+}
+
+/* 레이아웃 변경 */
+@media (max-width: 1400px) {
+    .contestWrap {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .contestWrap .contestWrapLeft .contestlistWrap {
+        width: 100%;
+    }
+
+    .contestWrap .contestWrapLeft .contestlist .swiper-wrapper {
+        flex-direction: row;
+    }
+
+    .swiper-slide.list-item-container {
+        width: clamp(302px, 70vw, 760px);
+        margin-bottom: clamp(12px, 4vh, 34px);
+    }
+
+    div.swiper-button-next {
+        display: block;
+    }
+
+    div.swiper-button-prev {
+        display: block;
+    }
+
+    .contestWrapRight {
+        width: 100%;
+        margin-bottom: var(--space50);
+    }
+
+    .contestlistDetail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contestlistDetail h2 {
+        width: 100%;
+    }
+
+    .contestlistDetail .member {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .contestlistDetail .member li .pic {
+        width: clamp(60px, 12vw, 120px);
+        aspect-ratio: 1 / 1;
+    }
+
+    .contestlistDetail .ratLink {
+        margin-bottom: var(--space20);
+    }
+
+    .contestlistDetail .explanation li .b8 {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .contestFilter-container button {
+        width: clamp(40px, 14vw, 100px);
+    }
+
+
+}
+
+/* 타블렛사이즈 */
+@media (max-width: 834px) {
+    .contestWrap {
+        padding: clamp(12px, 3vw, 40px) clamp(20px, 4vw, 70px);
+    }
+
+    .contestFilter-container button {
+        font-size: var(--button2-size);
+    }
+
+    .contestlistDetail .member li .pic {
+        width: clamp(40px, 12vw, 120px);
+        aspect-ratio: 1 / 1;
+    }
+
+    .contestlistDetail .ratLink {
+        flex-direction: column;
+        gap: clamp(10px, 3vw, 40px)
+    }
+}
+
+/* 모바일 사이즈 */
+@media (max-width: 393px) {}

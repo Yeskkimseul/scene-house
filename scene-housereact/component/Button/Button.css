@@ -1,0 +1,71 @@
+.Button {
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--light-gray1);
+    width: clamp(200px, 12vw, 300px);
+    height: clamp(60px, 10vw, 84px);
+    aspect-ratio: 2/1;
+    display: flex;
+    justify-content: center;
+    font-size: var(--button1-size);
+    font-weight: 400;
+    align-items: center;
+    color: var(--black);
+}
+
+.Button_default {}
+
+.Button_bigbt_neg {
+    font-size: var(--body5-size);
+    font-weight: 500;
+    background: var(--white-l);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Button_bigbt_pos {
+    font-size: var(--body5-size);
+    font-weight: 500;
+    background: var(--point-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Button_gobtn {
+    width: clamp(100px, 10vw, 142px);
+    height: clamp(36px, 5vw, 46px);
+    font-size: var(--button2-size);
+    font-weight: 600;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Button_upload {
+    width: clamp(130px, 12vw, 170px);
+    height: clamp(50px, 6vw, 60px);
+    background: var(--white);
+    border-radius: 100px;
+    border: 1px solid var(--point-color);
+}
+
+.Button_sm_check {
+    width: clamp(80px, 8vw, 112px);
+    height: clamp(40px, 5vw, 56px);
+    background: var(--point-color);
+}
+
+.Button_blackmidbtn {
+    width: clamp(98px, 9vw, 140px);
+    height: clamp(36px, 5vw, 46px);
+    font-size: var(--button2-size);
+    font-weight: 600;
+    color: var(--white);
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.Button_whitemidbtn {
+    width: clamp(98px, 9vw, 140px);
+    height: clamp(36px, 5vw, 46px);
+    font-size: var(--button2-size);
+    font-weight: 600;
+    border: 1px solid var(--main-color);
+    background: none;
+}

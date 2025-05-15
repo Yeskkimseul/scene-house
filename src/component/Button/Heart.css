@@ -1,0 +1,10 @@
+.heart-container{
+    width: clamp(20px, 4vw, 34px);
+    height: clamp(20px, 4vw, 34px);
+    cursor: pointer;
+}
+
+.heart-container img{
+    width: 100%;
+    height: auto;
+}

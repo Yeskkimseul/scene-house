@@ -1,0 +1,47 @@
+.UploadGuideWrap {
+    width: 100%;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: clamp(16px, 3vw, 30px);
+    background: var(--white);
+}
+
+.UploadGuideWrap .GuideTop {
+    width: clamp(200px, 20vw, 282px);
+    aspect-ratio: 1 / 1;
+    background: url('../../img/guidetopimg.svg') center/cover no-repeat;
+}
+
+.UploadGuideWrap .GuideBottom {
+    flex-shrink: 0;
+    width: clamp(320px, 80vw, 1330px);
+    aspect-ratio: 1330 / 438;
+    background: url('../../img/guidebottomimg.svg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(60px, 8vw, 108px)
+        /* top */
+        clamp(16px, 8vw, 336px)
+        /* right */
+        clamp(40px, 6vw, 72px)
+        /* bottom */
+        clamp(16px, 8vw, 336px)
+        /* left */
+    ;
+}
+
+.UploadGuideWrap .GuideBottom .b7 {
+    text-align: center;
+    word-break: keep-all;
+    margin-bottom: clamp(1px, 10vh, 50px);
+}
+
+.UploadGuideWrap .GuideBottom .Button_bigbt_neg {
+    background: var(--black);
+    color: var(--white);
+}

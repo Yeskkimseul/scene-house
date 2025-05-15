@@ -1,0 +1,24 @@
+.list-item-container {
+    width: clamp(300px, 50vw, 640px);
+    aspect-ratio: 16 / 9;
+    padding: clamp(16px, 3vw, 34px) clamp(16px, 3vw, 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.list-item-container .itemtop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.list-item-container .itemtop h4 {
+    color: var(--white);
+}
+
+.list-item-container .itemtop .b8 {
+    color: var(--gray1);
+}

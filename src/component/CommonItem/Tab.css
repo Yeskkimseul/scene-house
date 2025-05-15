@@ -1,0 +1,26 @@
+.tab {
+    font-size: var(--body7-size);
+    font-weight: 500;
+    line-height: 130%;
+    color: var(--gray1);
+    display: flex;
+    width: clamp(120px, 20vw, 145px);
+    height: clamp(32px, 5vh, 40px);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tabactive{
+    color: var(--brown);
+    font-size: var(--h6-size);
+    font-weight: 600;
+    line-height: 130%;
+    border-bottom: 2px solid var(--brown);
+    display: flex;
+    width: clamp(120px, 20vw, 145px);
+    height: clamp(32px, 5vh, 40px);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contest.css">
+    <link rel="stylesheet" href="css/media/contest_media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="js/contest.js"></script>
 </head>
 
 <body>
@@ -31,8 +33,7 @@
                         <a href="all.html" class="">
                             <h5>전체보기</h5>
                         </a>
-                        <a href="https://scenehouse-orcin.vercel.app
-" class="">
+                        <a href="contest.html" class="active">
                             <h5>공모전</h5>
                         </a>
                         <a href="scenehouseplay.html" class="">
@@ -48,12 +49,227 @@
                 <div class="hamMenu"><img src="img/icon/ham.svg" alt=""></div>
             </div>
         </header>
-        <!-- tabbar -->
-        <div class="tabbar">
-
-        </div>
 
         <main>
+
+            <!-- tabbar -->
+            <div class="toptabs">
+                <ul class="tabbar">
+                    <li class="active"><a href="#">
+                            <h6>공모 작품집</h6>
+                        </a></li>
+                    <li class=""><a href="#">
+                            <h6>팀원 모집</h6>
+                        </a></li>
+                </ul>
+                <a href="#" class="upload">작품 업로드</a>
+            </div>
+            <!--  콘텐츠 -->
+            <div class="contestWrap">
+                <!-- 리스트 -->
+                <article class="contestWrapLeft">
+                    <!-- 필터 버튼 -->
+                    <div class="contestFilter-container">
+                        <button class="btn-2025 on" data-year="25y">2025</button>
+                        <button class="btn-2024" data-year="24y">2024</button>
+                        <button class="btn-2023" data-year="23y">2023</button>
+                        <button class="btn-2022" data-year="22y">2022</button>
+                    </div>
+                    <div class="contestlistWrap">
+                        <div class="contestlist 25y on swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <img src="img/contestlist/contestlistimg1.png" alt="제목">
+                                    <div class="bggra"></div>
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2025.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2025.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2025.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2025.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div><!-- contestlist 25y -->
+                        <div class="contestlist 24y swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2024.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2024.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2024.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2024.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div><!-- contestlist 24y -->
+                        <div class="contestlist 23y swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2023.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2023.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2023.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2023.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div><!-- contestlist 23y -->
+                        <div class="contestlist 22y swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2022.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2022.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2022.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                                <a href="#" class="swiper-slide list-item-container">
+                                    <div class="itemtop">
+                                        <h4>제목</h4>
+                                        <div class="b8">2022.05.09</div>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </a><!-- list-item-container -->
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div><!-- contestlist 22y -->
+                    </div><!-- contestlistWrap -->
+                </article><!-- contestWrapLeft -->
+
+                <article class="contestWrapRight">
+                    <!-- 상세 -->
+                    <div class="contestlistDetail">
+                        <h2>기억의 조각들</h2>
+                        <ul class="member">
+                            <li>
+                                <div class="pic"></div>
+                                <div class="b8">조태양</div>
+                            </li>
+                            <li>
+                                <div class="pic"></div>
+                                <div class="b8">조태양</div>
+                            </li>
+                            <li>
+                                <div class="pic"></div>
+                                <div class="b8">조태양</div>
+                            </li>
+                            <li>
+                                <div class="pic"></div>
+                                <div class="b8">조태양</div>
+                            </li>
+                            <li>
+                                <div class="pic"></div>
+                                <div class="b8">조태양</div>
+                            </li>
+                        </ul>
+
+                        <div class="ratLink">
+                            <div class="star-rating-container" data-rating="3">
+                                <div class="star-rating">
+                                    <img src="/img/icon/starfill.svg" alt="" class="star-icon">
+                                    <img src="/img/icon/starfill.svg" alt="" class="star-icon">
+                                    <img src="/img/icon/starfill.svg" alt="" class="star-icon">
+                                    <img src="/img/icon/starempty.svg" alt="" class="star-icon">
+                                    <img src="/img/icon/starempty.svg" alt="" class="star-icon">
+                                </div>
+                                <div class="star-score">3.0점</div>
+                            </div>
+                            <a class="gobtn" href="#">영상 보러가기</a>
+                        </div>
+
+                        <ul class="explanation">
+                            <li>
+                                <div class="b6">줄거리</div>
+                                <div class="b8"> 친구 티모와 함께 차린 마카롱 가게가 쫄딱 망해 거액의 빚을 지고 못 갚으면 죽이겠다는 사채업자를 피해 지구를 떠나야 하는
+                                    미키. 기술이 없는 그는, 정치인 마셜의 얼음행성 개척단에서 위험한 일을 도맡고,죽으면 다시 프린트되는 익스펜더블로 지원한다.</div>
+                            </li>
+                            <li>
+                                <div class="b6">크리에이터 후기</div>
+                                <div class="b8">처음엔 그저 영화를 찍고 싶다는 열정 하나로 사람들을 모았어요. 전문가는 없었지만, 각자 다른 배경과 개성을 가진 사람들이 모여
+                                    시나리오를 완성해갔습니다. 촬영 현장은 늘 우당탕거리면서도 진심이 넘쳤고, 서로를 배우고 응원하는 공간이었습니다.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </article><!-- contestWrapRight -->
+            </div><!-- contestWrap -->
+
 
         </main>
 

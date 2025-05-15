@@ -1,0 +1,11 @@
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tab-content {
+    width: 100%;
+    margin-top: clamp(26px, 3vw, 36px);
+    height: auto;
+}

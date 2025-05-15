@@ -18,36 +18,34 @@
     --white-l: #f1f1f1;
     --red: #D82121;
 
-    /* Heading Sizes */
-    --h2-size: clamp(30px, 4vw, 50px);
-    --h3-size: clamp(26px, 3.2vw, 40px);
-    --h4-size: clamp(20px, 2.2vw, 30px);
-    --h5-size: clamp(18px, 2vw, 26px);
-    --h6-size: clamp(16px, 1.6vw, 20px);
+    /* font Sizes */
+--h2-size: clamp(1.875rem, 4vw, 3.125rem);     /* 30px ~ 50px */
+--h3-size: clamp(1.625rem, 3.2vw, 2.5rem);     /* 26px ~ 40px */
+--h4-size: clamp(1.25rem, 2.2vw, 1.875rem);    /* 20px ~ 30px */
+--h5-size: clamp(1.125rem, 2vw, 1.625rem);     /* 18px ~ 26px */
+--h6-size: clamp(1rem, 1.6vw, 1.25rem);        /* 16px ~ 20px */
 
-    /* Body Text Sizes */
-    --body1-size: clamp(80px, 5vw, 90px);
-    --body2-size: clamp(70px, 5vw, 80px);
-    --body3-size: clamp(60px, 5vw, 70px);
-    --body4-size: clamp(24px, 3.2vw, 40px);
-    --body5-size: clamp(20px, 2.4vw, 30px);
-    --body6-size: clamp(18px, 2vw, 24px);
-    --body7-size: clamp(16px, 1.6vw, 20px);
-    --body8-size: clamp(14px, 1.4vw, 16px);
+--body1-size: clamp(5rem, 5vw, 5.625rem);      /* 80px ~ 90px */
+--body2-size: clamp(4.375rem, 5vw, 5rem);      /* 70px ~ 80px */
+--body3-size: clamp(3.75rem, 5vw, 4.375rem);   /* 60px ~ 70px */
+--body4-size: clamp(1.875rem, 3.2vw, 2.5rem);  /* 30px ~ 40px */
+--body5-size: clamp(1.625rem, 2.4vw, 1.875rem);/* 26px ~ 30px */
+--body6-size: clamp(1.25rem, 2vw, 1.5rem);     /* 20px ~ 24px */
+--body7-size: clamp(1.125rem, 1.6vw, 1.25rem); /* 18px ~ 20px */
+--body8-size: clamp(0.875rem, 1.4vw, 1rem);    /* 14px ~ 16px */
 
-    /* Footer Text Sizes */
-    --footer-size: clamp(16px, 2vw, 24px);
+--footer-size: clamp(1rem, 2vw, 1.5rem);       /* 16px ~ 24px */
 
     /* Button Text Sizes */
-    --button1-size: clamp(16px, 1.6vw, 20px);
-    --button2-size: clamp(14px, 1.5vw, 18px);
+ --button1-size: clamp(1.125rem, 1.6vw, 1.25rem);  /* 18px ~ 20px */
+--button2-size: clamp(1rem, 1.5vw, 1.125rem);     /* 16px ~ 18px */
 
-    --space80: clamp(30px, 10vh, 80px);
-    --space60: clamp(26px, 8vw, 60px);
-    --space50: clamp(24px, 5vh, 50px);
-    --space40: clamp(20px, 5vw, 40px);
-    --space30: clamp(18px, 4vw, 30px);
-    --space24: clamp(12px, 3vw, 24px);
+    --space80: clamp(60px, 10vh, 80px);
+    --space60: clamp(50px, 8vw, 60px);
+    --space50: clamp(40px, 5vh, 50px);
+    --space40: clamp(30px, 5vw, 40px);
+    --space30: clamp(20px, 4vw, 30px);
+    --space24: clamp(18px, 3vw, 24px);
 
     --space20: clamp(12px, 3vw, 20px);
     --space10: clamp(6px, 1vw, 10px);
@@ -172,6 +170,8 @@ body,
     height: 100%;
     margin: 0;
     padding: 0;
+    width: 100%;
+     overflow-x: hidden;
 }
 
 .AppLayout {
@@ -189,7 +189,6 @@ body {
     color: var(--black);
     background-color: var(--white-l);
     overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 .wrap {
