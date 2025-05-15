@@ -28,6 +28,9 @@
         width: clamp(302px, 70vw, 760px);
         margin-bottom: clamp(12px, 4vh, 34px);
     }
+    .contestlist div.swiper-pagination{
+        display: block;
+    }
 
     div.swiper-button-next {
         display: block;

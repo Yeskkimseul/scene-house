@@ -41,33 +41,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Swiper 초기화 함수
     function initContestSwiper() {
-        const screenWidth = window.innerWidth;
-        const activeList = document.querySelector('.contestlist.on.swiper');
+        const activeList = document.querySelector('.contestWrap .contestlist.on.swiper');
 
-        if (screenWidth <= 1400) {
-            if (activeList && !contestSwiper) {
-                contestSwiper = new Swiper(activeList, {
-                    loop: true,
-                    slidesPerView: 1, 
+
+        contestSwiper = new Swiper(activeList, {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            autoHeight: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            breakpoints: {
+                834: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20
+                },
+                1400: {
+                    slidesPerView: 2.8,
                     spaceBetween: 0,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true
+                    mousewheel: { /* 이거 왜 적용 안되는거심!!!! */
+                        forceToAxis: true,
+                        sensitivity: 1,
+                        releaseOnEdges: true,
+                        eventsTarget: '.contestWrap ',
                     },
-                    breakpoints: {
-                        834: {
-                            slidesPerView: 1.2,
-                            spaceBetween: 20
-                        }
-                    }
-                });
+                    direction: "vertical",
+                    autoHeight: false,
+                    loop: false,
+                }
             }
-        } else {
-            if (contestSwiper) {
-                contestSwiper.destroy(true, true);
-                contestSwiper = null;
-            }
-        }
+        });
     }
 
     // 창 크기 변경 시 Swiper 다시 초기화
@@ -81,4 +86,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 페이지 로딩 시 초기화
     initContestSwiper();
+
 });

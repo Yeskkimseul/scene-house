@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+body {
+    background: var(--sub-color);
+}
+
+
+/* tabbar */
+
+.toptabs {
+    width: 100%;
+    position: relative;
+}
+
+.tabbar {
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+}
+
+.tabbar li {
+    display: flex;
+    width: clamp(80px, 12vw, 145px);
+    padding: 8px 0;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray1);
+}
+
+.tabbar li.active {
+    color: var(--brown);
+    border-bottom: 2px solid var(--brown);
+}
+
+.upload {
+    cursor: pointer;
+    aspect-ratio: 2/1;
+    display: flex;
+    justify-content: center;
+    font-size: var(--button1-size);
+    font-weight: 400;
+    align-items: center;
+    color: var(--black);
+    width: clamp(130px, 12vw, 170px);
+    height: clamp(50px, 6vw, 60px);
+    background: var(--white);
+    border-radius: 100px;
+    border: 1px solid var(--point-color);
+    position: absolute;
+    right: 0;
+    top: clamp(8px, 2vw, 16px);
+}
