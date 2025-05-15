@@ -63,18 +63,26 @@
                         </a></li>
                 </ul>
             </div>
-                  <!-- 필터 버튼 -->
-                    <div class="contestFilter-container">
-                        <button class="btn-2025 on" data-year="25y">2025</button>
-                        <button class="btn-2024" data-year="24y">2024</button>
-                        <button class="btn-2023" data-year="23y">2023</button>
-                        <button class="btn-2022" data-year="22y">2022</button>
-                    </div>
+            <!-- 필터 버튼 -->
+            <!--    <div class="contestFilter-container">
+                <button class="btn-2025 on" data-year="25y">2025</button>
+                <button class="btn-2024" data-year="24y">2024</button>
+                <button class="btn-2023" data-year="23y">2023</button>
+                <button class="btn-2022" data-year="22y">2022</button>
+            </div> -->
+            <div class="contestFilter-container">
+                <select id="yearFilter" class="year-select">
+                    <option value="25y" selected>2025</option>
+                    <option value="24y">2024</option>
+                    <option value="23y">2023</option>
+                    <option value="22y">2022</option>
+                </select>
+            </div>
             <!--  콘텐츠 -->
             <div class="contestWrap">
                 <!-- 리스트 -->
                 <article class="contestWrapLeft">
-              
+
                     <div class="contestlistWrap">
                         <div class="contestlist 25y on swiper">
                             <div class="swiper-wrapper">
@@ -216,7 +224,22 @@
                 <article class="contestWrapRight">
                     <!-- 상세 -->
                     <div class="contestlistDetail">
-                        <h2>기억의 조각들</h2>
+                        <div class="top">
+                            <h3>기억의 조각들</h3>
+                            <div class="ratLink">
+                                <div class="star-rating-container" data-rating="3">
+                                    <div class="star-rating">
+                                        <img src="img/icon/starfill.svg" alt="" class="star-icon">
+                                        <img src="img/icon/starfill.svg" alt="" class="star-icon">
+                                        <img src="img/icon/starfill.svg" alt="" class="star-icon">
+                                        <img src="img/icon/starempty.svg" alt="" class="star-icon">
+                                        <img src="img/icon/starempty.svg" alt="" class="star-icon">
+                                    </div>
+                                </div>
+                                <a class="gobtn" href="contest/contestdetail.html">영상 보러가기</a>
+                            </div>
+                        </div><!-- top -->
+
                         <ul class="member">
                             <li>
                                 <div class="pic"></div>
@@ -240,19 +263,7 @@
                             </li>
                         </ul>
 
-                        <div class="ratLink">
-                            <div class="star-rating-container" data-rating="3">
-                                <div class="star-rating">
-                                    <img src="img/icon/starfill.svg" alt="" class="star-icon">
-                                    <img src="img/icon/starfill.svg" alt="" class="star-icon">
-                                    <img src="img/icon/starfill.svg" alt="" class="star-icon">
-                                    <img src="img/icon/starempty.svg" alt="" class="star-icon">
-                                    <img src="img/icon/starempty.svg" alt="" class="star-icon">
-                                </div>
-                                <div class="star-score">3.0점</div>
-                            </div>
-                            <a class="gobtn" href="contest/contestdetail.html">영상 보러가기</a>
-                        </div>
+
 
                         <ul class="explanation">
                             <li>

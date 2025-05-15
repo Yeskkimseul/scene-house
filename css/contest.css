@@ -37,11 +37,11 @@ body {
     gap: clamp(6px, 2vw, 30px);
     justify-content: flex-end;
 }
-
+/* 
 .contestFilter-container button {
     display: flex;
     width: clamp(40px, 10vw, 100px);
-    aspect-ratio: 2.2 / 1; 
+    aspect-ratio: 2.2 / 1;
     justify-content: center;
     align-items: center;
     font-size: var(--button1-size);
@@ -57,20 +57,27 @@ body {
 .contestFilter-container button.on {
     background: var(--white-l);
     color: var(--black);
-}
+} */
 
+ .year-select {
+  padding: clamp(6px, 1.5vw, 8px) clamp(12px, 4vw, 16px);
+  font-size: var(--button2-size);
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+}
 
 .contestWrap {
     margin-top: clamp(14px, 5vh, 26px);
     width: 100%;
-    height: 90vh;
     background: var(--main-color);
     display: flex;
     border-radius: 20px;
     padding: clamp(12px, 3vw, 40px) clamp(20px, 10vw, 70px);
     justify-content: space-between;
     gap: clamp(2px, 5%, 160px);
-    overflow: hidden;
+    align-items: flex-start;
 }
 
 .contestWrap .contestWrapLeft {
@@ -105,7 +112,7 @@ body {
 }
 
 .swiper-slide.list-item-container {
-    width: clamp(150px, 38vw, 640px);
+    width: 100%;
     aspect-ratio: 16 / 9;
     padding: clamp(16px, 3vw, 34px) clamp(16px, 3vw, 30px);
     display: flex;
@@ -127,7 +134,7 @@ body {
     right: 0;
 }
 
-.swiper-slide.list-item-container .bggra{
+.swiper-slide.list-item-container .bggra {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 41.83%);
     background-size: 'cover';
     background-repeat: 'no-repeat';
@@ -172,39 +179,79 @@ body {
 }
 
 
-.contestlist div.swiper-pagination{
+.contestlist div.swiper-pagination {
     display: none;
     position: absolute;
-      bottom: 0;
+    bottom: 0;
 }
+
 .swiper-pagination-bullet {
     width: 6px;
     height: 6px;
     background: none;
     border: 1px solid var(--white-l);
 }
-.contestlist .swiper-pagination-bullet-active{
+
+.contestlist .swiper-pagination-bullet-active {
     background: var(--white-l);
 }
 
 
 .contestWrapRight {
     width: fit-content;
-    height: 100%;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+
 }
 
 .contestlistDetail {
-    width: 100%;
-    height: 100%;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
 }
 
+.contestlistDetail .top {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: clamp(20px, 4vw, 30px);
+}
 
-
-.contestlistDetail h2 {
+.contestlistDetail h3 {
     /* margin-top: clamp(24px, 5vw, 76px); */
     color: var(--point-color);
-    margin-bottom: clamp(12px, 2vw, 20px);
+    word-break: keep-all;
 }
+
+.contestlistDetail .ratLink {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: clamp(14px, 2vw, 16px);
+}
+
+.star-rating-container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    gap: 8px;
+}
+
+.star-rating {
+    display: flex;
+    gap: 4px;
+}
+
+.star-icon {
+    width: clamp(18px, 2vw, 24px);
+    height: auto;
+}
+
 
 .contestlistDetail .member {
     display: flex;
@@ -222,7 +269,7 @@ body {
 
 .contestlistDetail .member li .pic {
     width: clamp(80px, 6.5vw, 120px);
-      aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1;
     border-radius: 120px;
     border: 1px solid var(--point-color);
 }
@@ -251,38 +298,6 @@ body {
     color: var(--white);
 }
 
-.contestlistDetail .ratLink {
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: clamp(30px, 3vw, 40px);
-}
-
-.star-rating-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.star-rating {
-    display: flex;
-    gap: 4px;
-}
-
-.star-icon {
-    width: clamp(18px, 2vw, 24px);
-    height: auto;
-}
-
-
-.star-score {
-    font-size: 18px;
-    color: var(--gray1);
-    font-weight: 500;
-    line-height: 150%;
-}
 
 .gobtn {
     width: clamp(120px, 10vw, 142px);

@@ -3,30 +3,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const contestLists = document.querySelectorAll(".contestlist");
     let contestSwiper = null;
 
-    // 연도 필터 버튼 클릭 시
-    buttons.forEach(function (button) {
-        button.addEventListener("click", function () {
-            buttons.forEach(btn => btn.classList.remove("on"));
-            this.classList.add("on");
+    const yearSelect = document.querySelector(".year-select");
+    const container = document.querySelector(".contestlistWrap");
 
-            const selectedYear = this.getAttribute("data-year");
-            const container = document.querySelector(".contestlistWrap");
+    yearSelect.addEventListener("change", function () {
+        const selectedYear = this.value;
 
-            contestLists.forEach(list => {
-                list.classList.remove("on");
-                if (list.classList.contains(selectedYear)) {
-                    list.classList.add("on");
+        contestLists.forEach(list => {
+            list.classList.remove("on");
 
-                    const topOffset = list.offsetTop;
-                    container.scrollTo({ top: topOffset, behavior: "smooth" });
+            if (list.classList.contains(selectedYear)) {
+                list.classList.add("on");
 
-                    if (contestSwiper) {
-                        contestSwiper.destroy(true, true);
-                        contestSwiper = null;
-                    }
-                    initContestSwiper();
+                const topOffset = list.offsetTop;
+                container.scrollTo({ top: topOffset, behavior: "smooth" });
+
+                if (contestSwiper) {
+                    contestSwiper.destroy(true, true);
+                    contestSwiper = null;
                 }
-            });
+
+                initContestSwiper();
+            }
         });
     });
 
