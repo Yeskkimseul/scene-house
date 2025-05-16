@@ -4,9 +4,6 @@ body {
     background: var(--white);
 }
 
-main {
-    margin-top: clamp(80px, 12vw, 150px);
-}
 
 /* 메인비주얼 */
 

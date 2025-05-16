@@ -2,30 +2,31 @@ header {
     padding: 0 var(--wrap);
     width: 100%;
     position: fixed;
-    left: 0; top: 0;
+    left: 0;
+    top: 0;
     z-index: 10;
     background: #fff;
+    box-shadow: 0px -4px 30px 0px rgba(71, 69, 62, 0.20);
 }
 
 header .top {
     width: 100%;
-    height: clamp(80px, 12vw, 122px);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: clamp(12px, 2vw, 18px) 0 0 0;
+    padding: var(--margin-top20) 0;
 }
 
 .top .nav {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: clamp(4px, 2vw, 20px);
+    gap: var(--space24);
 }
 
 .top .nav .MainLogo img {
-    width: clamp(120px, 20vw, 160px);
-    aspect-ratio: 16 / 9;
+    max-width: 147px;
+    aspect-ratio: 147 / 70;
     height: auto;
 }
 
@@ -33,20 +34,22 @@ header .top {
     display: flex;
     gap: clamp(16px, 4vw, 36px);
     align-items: center;
-    color: var(--light-gray2);
+    color: var(--black);
     padding-bottom: clamp(8px, 2vw, 16px);
 }
 
-.top .nav .gnb a {
-    transition: 0.3s linear;
+.top .nav .gnb a .b6 {
+    transition: 0.5s linear;
+}
+.top .nav .gnb a:first-child{
+    color: var(--point-color);
+}
+.top .nav .gnb a:hover .b6 {
+    font-weight: 700;
 }
 
-.top .nav .gnb a:hover {
-    color: var(--black);
-}
-
-.top .nav .gnb .active {
-    color: var(--black);
+.top .nav .gnb .active .b6 {
+      font-weight: 700;
 }
 
 .top .lefticon {
@@ -70,13 +73,15 @@ header .top {
     cursor: pointer;
 }
 
-@media (max-width: 750px) { 
+@media (max-width: 830px) {
     .top .nav .gnb {
         display: none;
     }
+
     .top .lefticon {
         display: none;
     }
+
     .top .hamMenu {
         display: block;
     }

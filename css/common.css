@@ -326,3 +326,6 @@ body {
     overflow-y: scroll;
 }
 
+main {
+    margin-top: clamp(80px, 12vw, 150px);
+}
