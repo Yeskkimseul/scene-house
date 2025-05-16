@@ -202,7 +202,6 @@ body {
     position: sticky;
     top: 100px;
     align-self: flex-start;
-
 }
 
 .contestlistDetail {
@@ -210,7 +209,6 @@ body {
     top: 0;
     align-self: flex-start;
 }
-
 .contestlistDetail .top {
     display: flex;
     width: 100%;
@@ -275,23 +273,23 @@ body {
 }
 
 .contestlistDetail .member li:nth-child(1) .pic {
-    background: url(../img/contestlistmember1.png) center/cover no-repeat;
+    background: url(../img/contestlist/contestlistmember1.png) center/cover no-repeat;
 }
 
 .contestlistDetail .member li:nth-child(2) .pic {
-    background: url(../img/contestlistmember1.png) center/cover no-repeat;
+    background: url(../img/contestlist/contestlistmember2.png) center/cover no-repeat;
 }
 
 .contestlistDetail .member li:nth-child(3) .pic {
-    background: url(../img/contestlistmember1.png) center/cover no-repeat;
+    background: url(../img/contestlist/contestlistmember3.png) center/cover no-repeat;
 }
 
 .contestlistDetail .member li:nth-child(4) .pic {
-    background: url(../img/contestlistmember1.png) center/cover no-repeat;
+    background: url(../img/contestlist/contestlistmember4.png) center/cover no-repeat;
 }
 
 .contestlistDetail .member li:nth-child(5) .pic {
-    background: url(../img/contestlistmember1.png) center/cover no-repeat;
+    background: url(../img/contestlist/contestlistmember5.png) center/cover no-repeat;
 }
 
 .contestlistDetail .member li .b8 {

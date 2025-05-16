@@ -1,38 +1,48 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".contestFilter-container button");
-    const contestLists = document.querySelectorAll(".contestlist");
-    let contestSwiper = null;
-
     const yearSelect = document.querySelector(".year-select");
     const container = document.querySelector(".contestlistWrap");
+    let contestSwiper = null;
 
     yearSelect.addEventListener("change", function () {
         const selectedYear = this.value;
 
+        // ① 모든 contestlist 숨기고 선택된 연도만 보이게
+        const contestLists = document.querySelectorAll(".contestlist");
         contestLists.forEach(list => {
             list.classList.remove("on");
-
             if (list.classList.contains(selectedYear)) {
                 list.classList.add("on");
 
+                // 스크롤 이동
                 const topOffset = list.offsetTop;
                 container.scrollTo({ top: topOffset, behavior: "smooth" });
 
+                // 기존 Swiper 파괴 후 재초기화
                 if (contestSwiper) {
                     contestSwiper.destroy(true, true);
                     contestSwiper = null;
                 }
 
+                // ② 모든 .contestlistDetail의 .on 제거
+                document.querySelectorAll(".contestlistDetail").forEach(detail => {
+                    detail.classList.remove("on");
+                });
+
+                // ③ 첫 번째 슬라이드 찾아서 해당 detail만 .on
+                const firstSlide = list.querySelector(".swiper-slide.list-item-container");
+                if (firstSlide) {
+                    updateDetailFromSlide(firstSlide);
+                }
+
+                // ④ Swiper 재초기화
                 initContestSwiper();
             }
         });
     });
 
-    // 하트 아이콘 클릭 시
-    const hearts = document.querySelectorAll(".heart-icon");
-    hearts.forEach(function (heart) {
+    // 하트 아이콘 토글
+    document.querySelectorAll(".heart-icon").forEach(heart => {
         heart.addEventListener("click", function () {
-            console.log("클릭");
             this.classList.toggle("on");
         });
     });
@@ -40,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Swiper 초기화 함수
     function initContestSwiper() {
         const activeList = document.querySelector('.contestWrap .contestlist.on.swiper');
-
+        if (!activeList) return;
 
         contestSwiper = new Swiper(activeList, {
             loop: true,
@@ -63,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         forceToAxis: true,
                         sensitivity: 1,
                         releaseOnEdges: true,
-                        eventsTarget: '.contestWrap ',
+                        eventsTarget: '.contestWrap',
                     },
                     direction: "vertical",
                     autoHeight: false,
@@ -71,9 +81,64 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         });
+
+        initDetailObserver();
     }
 
-    // 창 크기 변경 시 Swiper 다시 초기화
+    // 상세 업데이트를 위한 IntersectionObserver 초기화
+    let detailObserver = null;
+    let currentVisibleIndex = -1;
+
+    function initDetailObserver() {
+        if (detailObserver) detailObserver.disconnect();
+
+        const activeSlides = document.querySelectorAll(".contestlist.on .swiper-slide.list-item-container");
+        if (!activeSlides.length) return;
+
+        currentVisibleIndex = -1;
+
+        detailObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const index = Array.from(activeSlides).indexOf(entry.target);
+                    if (index !== currentVisibleIndex) {
+                        currentVisibleIndex = index;
+                        updateDetailFromSlide(entry.target);
+                    }
+                }
+            });
+        }, {
+            root: container,
+            threshold: 0.
+        });
+
+        activeSlides.forEach(slide => detailObserver.observe(slide));
+    }
+
+    // 연도 + 고유 클래스 기준으로 상세정보 토글
+    function updateDetailFromSlide(slide) {
+        if (!slide) return;
+
+        // 슬라이드 고유 클래스 (first, second, third, fourth, fifth)
+        const uniqueClass = [...slide.classList].find(cls => ['first', 'second', 'third', 'fourth'].includes(cls));
+        if (!uniqueClass) return;
+
+        // 슬라이드 연도 클래스 (ex: 25y, 24y)
+        const yearClass = [...slide.classList].find(cls => /\d{2}y/.test(cls));
+        if (!yearClass) return;
+
+        const details = document.querySelectorAll(".contestlistDetail");
+
+        details.forEach(detail => {
+            if (detail.classList.contains(yearClass) && detail.classList.contains(uniqueClass)) {
+                detail.classList.add("on");
+            } else {
+                detail.classList.remove("on");
+            }
+        });
+    }
+
+    // 창 크기 변경 시 Swiper 재초기화
     window.addEventListener("resize", function () {
         if (contestSwiper) {
             contestSwiper.destroy(true, true);
@@ -82,7 +147,6 @@ document.addEventListener("DOMContentLoaded", function () {
         initContestSwiper();
     });
 
-    // 페이지 로딩 시 초기화
+    // 초기 실행
     initContestSwiper();
-
 });
