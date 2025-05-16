@@ -161,7 +161,7 @@ function Casting() {
         </div>
       </div>
     </div>
-      <Footer />
+    
      </div>
   );
 }

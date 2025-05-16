@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-body {
-    background: var(--sub-color);
-}
 
 
 /* tabbar */
@@ -10,6 +7,7 @@ body {
 .toptabs {
     width: 100%;
     position: relative;
+    padding: 0 var(--wrap);
 }
 
 .tabbar {
@@ -47,7 +45,7 @@ body {
     border-radius: 100px;
     border: 1px solid var(--point-color);
     position: absolute;
-    right: 0;
+    right: var(--wrap);
     top: clamp(8px, 2vw, 16px);
 }
 
@@ -60,13 +58,14 @@ body {
     margin-top: 100px;
     width: 100%;
     display: flex;
-    padding: clamp(40px, 10vw, 88px) 0;
+    padding: clamp(40px, 10vw, 88px) var(--wrap);
     gap: clamp(20px, 5vw, 80px);
 }
 
 .contentBox .video-container {
     width: clamp(300px, 80vw, 900px);
     aspect-ratio: 900 / 506;
+    cursor: pointer;
 }
 
 .contentBox .video-container img {}
@@ -179,9 +178,7 @@ body {
 }
 
 .rieview-bg {
-    width: 100vw;
-    position: relative;
-    left: calc(-1 * clamp(20px, 5vw, 100px));
+    width: 100%;
     background: var(--main-color);
 }
 
@@ -260,3 +257,25 @@ body {
 }
 
 .icons .heart-container {}
+
+.user-icon {
+    width: clamp(60px, 10vw, 100px);
+    height: clamp(60px, 10vw, 100px);
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.btn-sm_check {
+    cursor: pointer;
+    border-radius: 10px;
+    aspect-ratio: 2/1;
+    display: flex;
+    justify-content: center;
+    font-size: var(--button1-size);
+    font-weight: 400;
+    align-items: center;
+    color: var(--black);
+    width: clamp(80px, 8vw, 112px);
+    height: clamp(40px, 5vw, 56px);
+    background: var(--point-color);
+}
