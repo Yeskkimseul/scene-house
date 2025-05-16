@@ -22,7 +22,7 @@
 <body>
     <div class="wrap">
         <!-- header -->
-         <header>
+        <header>
             <div class="top">
                 <div class="nav">
                     <a href="index.html" class="MainLogo"><img src="img/scenehouse_logo.png" alt="scene house"></a>
@@ -57,16 +57,27 @@
         <main>
 
             <!-- tabbar -->
-            <div class="toptabs">
-                <ul class="tabbar">
-                    <li class="active"><a href="#">
-                            <h6>공모 작품집</h6>
-                        </a></li>
-                    <li class=""><a href="#">
-                            <h6>팀원 모집</h6>
-                        </a></li>
-                </ul>
+            <div class="top_btn">
+                <div class="toptabs">
+                    <ul class="tabbar">
+                        <li class="active"><a href="#">
+                                <h6>공모 작품집</h6>
+                            </a></li>
+                        <li class=""><a href="#">
+                                <h6>팀원 모집</h6>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="contestFilter-container">
+                    <select id="yearFilter" class="year-select">
+                        <option value="25y" selected>2025</option>
+                        <option value="24y">2024</option>
+                        <option value="23y">2023</option>
+                        <option value="22y">2022</option>
+                    </select>
+                </div>
             </div>
+
             <!-- 필터 버튼 -->
             <!--    <div class="contestFilter-container">
                 <button class="btn-2025 on" data-year="25y">2025</button>
@@ -74,14 +85,7 @@
                 <button class="btn-2023" data-year="23y">2023</button>
                 <button class="btn-2022" data-year="22y">2022</button>
             </div> -->
-            <div class="contestFilter-container">
-                <select id="yearFilter" class="year-select">
-                    <option value="25y" selected>2025</option>
-                    <option value="24y">2024</option>
-                    <option value="23y">2023</option>
-                    <option value="22y">2022</option>
-                </select>
-            </div>
+
             <!--  콘텐츠 -->
             <div class="contestWrap">
                 <!-- 리스트 -->
@@ -317,50 +321,32 @@
             </div><!-- contestWrap -->
 
 
+
+
+              <!-- footer -->
+            <footer data-scroll-section>
+                <div class="topfooter">
+                    <img src="img/scenehouse_logo.png" alt="scene house">
+                    <ul>
+                        <li><a href="#" class="bu1">서비스 이용약관</a></li>
+                        <li><a href="#" class="bu1">개인정보 처리방침</a></li>
+                        <li><a href="#" class="bu1">고객센터</a></li>
+                        <li><a href="#" class="bu1">광고 문의</a></li>
+                    </ul>
+                    <div class="ft">
+                        상호명: 헤라과자점 ｜ 대표자: 김헤라 ｜ 사업자등록번호: 123-45-67890
+                        통신판매업신고번호: 2025-서울강남-01234 ｜ 주소: 서울특별시 서초구 서초대로77길 41 대동2빌딩 9층
+                        이메일: contact@hera-snacks.com ｜ 전화번호: 010-1234-5678
+                    </div>
+                </div>
+                <div class="copy">
+                    <div class="ft">
+                        Copyright © 2025 • Scene House
+                    </div>
+                </div>
+            </footer>
         </main>
-
-
-        <!-- footer -->
-        <footer>
-            <div class="topfooter">
-                <img src="img/scenelogo.svg" alt="scene house">
-                <ul class="info">
-                    <li><img src="img/icon/mapicon.svg" alt="location">
-                        <div class="bu1">서울특별시 강남구 역삼로 210,5층</div>
-                    </li>
-                    <li><img src="img/icon/phoneicon.svg" alt="call">
-                        <div class="bu1">(123)456-7800</div>
-                    </li>
-                </ul>
-                <div class="right">
-                    <ul class="fnavTop">
-                        <li>
-                            <h6>About us</h6>
-                        </li>
-                        <li>
-                            <h6>Contact us</h6>
-                        </li>
-                        <li>
-                            <h6>Help</h6>
-                        </li>
-                    </ul>
-                    <ul class="fnavBot">
-                        <li>
-                            <h6>Privacy Policy</h6>
-                        </li>
-                        <li>
-                            <h6>Disclaimer</h6>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copy">
-                <div class="ft">
-                    Copyright © 2025 • Scene House
-                </div>
-            </div>
-        </footer>
-    </div>
+    </div><!-- wrap -->
 </body>
 
 </html>

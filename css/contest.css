@@ -1,9 +1,12 @@
-
-
 /* tabbar */
 
-main{
+main {
     padding: 0 var(--wrap);
+}
+
+.top_btn {
+    display: flex;
+    align-items: end;
 }
 
 .toptabs {
@@ -37,8 +40,9 @@ main{
 .contestFilter-container {
     display: flex;
     gap: clamp(6px, 2vw, 30px);
-    justify-content: flex-end;
+    height: clamp(40px, 5vw, 46px);
 }
+
 /* 
 .contestFilter-container button {
     display: flex;
@@ -61,13 +65,13 @@ main{
     color: var(--black);
 } */
 
- .year-select {
-  padding: clamp(6px, 1.5vw, 8px) clamp(12px, 4vw, 16px);
-  font-size: var(--button2-size);
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  color: #333;
+.year-select {
+    padding: clamp(6px, 1.5vw, 8px) clamp(12px, 4vw, 16px);
+    font-size: var(--button2-size);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
 }
 
 .contestWrap {
@@ -211,6 +215,7 @@ main{
     top: 0;
     align-self: flex-start;
 }
+
 .contestlistDetail .top {
     display: flex;
     width: 100%;

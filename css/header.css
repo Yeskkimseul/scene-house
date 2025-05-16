@@ -41,15 +41,17 @@ header .top {
 .top .nav .gnb a .b6 {
     transition: 0.5s linear;
 }
-.top .nav .gnb a:first-child{
+
+.top .nav .gnb a:first-child {
     color: var(--point-color);
 }
+
 .top .nav .gnb a:hover .b6 {
     font-weight: 700;
 }
 
 .top .nav .gnb .active .b6 {
-      font-weight: 700;
+    font-weight: 700;
 }
 
 .top .lefticon {
@@ -74,6 +76,9 @@ header .top {
 }
 
 @media (max-width: 830px) {
+    header .top{
+        align-items: center;
+    }
     .top .nav .gnb {
         display: none;
     }
@@ -84,5 +89,11 @@ header .top {
 
     .top .hamMenu {
         display: block;
+    }
+
+    .top .nav .MainLogo img {
+        max-width: 100px;
+        aspect-ratio: 147 / 70;
+        height: auto;
     }
 }
