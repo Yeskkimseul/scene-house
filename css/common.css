@@ -103,7 +103,8 @@
     --icon34: clamp(20px, 2vw, 34px);
     --icon24: clamp(16px, 5vw, 24px);
 
-
+    /* 웹 좌우여백 padding: 0 var(--wrap)으로 넣기 */
+    --wrap: clamp(20px, 6vw, 100px);
 }
 
 h2 {
@@ -325,6 +326,3 @@ body {
     overflow-y: scroll;
 }
 
-.wrap {
-    padding: 0 clamp(20px, 6vw, 100px);
-}

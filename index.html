@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>scene-house</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
+    <script src="main.js"></script>
 </head>
 
-<body>
+<body data-scroll-container>
     <!-- header -->
     <div class="wrap">
 
@@ -51,9 +58,9 @@
             </div>
         </header>
 
-        <main>
+        <main  data-scroll-container>
             <!-- 메인비주얼 -->
-            <div class="mainvisual">
+            <section class="mainvisual">
                 <a class="top" href="#">
                     <div class="ott">
                         <img src="img/wave.png" alt="웨이브">
@@ -140,9 +147,9 @@
                         </a>
                     </li>
                 </ul>
-            </div><!-- mainvisual -->
-
-            <div class="young">
+            </section><!-- mainvisual -->
+            <!-- young -->
+            <section class="young">
                 <div class="tit">
                     <div class="b_80">
                         Scenehouse Top
@@ -188,7 +195,109 @@
                         </div>
                     </div><!-- right -->
                 </div><!-- container -->
-            </div><!-- young -->
+            </section><!-- young -->
+            <!-- Be the Best -->
+            <section class="bethebest" data-scroll-section>
+                <div class="tit">
+                    <div class="b_80">
+                        Be the Best
+                    </div>
+                    <div class="b6l">
+                        현실이 가둔 툴을 깨다
+                    </div>
+                </div><!-- tit -->
+                <ul>
+                    <li data-scroll data-scroll-speed="1">
+                        <a href="#">
+                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <div class="txt">
+                                <h3>문라이트</h3>
+                                <div class="r_25">
+                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <a href="#">
+                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <div class="txt">
+                                <h3>문라이트</h3>
+                                <div class="r_25">
+                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <a href="#">
+                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <div class="txt">
+                                <h3>문라이트</h3>
+                                <div class="r_25">
+                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <a href="#">
+                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <div class="txt">
+                                <h3>문라이트</h3>
+                                <div class="r_25">
+                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <a href="#">
+                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <div class="txt">
+                                <h3>문라이트</h3>
+                                <div class="r_25">
+                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <a href="#">
+                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <div class="txt">
+                                <h3>문라이트</h3>
+                                <div class="r_25">
+                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <a href="#">
+                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <div class="txt">
+                                <h3>문라이트</h3>
+                                <div class="r_25">
+                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <a href="#">
+                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <div class="txt">
+                                <h3>문라이트</h3>
+                                <div class="r_25">
+                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </section><!-- bethebest -->
         </main>
 
 

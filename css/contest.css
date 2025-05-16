@@ -4,6 +4,10 @@ body {
 
 /* tabbar */
 
+main{
+    padding: 0 var(--wrap);
+}
+
 .toptabs {
     width: 100%;
     position: relative;

@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    padding: clamp(12px, 2vh, 20px) 0;
+    padding: clamp(12px, 2vh, 20px) var(--wrap);
     color: var(--gray2);
     position: relative;
     z-index: 10;

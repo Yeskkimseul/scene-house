@@ -3,6 +3,7 @@
 /* 메인비주얼 */
 
 .mainvisual {
+    padding: 0 var(--wrap);
     display: flex;
     flex-direction: column;
     margin-top: var(--margin-top40);
@@ -156,7 +157,7 @@
 /* young */
 
 .young {
-    padding: var(--margin-top160) 0;
+    padding: var(--margin-top160) var(--wrap);
     display: flex;
     flex-direction: column;
     gap: var(--margin-top80);
@@ -237,4 +238,56 @@
 
 .young .container .right .pura_40 {
     border-bottom: 2px solid var(--point-color);
+}
+
+/* bethebest */
+
+.bethebest {
+    padding: clamp(100px, 10vh, 180px) var(--wrap);
+    width: 100vw;
+    background: var(--main-color);
+    color: var(--white);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(40px, 8vw, 180px);
+}
+
+.bethebest .tit {
+    color: var(--point-color);
+}
+
+.bethebest ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.bethebest ul li {
+    margin-top: var(--margin-top50);
+}
+.bethebest ul li:nth-child(odd){
+    margin-top: var(--margin-top150);
+}
+.bethebest ul li a{
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-top30);
+}
+
+
+.bethebest ul li img {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 400 / 594;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    border-top: 5px solid var(--point-color);
+}
+.bethebest ul li a .txt{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 2vw, 15px);
 }
