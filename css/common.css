@@ -2,7 +2,11 @@
 2. 파일 내에 header, main - main 안에 footer 들어가있습니다 헤더와 푸터는 별도의 css 코드가 따로 존재하니 이쪽은 건드리지 않아도 돼요
 3. css/common.css에 반응형 폰트 사이즈, 여백, 컬러 등이 등록되어있습니다 이쪽을 활용해주시면 작업이 더 빨라요
 4. 중요!!! css/ common.css에 좌우 여백값이 --wrap: clamp(20px, 6vw, 100px);로 등록되어있습니다 각 섹션의 최상위 부모에게 padding: var(--wrap) 0; 을 적용해주면 따로 계산 안 해도 여백이 들어간 값으로 작업하실 수 있어요 */
-
+/* 1. 작업 시작 전 - git 레파지토리 적용된 vs 코드에서 git pull -> 가져오기
+2. 내가 작업할 파일만 수정
+3. git add . -(전체 파일 올리기:수정된 부분만 올라갑니다)
+4.git commit -m "수정 메세지 입력"
+5.git push (git허브에 등록) */
 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
