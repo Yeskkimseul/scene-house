@@ -22,14 +22,12 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
     <script src="
 https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
 "></script>
-    <script src="main.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 
-<body data-scroll-container>
+<body>
     <!-- header -->
-    <div class="wrap">
-
-
+    <div class="wrap" data-scroll-container>
         <header>
             <div class="top">
                 <div class="nav">
@@ -58,9 +56,9 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
             </div>
         </header>
 
-        <main  data-scroll-container>
+        <main>
             <!-- 메인비주얼 -->
-            <section class="mainvisual">
+            <section class="mainvisual" data-scroll-section>
                 <a class="top" href="#">
                     <div class="ott">
                         <img src="img/wave.png" alt="웨이브">
@@ -149,7 +147,7 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                 </ul>
             </section><!-- mainvisual -->
             <!-- young -->
-            <section class="young">
+            <section class="ScenehouseTop" data-scroll-section>
                 <div class="tit">
                     <div class="b_80">
                         Scenehouse Top
@@ -220,77 +218,77 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                     </li>
                     <li data-scroll data-scroll-speed="3">
                         <a href="#">
-                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <img src="img/main/btbimg2.png" alt="매트릭스">
                             <div class="txt">
-                                <h3>문라이트</h3>
+                                <h3>매트릭스</h3>
                                 <div class="r_25">
-                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                    깨어나는 순간, 돌아갈 수 없다.
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li data-scroll data-scroll-speed="1">
                         <a href="#">
-                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <img src="img/main/btbimg3.png" alt="마른 물 위에서">
                             <div class="txt">
-                                <h3>문라이트</h3>
+                                <h3>마른 물 위에서</h3>
                                 <div class="r_25">
-                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                    흐르지 않는 강 위에서, 진실이 드러난다.
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li data-scroll data-scroll-speed="3">
                         <a href="#">
-                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <img src="img/main/btbimg4.png" alt="Stillness">
                             <div class="txt">
-                                <h3>문라이트</h3>
+                                <h3>Stillness</h3>
                                 <div class="r_25">
-                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                    고요함 속에서만 들리는 진짜 이야기.
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li data-scroll data-scroll-speed="1">
                         <a href="#">
-                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <img src="img/main/btbimg5.png" alt="네온">
                             <div class="txt">
-                                <h3>문라이트</h3>
+                                <h3>네온</h3>
                                 <div class="r_25">
-                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                    네온처럼, 그날의 기억이 반짝거린다.
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li data-scroll data-scroll-speed="3">
                         <a href="#">
-                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <img src="img/main/btbimg6.png" alt="When we were">
                             <div class="txt">
-                                <h3>문라이트</h3>
+                                <h3>When we were</h3>
                                 <div class="r_25">
-                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                    우리는 그 날 그곳에 있었다.
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li data-scroll data-scroll-speed="1">
                         <a href="#">
-                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <img src="img/main/btbimg7.png" alt="푸른 기다림">
                             <div class="txt">
-                                <h3>문라이트</h3>
+                                <h3>푸른 기다림</h3>
                                 <div class="r_25">
-                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                    그 푸른 날들에, 여전히 너를 기다린다.
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li data-scroll data-scroll-speed="3">
                         <a href="#">
-                            <img src="img/main/btbimg1.png" alt="문라이트">
+                            <img src="img/main/btbimg1.png" alt="통화 종료">
                             <div class="txt">
-                                <h3>문라이트</h3>
+                                <h3>통화 종료</h3>
                                 <div class="r_25">
-                                    한 번의 선택이, 모든 운명을 바꿔버린다.
+                                    그 순간, 말보다 침묵이 더 선명했다.
                                 </div>
                             </div>
                         </a>
@@ -298,11 +296,13 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
 
                 </ul>
             </section><!-- bethebest -->
+            <!--  -->
+            
         </main>
 
 
         <!-- footer -->
-        <footer>
+        <footer data-scroll-section>
             <div class="topfooter">
                 <img src="img/scenelogo.svg" alt="scene house">
                 <ul class="info">

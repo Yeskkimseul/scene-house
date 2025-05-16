@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+body {
+    background: var(--white);
+}
+
+main {
+    margin-top: clamp(80px, 12vw, 150px);
+}
+
 /* 메인비주얼 */
 
 .mainvisual {
@@ -17,7 +25,7 @@
 /* 메인비주얼-top */
 
 .mainvisual>.top {
-    width: clamp(300px, 90vw, 1705px);
+    width: 100%;
     aspect-ratio: 1705 / 680;
     height: auto;
     border-radius: 20px;
@@ -107,6 +115,7 @@
     aspect-ratio: 16 / 10;
     border-radius: 20px;
     padding: var(--space20);
+    overflow: hidden;
 }
 
 .mainvisual .bottom .b_rank:nth-child(1) {
@@ -154,33 +163,33 @@
     color: var(--point-color);
 }
 
-/* young */
+/* ScenehouseTop */
 
-.young {
+.ScenehouseTop {
     padding: var(--margin-top160) var(--wrap);
     display: flex;
     flex-direction: column;
     gap: var(--margin-top80);
 }
 
-.young .tit .b_80 {
+.ScenehouseTop .tit .b_80 {
     margin-bottom: var(--margin-top10);
 }
 
-.young .container {
+.ScenehouseTop .container {
     width: 100%;
     justify-content: space-between;
     display: flex;
 }
 
-/* young left */
-.young .container .left {
+/* ScenehouseTop left */
+.ScenehouseTop .container .left {
     display: flex;
     flex-direction: column;
     gap: clamp(40px, 10vh, 70px);
 }
 
-.young .container .left .img {
+.ScenehouseTop .container .left .img {
     width: clamp(320px, 70vw, 1015px);
     aspect-ratio: 1015 / 630;
     padding: clamp(24px, 5vh, 50px) clamp(32px, 6vw, 64px);
@@ -191,15 +200,15 @@
     justify-content: flex-end;
     align-items: flex-start;
     color: var(--white);
-    background: url(../img/main/youngimg1.png) center/cover no-repeat;
+    background: url(../img/main/ScenehouseTopimg1.png) center/cover no-repeat;
 }
 
-.young .container .left .img .pura_60 {
+.ScenehouseTop .container .left .img .pura_60 {
     border-bottom: 2px solid var(--point-color);
     margin-bottom: clamp(8px, 2vh, 15px);
 }
 
-.young .container .left .r_25 {
+.ScenehouseTop .container .left .r_25 {
     text-align: justify;
     word-break: keep-all;
     color: var(--gray2);
@@ -207,8 +216,8 @@
 }
 
 
-/* young right */
-.young .container .right {
+/* ScenehouseTop right */
+.ScenehouseTop .container .right {
     border-radius: 20px;
     border: 5px solid var(--point-color);
     display: flex;
@@ -216,7 +225,7 @@
     overflow: hidden;
 }
 
-.young .container .right .img {
+.ScenehouseTop .container .right .img {
     display: flex;
     aspect-ratio: 32 / 21;
     width: clamp(320px, 40vw, 640px);
@@ -228,29 +237,28 @@
     color: var(--white);
 }
 
-.young .container .right .top {
-    background: url(../img/main/youngimg2.png) center/cover no-repeat;
+.ScenehouseTop .container .right .top {
+    background: url(../img/main/ScenehouseTopimg2.png) center/cover no-repeat;
 }
 
-.young .container .right .bottom {
-    background: url(../img/main/youngimg3.png) center/cover no-repeat;
+.ScenehouseTop .container .right .bottom {
+    background: url(../img/main/ScenehouseTopimg3.png) center/cover no-repeat;
 }
 
-.young .container .right .pura_40 {
+.ScenehouseTop .container .right .pura_40 {
     border-bottom: 2px solid var(--point-color);
 }
 
 /* bethebest */
 
 .bethebest {
-    padding: clamp(100px, 10vh, 180px) var(--wrap);
+    padding: clamp(100px, 10vh, 180px) var(--wrap) clamp(140px, 30vh, 260px) ;
     width: 100vw;
     background: var(--main-color);
     color: var(--white);
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: clamp(40px, 8vw, 180px);
 }
 
 .bethebest .tit {
@@ -266,10 +274,12 @@
 .bethebest ul li {
     margin-top: var(--margin-top50);
 }
-.bethebest ul li:nth-child(odd){
+
+.bethebest ul li:nth-child(odd) {
     margin-top: var(--margin-top150);
 }
-.bethebest ul li a{
+
+.bethebest ul li a {
     display: flex;
     flex-direction: column;
     gap: var(--margin-top30);
@@ -284,9 +294,18 @@
     object-fit: cover;
     display: block;
     border-radius: 20px;
+
+}
+
+.bethebest ul li:nth-child(odd) img {
     border-top: 5px solid var(--point-color);
 }
-.bethebest ul li a .txt{
+
+.bethebest ul li:nth-child(even) img {
+    border-bottom: 5px solid var(--point-color);
+}
+
+.bethebest ul li a .txt {
     display: flex;
     flex-direction: column;
     gap: clamp(10px, 2vw, 15px);
