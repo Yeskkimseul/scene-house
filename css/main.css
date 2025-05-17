@@ -7,6 +7,9 @@ body {
 
 /* 메인비주얼 */
 
+main{
+    margin-top: clamp(100px, 12vw, 150px)
+}
 .mainvisual {
     padding: 0 var(--wrap);
     display: flex;

@@ -182,3 +182,26 @@ main {
     aspect-ratio: 1720/972;
     height: auto;
 }
+
+.rivew{
+    padding: var(--margin-top160) var(--wrap);
+    display: flex;
+    flex-direction: column;
+    background: var(--black);
+    color: var(--white);
+    gap: var(--margin-top80);
+}
+.rivew .b_80{
+    color: var(--point-color);
+}
+
+.rivew img{
+    color: var(--point-color);
+}
+
+.scenescreen{
+    padding: var(--margin-top160) 0;
+}
+.scenescreen .tit{
+    padding: 0 var(--wrap);
+}
