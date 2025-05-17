@@ -139,25 +139,27 @@ main {
     z-index: 2;
 }
 
-.gamewrap .top > img,
-.gamewrap .end > img {
+.gamewrap .top>img,
+.gamewrap .end>img {
     border-radius: 50px;
     height: auto;
     aspect-ratio: 870 / 452;
     object-fit: cover;
-    
+
 }
-.gamewrap .txt_box{
+
+.gamewrap .txt_box {
     display: flex;
     flex-direction: column;
     gap: var(--margin-top60);
     word-break: keep-all;
 }
-.gamewrap .txt h2{
+
+.gamewrap .txt h2 {
     margin-bottom: var(--margin-top10);
 }
 
-.gamebutton{
+.gamebutton {
     display: flex;
     padding: var(--margin-top10) var(--space30);
     align-items: center;
@@ -168,22 +170,22 @@ main {
     gap: 22px;
 }
 
-.gamebutton img{
-    width: clamp(36px,3vw,48px);
+.gamebutton img {
+    width: clamp(36px, 3vw, 48px);
     height: auto;
 }
 
-.gamewrap .bg{
+.gamewrap .bg {
     position: absolute;
     z-index: 1;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     aspect-ratio: 1720/972;
     height: auto;
 }
 
-.rivew{
+.rivew {
     padding: var(--margin-top160) var(--wrap);
     display: flex;
     flex-direction: column;
@@ -191,17 +193,46 @@ main {
     color: var(--white);
     gap: var(--margin-top80);
 }
-.rivew .b_80{
+
+.rivew .b_80 {
     color: var(--point-color);
 }
 
-.rivew img{
+.rivew img {
     color: var(--point-color);
 }
 
-.scenescreen{
+.scenescreen {
     padding: var(--margin-top160) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--margin-top80);
+    background: var(--white);
 }
-.scenescreen .tit{
+
+.scenescreen .tit {
     padding: 0 var(--wrap);
+}
+
+.sceneswiper {
+    overflow: hidden;
+}
+
+.scenescreen .swiper-wrapper{
+    width: max-content;
+    display: flex;
+    gap: var(--space20);
+}
+
+.scenescreen .swiper-slide {
+    aspect-ratio: 700 / 400;
+    width: clamp(320px, 70vw, 700px);
+    flex-shrink: 0;
+}
+
+.scenescreen .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
