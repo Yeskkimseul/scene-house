@@ -1,0 +1,78 @@
+.CastingItemWraper {
+    width: 100%;
+    padding: clamp(24px, 5vh, 50px) clamp(60px, 10vw, 150px);
+}
+
+.CastingItem {
+    background: white;
+    border-radius: 10px;
+}
+
+.CastingItem .Top {
+    padding: clamp(24px, 5vw, 36px) clamp(32px, 10vw, 146px);
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid var(--sub-color);
+}
+
+.CastingItem .bottom {
+    padding: 0 clamp(32px, 10vw, 146px) clamp(50px, 6vw, 100px);
+}
+
+.CastingItem .id_date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(14px, 2vw, 34px) 0;
+}
+
+.CastingItem .id_date .user {
+    display: flex;
+    align-items: center;
+    gap: clamp(14px, 2vw, 20px);
+}
+
+.user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.CastingItem .date {
+    display: flex;
+    gap: var(--space24);
+}
+
+.CastingItem .date li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--gray1);
+    font-size: var(--body7-size);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.CastingItem .date li .txt{
+    padding: 4px clamp(16px, 1.6vw, 20px);
+    border: 2px solid var(--gray1);
+    border-radius: 100px;
+}
+.CastingItem .date li:last-child .txt{
+    background: var(--gray1);
+    color: var(--white);
+}
+
+.txtbox{
+    background: var(--white-l);
+    padding: var(--space60) var(--space50);
+    border-radius: 10px;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space50);
+}

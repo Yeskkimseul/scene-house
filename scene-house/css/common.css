@@ -1,0 +1,341 @@
+/* 1. git 파일 받아보시면 scene-house 폴더 내부에 바로 각 메인 페이지별 html파일이 있습니다 맞는 파일로 작업하시고 본인 작업 외 다른 파일은 수정, git add / push하지 않도록 합시다!!
+2. 파일 내에 header, main - main 안에 footer 들어가있습니다 헤더와 푸터는 별도의 css 코드가 따로 존재하니 이쪽은 건드리지 않아도 돼요
+3. css/common.css에 반응형 폰트 사이즈, 여백, 컬러 등이 등록되어있습니다 이쪽을 활용해주시면 작업이 더 빨라요
+4. 중요!!! css/ common.css에 좌우 여백값이 --wrap: clamp(20px, 6vw, 100px);로 등록되어있습니다 각 섹션의 최상위 부모에게 padding: var(--wrap) 0; 을 적용해주면 따로 계산 안 해도 여백이 들어간 값으로 작업하실 수 있어요 */
+/* 1. 작업 시작 전 - git 레파지토리 적용된 vs 코드에서 git pull -> 가져오기
+2. 내가 작업할 파일만 수정
+3. git add . -(전체 파일 올리기:수정된 부분만 올라갑니다)
+4.git commit -m "수정 메세지 입력"
+5.git push (git허브에 등록) */
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: 'PuradakGentleGothicR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: "Pretendard Variable", sans-serif;
+ */
+:root {
+    --ab: "Abhaya Libre", serif;
+    --pretendard: "Pretendard Variable", sans-serif;
+    --pura: 'PuradakGentleGothicR', sans-serif;
+    --main-color: #2D2D2D;
+    --point-color: #EEB831;
+    --sub-color: #E1DDCE;
+    --navy: #25245E;
+    --brown: #6B4E2E;
+    --light-gray1: #E5E5E5;
+    --light-gray2: #959595;
+    --gray1: #7D7D7D;
+    --gray2: #4C4C4C;
+    --black: #111;
+    --white: #fff;
+    --white-l: #f1f1f1;
+    --red: #D82121;
+
+    /* font Sizes */
+    --h2-size: clamp(1.875rem, 4vw, 3.125rem);
+    /* 30px ~ 50px */
+    --h3-size: clamp(1.625rem, 3.2vw, 2.5rem);
+    /* 26px ~ 40px */
+    --h4-size: clamp(1.25rem, 2.2vw, 1.875rem);
+    /* 20px ~ 30px */
+    --h5-size: clamp(1.125rem, 2vw, 1.625rem);
+    /* 18px ~ 26px */
+    --h6-size: clamp(1rem, 1.6vw, 1.25rem);
+    /* 16px ~ 20px */
+    --body1-size: clamp(5rem, 5vw, 5.625rem);
+    /* 80px ~ 90px */
+    --body2-size: clamp(4.375rem, 5vw, 5rem);
+    /* 70px ~ 80px */
+    --body3-size: clamp(3.75rem, 5vw, 4.375rem);
+    /* 60px ~ 70px */
+    --body4-size: clamp(1.875rem, 3.2vw, 2.5rem);
+    /* 30px ~ 40px */
+    --body5-size: clamp(1.625rem, 2.4vw, 1.875rem);
+    /* 26px ~ 30px */
+    --body6-size: clamp(1.25rem, 2vw, 1.5rem);
+    /* 20px ~ 24px */
+    --body7-size: clamp(1.125rem, 1.6vw, 1.25rem);
+    /* 18px ~ 20px */
+    --body8-size: clamp(0.875rem, 1.4vw, 1rem);
+    /* 14px ~ 16px */
+
+
+
+    /* Button Text Sizes */
+    --button1-size: clamp(1.125rem, 1.6vw, 1.25rem);
+    /* 18px ~ 20px */
+    --button2-size: clamp(1rem, 1.5vw, 1.125rem);
+    /* 16px ~ 18px */
+
+    --m-45: clamp(2.5rem, 5vw, 2.8125rem);
+    /* 40~45 */
+    --r-25: clamp(1.375rem, 3vw, 1.5625rem);
+    /* 22~25 */
+    --r-22: clamp(1.25rem, 2vw, 1.375rem);
+    /* 20~22 */
+    --l-25: clamp(1.4375rem, 1.4vw, 1.5625rem);
+    /* 23~25 */
+
+    /* 세로여백값 */
+
+    --margin-top160: clamp(80px, 10vh, 160px);
+    --margin-top150: clamp(60px, 12vh, 150px);
+    --margin-top40: clamp(30px, 5vh, 40px);
+    --margin-top80: clamp(60px, 10vh, 80px);
+    --margin-top60: clamp(50px, 8vh, 60px);
+    --margin-top50: clamp(40px, 5vh, 50px);
+    --margin-top40: clamp(30px, 5vh, 40px);
+    --margin-top30: clamp(20px, 4vh, 30px);
+    --margin-top24: clamp(18px, 3vh, 24px);
+    --margin-top20: clamp(12px, 3vh, 20px);
+    --margin-top10: clamp(6px, 1vw, 10px);
+
+    /* 가로여백값 */
+    --space80: clamp(60px, 10vw, 80px);
+    --space60: clamp(50px, 8vw, 60px);
+    --space50: clamp(40px, 5vw, 50px);
+    --space40: clamp(30px, 5vw, 40px);
+    --space30: clamp(20px, 4vw, 30px);
+    --space24: clamp(18px, 3vw, 24px);
+    --space20: clamp(12px, 3vw, 20px);
+    --space10: clamp(6px, 1vw, 10px);
+
+
+    --icon30: clamp(18px, 2vw, 30px);
+    --icon34: clamp(20px, 2vw, 34px);
+    --icon24: clamp(16px, 5vw, 24px);
+
+    /* 웹 좌우여백 padding: 0 var(--wrap)으로 넣기 */
+    --wrap: clamp(20px, 6vw, 100px);
+}
+
+h2 {
+    font-size: var(--h2-size);
+    font-weight: 600;
+    line-height: 150%;
+}
+
+h3 {
+    font-size: var(--h3-size);
+    font-weight: 500;
+    line-height: 130%;
+}
+
+h4 {
+    font-size: var(--h4-size);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+h5 {
+    font-size: var(--h5-size);
+    font-weight: 600;
+    line-height: 130%;
+}
+
+h6 {
+    font-size: var(--h6-size);
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.b1 {
+    font-size: var(--body1-size);
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.b2 {
+    font-size: var(--body2-size);
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.b3 {
+    font-size: var(--body3-size);
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.b4 {
+    font-size: var(--body4-size);
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.b4 {
+    font-size: var(--body4-size);
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.b5 {
+    font-size: var(--body5-size);
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.b6 {
+    font-size: var(--body6-size);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.b6l {
+    font-size: var(--body6-size);
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.b7 {
+    font-size: var(--body7-size);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.b8 {
+    font-size: var(--body8-size);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.bu1 {
+    font-size: var(--button1-size);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.bu2 {
+    font-size: var(--button2-size);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.ft {
+    font-size: var(--body8-size);
+    font-weight: 100;
+    line-height: 120%;
+}
+
+/* new_0515 */
+
+.ab_exb_200 {
+    font-family: var(--ab);
+    font-size: clamp(9.375rem, 10vw, 12.5rem);
+    /* 150px~200px */
+    font-weight: 800;
+}
+
+.ab_exb_90 {
+    font-family: var(--ab);
+    font-size: clamp(5rem, 10vw, 5.625rem);
+    /* 80px, 10vw, 90px */
+}
+
+.pura_60 {
+    font-family: var(--pura);
+    font-size: clamp(3.125rem, 3.5vw, 3.75rem);
+    font-weight: 400;
+    /*  clamp(50px, 3.5vw, 60px); */
+}
+
+.pura_40 {
+    font-family: var(--pura);
+    font-size: var(--body4-size);
+    font-weight: 400;
+}
+
+
+.b_80 {
+    font-size: var(--body2-size);
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.b_50 {
+    font-size: var(--h2-size);
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.sb_40 {
+    font-size: var(--body4-size);
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.m_45 {
+    font-size: var(--m-45);
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.r_25 {
+    font-size: var(--r-25);
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.r_22 {
+    font-size: var(--r-22);
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.l_22 {
+    font-size: var(--r-22);
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.l_25 {
+    font-size: var(--l-25);
+    font-weight: 300;
+}
+
+.l_26 {
+    font-size: var(--h5-size);
+    font-weight: 300;
+    line-height: 130%;
+}
+
+
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.AppLayout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainContent {
+    flex: 1;
+}
+
+body {
+    font-family: var(--pretendard);
+    color: var(--black);
+    background-color: var(--white-l);
+    overflow-y: scroll;
+}
+
+main {
+    margin-top: clamp(100px, 12vw, 110px);
+  padding-bottom:clamp(180px, 30vh, 200px);
+}

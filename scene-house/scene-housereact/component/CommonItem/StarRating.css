@@ -1,0 +1,22 @@
+.star-rating-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.star-rating {
+    display: flex;
+    gap: 4px;
+}
+
+.star-icon {
+    width: clamp(18px, 2vw, 24px);
+    height: clamp(18px, 2vw, 24px);
+}
+
+
+.star-score {
+  font-size: 18px;
+  color: var(--gray1);
+  font-weight: 500;
+  line-height: 150%;
+}

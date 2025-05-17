@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+main {
+    margin-top: clamp(100px, 12vw, 110px)
+}
+
+.main_visual {
+    width: 100%;
+    aspect-ratio: 1920/876;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    word-break: keep-all;
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    gap: var(--margin-top80);
+    background: url(../img/goldenkey/main_visual.png) center/cover no-repeat;
+    padding: var(--space20);
+}
+
+.main_visual .top_txt h3 span {
+    color: var(--point-color);
+}
+
+.main_visual .top_txt strong {
+    font-size: clamp(60px, 10vw, 115px);
+    font-weight: 900;
+    color: var(--point-color);
+}
+
+.main_visual .b6 span {
+    color: var(--point-color);
+}
+
+.scenehouse {
+    width: 100%;
+    background: var(--point-color);
+}
+
+.scenehouse .scenehousebg {
+    width: 100%;
+    aspect-ratio: 1920/1786;
+    object-fit: cover;
+    min-height: 1786px;
+    padding: var(--margin-top160) var(--wrap) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--margin-top80);
+    background: url(../img/goldenkey/scenehousebg.svg) no-repeat center/cover;
+}
+
+.tit {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    gap: var(--margin-top10);
+}
+
+.scenehouse .scenehousebg .imgwrap {
+    display: flex;
+    gap: var(--space20);
+}
+
+.scenehouse .scenehousebg .imgwrap .left {
+    display: flex;
+    gap: var(--space20);
+}
+
+.scenehouse .scenehousebg .imgwrap .left img {
+    min-width: 560px;
+    aspect-ratio: 560/820;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 5px solid var(--point-color);
+}
+
+.scenehouse .scenehousebg .imgwrap .right {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-top20);
+}
+
+.scenehouse .scenehousebg .imgwrap .right img {
+    border-radius: 20px;
+    border: 5px solid var(--point-color);
+    min-width: 560px;
+    aspect-ratio: 560 / 400;
+    object-fit: cover;
+}
+
+.scenehouse .scenehousebg .buttonwrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background: var(--main-color);
+    color: var(--point-color);
+    padding: var(--space30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(300px, 33vw, 636px);
+    height: clamp(80px, 10vw, 140px);
+    border-radius: 0px 140px;
+    border-bottom: 10px solid var(--point-color);
+}
+
+.gamelineup {
+    background: var(--point-color);
+    width: 100%;
+    padding: clamp(80px, 8vw, 120px) var(--wrap) clamp(150px, 12vw, 250px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(80px, 8vh, 120px);
+    position: relative;
+}
+
+.gamelineup .gamewrap {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(100px, 40vh, 300px);
+}
+
+.gamelineup .gamewrap>div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.gamewrap .top > img,
+.gamewrap .end > img {
+    border-radius: 50px;
+    height: auto;
+    aspect-ratio: 870 / 452;
+    object-fit: cover;
+    
+}
+.gamewrap .txt_box{
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-top60);
+    word-break: keep-all;
+}
+.gamewrap .txt h2{
+    margin-bottom: var(--margin-top10);
+}
+
+.gamebutton{
+    display: flex;
+    padding: var(--margin-top10) var(--space30);
+    align-items: center;
+    color: var(--white-l);
+    border-radius: 36px;
+    width: fit-content;
+    background: var(--main-color);
+    gap: 22px;
+}
+
+.gamebutton img{
+    width: clamp(36px,3vw,48px);
+    height: auto;
+}
+
+.gamewrap .bg{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    aspect-ratio: 1720/972;
+    height: auto;
+}

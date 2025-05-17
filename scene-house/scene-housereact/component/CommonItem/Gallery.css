@@ -1,0 +1,99 @@
+.gallery-wrapper {
+
+    width: 100%;
+    position: relative;
+}
+
+.galleryBg {
+    width: 100vw;
+    position: relative;
+    left: calc(-1 * clamp(20px, 5vw, 100px));
+    background: var(--main-color);
+}
+
+.galleryBg .gallery {
+    height: fit-content;
+    padding: clamp(40px, 6vw, 96px) clamp(20px, 15vw, 132px);
+    color: var(--white);
+    position: relative;
+}
+
+.galleryBg .gallery h2 {
+    text-align: center;
+}
+
+.galleryBg .gallery Swiper {
+    width: 86.25vw;
+    height: auto;
+    position: relative;
+}
+
+.galleryBg .imgbox {
+
+    cursor: pointer;
+}
+
+
+.navigation_btn {
+    display: flex;
+    width: 86.25vw;
+    justify-content: space-between;
+    transform: translate(-50%, -55%);
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    z-index: 10;
+}
+
+.custom-prev,
+.custom-next {
+    width: clamp(20px, 10vw, 40px);
+    height: clamp(20px, 10vw, 40px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    pointer-events: auto;
+}
+
+.custom-prev {
+    background-image: url('/src/img/galleryprevbtn.png');
+}
+
+.custom-next {
+    background-image: url('/src/img/gallerynextbtn.png');
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 300px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+/* 페이지네이션 버튼 (클릭 가능한 점) */
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 0.2;
+    border-radius: 50%;
+    margin: 0 6px;
+    transition: opacity 0.3s;
+    border: 1px solid var(--white-l);
+    background: none;
+}
+
+/* 페이지네이션 버튼에 호버 효과 */
+.swiper-pagination-bullet:hover {
+    opacity: 1;
+}
+
+/* 페이지네이션 버튼이 활성화되었을 때 (현재 페이지) */
+.swiper-pagination-bullet-active {
+    background-color: var(--white-l);
+    /* 원하는 활성화 색상 */
+    opacity: 1;
+}

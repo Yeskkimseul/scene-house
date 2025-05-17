@@ -1,0 +1,71 @@
+.VideoSlide-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.VideoSlideBg {
+    width: 100vw;
+    position: relative;
+    left: calc(-1 * clamp(20px, 5vw, 100px));
+    background: var(--main-color);
+}
+
+.VideoSlideBg .VideoSlide {
+    height: fit-content;
+    padding: clamp(40px, 6vw, 96px) 0;
+    color: var(--white);
+    position: relative;
+}
+
+.VideoSlideBg .VideoSlide h2 {
+    text-align: center;
+}
+
+.VideoSlideBg .VideoSlide Swiper {
+    width: 86.25vw;
+    height: auto;
+    position: relative;
+}
+
+.VideoSlideBg .VideoSlide Swiper SwiperSlide {}
+
+.imgbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space40);
+    cursor: pointer;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 300px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+/* 페이지네이션 버튼 (클릭 가능한 점) */
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 0.2;
+    border-radius: 50%;
+    margin: 0 6px;
+    transition: opacity 0.3s;
+    border: 1px solid var(--white-l);
+    background: none;
+}
+
+/* 페이지네이션 버튼에 호버 효과 */
+.swiper-pagination-bullet:hover {
+    opacity: 1;
+}
+
+/* 페이지네이션 버튼이 활성화되었을 때 (현재 페이지) */
+.swiper-pagination-bullet-active {
+    background-color: var(--white-l);
+    /* 원하는 활성화 색상 */
+    opacity: 1;
+}

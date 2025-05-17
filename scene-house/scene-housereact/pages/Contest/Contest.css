@@ -1,0 +1,19 @@
+
+.toptab{
+    width: 100%;
+    height: clamp(60px, 10vw, 85px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: clamp(8px, 2vw, 16px) clamp(20px, 5vw, 100px);
+    position: relative;
+}
+
+.toptab > .Button{
+    position: absolute;
+    right: clamp(20px, 5vw, 100px); top: clamp(8px, 2vw, 16px);
+}
+
+body.Contest {
+  background: var(--sub-color);
+}
