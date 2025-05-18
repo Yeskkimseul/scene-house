@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+body {
+    background: var();
+}
+
+main {
+    margin-top: clamp(100px, 12vw, 110px);
+}
