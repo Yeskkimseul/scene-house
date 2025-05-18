@@ -151,10 +151,6 @@
         display: none;
     }
 
-    .main_visual .top_txt h3 {
-        display: none;
-    }
-
     .scenehouse .scenehousebg {
         height: clamp(800px, 10vh, 1786px);
     }
