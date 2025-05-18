@@ -51,15 +51,45 @@
 
     .main_visual .b6 {
         font-size: var(--body7-size);
-        font-weight: 500;
+        font-weight: 400;
         line-height: 150%;
     }
-        .scenehouse .scenehousebg .imgwrap .left img {
+
+    .scenehouse .scenehousebg {
+        gap: var(--margin-top40);
+    }
+
+    .scenehouse .b_80 {
+        font-size: var(--h2-size);
+        font-weight: 700;
+        line-height: 130%;
+    }
+
+    .scenehouse .b6 {
+        font-size: var(--body7-size);
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .scenehouse .scenehousebg .imgwrap .left img {
         width: 100%;
         height: calc(clamp(160px, 30vw, 560px) * 820 / 560);
     }
+
     .scenehouse .scenehousebg .imgwrap .right img {
         width: 100%;
         height: calc(clamp(160px, 29vw, 550px) * 820 / 560 / 2);
+    }
+
+    .button {
+        width: clamp(150px, 33vw, 636px);
+        height: clamp(40px, 10vw, 140px);
+         border-bottom: 5px solid var(--point-color);
+    }
+
+    .button h3 {
+        font-size: var(--button1-size);
+        font-weight: 400;
+        line-height: 130%;
     }
 }
