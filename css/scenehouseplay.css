@@ -1,7 +1,11 @@
 @charset "utf-8";
 
+body {
+    background: var();
+}
+
 main {
-    margin-top: clamp(100px, 12vw, 110px)
+    margin-top: clamp(100px, 12vw, 110px);
 }
 
 .main_visual {
@@ -66,21 +70,20 @@ main {
 .scenehouse .scenehousebg .imgwrap {
     display: flex;
     width: 100%;
-    height: clamp(400px, 90vh, 820px);
+    height: auto;
     gap: var(--space20);
 }
 
 .scenehouse .scenehousebg .imgwrap .left {
     display: flex;
-    width: fit-content;
+    flex: 1;
     height: 100%;
     gap: var(--space20);
 }
 
 .scenehouse .scenehousebg .imgwrap .left img {
-    width: clamp(320px, 50vw, 560px);
-    aspect-ratio: 560/820;
-    height: 100%;
+    width: clamp(320px, 30vw, 560px);
+    height: calc(clamp(320px, 30vw, 560px) * 820 / 560);
     border-radius: 20px;
     object-fit: cover;
     border: 5px solid var(--point-color);
@@ -89,7 +92,7 @@ main {
 .scenehouse .scenehousebg .imgwrap .right {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    flex: 1;
     height: 100%;
     gap: var(--margin-top20);
 }
@@ -97,8 +100,8 @@ main {
 .scenehouse .scenehousebg .imgwrap .right img {
     border-radius: 20px;
     border: 5px solid var(--point-color);
-    width: clamp(320px, 80vw, 550px);
-    height: 50%;
+    width: clamp(320px, 30vw, 550px);
+    height: calc(clamp(320px, 29vw, 550px) * 820 / 560 / 2);
     object-fit: cover;
 }
 
