@@ -42,7 +42,11 @@ footer .copy .ft{
 }
 
 @media (max-width: 500px){
+     footer ul{
+        gap: var(--space20);
+     }
     footer ul .bu1 {
-        font-size: var(--body8-size);
+        font-size: 14px;
+        text-align: center;
     }
 }

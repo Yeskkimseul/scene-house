@@ -337,5 +337,4 @@ body {
 
 main {
     margin-top: clamp(100px, 12vw, 110px);
-  padding-bottom:clamp(180px, 30vh, 200px);
 }

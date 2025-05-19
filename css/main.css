@@ -1,6 +1,8 @@
 @charset "utf-8";
 
-
+main{
+     padding-bottom:clamp(180px, 30vh, 200px);
+}
 
 /* 메인비주얼 */
 
@@ -315,7 +317,7 @@ main {
 
 
 .bethebest ul li img {
-    width: clamp(400px);
+    width: clamp(360px,24vw,400px);
     aspect-ratio: 400 / 594;
     height: auto;
     object-fit: cover;
