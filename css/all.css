@@ -29,7 +29,7 @@ main {
     background-image: url(../img/all/contest/bg1.jpg);
     background-repeat: no-repeat;
     /* 반복 안되게 */
-    background-size: 100% auto;
+    background-size: 130% 100%;
     filter: brightness(0.3);
     /* 밝기 줄이기 */
     z-index: -1;
@@ -113,7 +113,7 @@ main {
 }
 
 .sceneswiper .swiper-pagination-bullet {
-    background-color: var(--main-color);
+    background-color: var(--gray2);
     opacity: 1;
 }
 
@@ -170,7 +170,7 @@ main {
 
 .Ranking ul {
     display: flex;
-    gap: 200px;
+    gap: 100px;
     margin-bottom: var(--margin-top80);
 }
 
@@ -207,7 +207,18 @@ main {
 
 .Ranking ul li img {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
 }
 
+.new{
+    padding: 0 var(--wrap);
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--margin-top160);
+    margin-bottom: var(--margin-top160);
+    gap: var(--margin-top20);
+    justify-content: center;
+    align-items: center;
+    color: var(--sub-color);
+}
