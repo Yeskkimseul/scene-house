@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+.main_visual {
+    width: 100%;
+}
+
+.main_visual .h3 {
+    color: var(--black);
+}
+
+.main_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 78px;
+}
+
+.main_box ul {
+    display: flex;
+    gap: 78px;
+}
+
+.main_box ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.main_box ul li img {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    /* 이미지가 꽉 차게 */
+    height: auto;
+}
+
+.main_box ul li h4 {
+    position: absolute;
+}
