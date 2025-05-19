@@ -1,0 +1,17 @@
+@media (max-width: 1700px) {
+    
+}
+
+@media (max-width: 1230px) {}
+
+@media (max-width: 834px) {}
+
+@media (max-width: 645px) {
+    .txt_box .r_25 {
+        font-size: var(--body8-size);
+    }
+
+    .b5 {
+        font-size: var(--body7-size);
+    }
+}
