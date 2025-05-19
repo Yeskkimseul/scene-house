@@ -214,7 +214,8 @@ main {
 .ScenehouseTop .container .left {
     display: flex;
     flex-direction: column;
-    gap: clamp(40px, 10vh, 70px);
+    flex: 1;
+    gap: clamp(40px, 6vh, 70px);
 }
 
 .ScenehouseTop .container .left .img {
@@ -233,7 +234,6 @@ main {
 
 .ScenehouseTop .container .left .img .pura_60 {
     border-bottom: 2px solid var(--point-color);
-    margin-bottom: clamp(8px, 2vh, 15px);
 }
 
 .ScenehouseTop .container .left .r_25 {
@@ -249,6 +249,7 @@ main {
     border-radius: 20px;
     border: 5px solid var(--point-color);
     display: flex;
+    justify-content: center;
     flex-direction: column;
     overflow: hidden;
     height: fit-content;
@@ -259,7 +260,7 @@ main {
     display: flex;
     aspect-ratio: 32 / 21;
     width: 100%;
-    padding: clamp(24px, 5vw, 40px) clamp(32px, 6vw, 64px);
+    padding: var(--margin-top40) var(--space60);
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
