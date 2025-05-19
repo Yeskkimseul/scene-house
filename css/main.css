@@ -356,22 +356,28 @@ main {
 }
 
 .Gamelineup .gamecardwrap {
-    min-width: 1720px;
-    aspect-ratio: 1720/600;
+    width: 100%;
+    height: 630px;
     overflow: hidden;
     position: relative;
     display: flex;
     align-items: flex-end;
-    gap: var(--space40);
+    justify-content: space-between;
+    gap: var(--space20);
 }
 
 .Gamelineup .gamecardwrap li {
-    min-width: 400px;
-    min-height: 600px;
-    aspect-ratio: 400 / 600;
-    background: url(../img/main/cardimg.png) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 80%;
+    height: auto;
+    aspect-ratio: 2/3;
+    background: url(../img/main/cardimg.png) center/contain no-repeat;
     transition: 0.2s linear;
-    transform: translateY(18%);
+    transform: translateY(20%);
+    word-break: keep-all;
+    text-align: center;
 }
 
 .Gamelineup .gamecardwrap li:hover {
@@ -380,14 +386,13 @@ main {
 
 .Gamelineup .gamecardwrap li a {
     display: flex;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: clamp(60px, 15vh, 110px) clamp(20px, 5vw, 30px);
+    padding: clamp(60px, 10vh, 110px) 0;
 }
 
 .Gamelineup .gamecardwrap li img {
-    min-width: 284px;
+    width: clamp(80px,15vw,284px);
     aspect-ratio: 1/1;
     object-fit: cover;
     opacity: 30%;
