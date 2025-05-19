@@ -341,7 +341,7 @@ main{
     min-height: 600px;
     aspect-ratio: 400 / 600;
     background: url(../img/main/cardimg.png) center/cover no-repeat;
-    transition: 0.3s linear;
+    transition: 0.2s linear;
     transform: translateY(18%);
 }
 
@@ -362,7 +362,7 @@ main{
     aspect-ratio: 1/1;
     object-fit: cover;
     opacity: 30%;
-    transition: 0.8s linear;
+    transition: 0.3s linear;
 }
 
 .Gamelineup .gamecardwrap li:hover img {
