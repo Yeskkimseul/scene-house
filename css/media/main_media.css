@@ -53,6 +53,20 @@
     .ScenehouseTop .container .left {
         gap: clamp(20px, 4vh, 50px);
     }
+
+    .eventlist li.active a {
+        padding: var(--space40);
+        gap: var(--margin-top10);
+    }
+
+    .m_45 {
+        font-size: var(--h4-size);
+    }
+
+    .l_25 {
+        font-size: var(--body7-size);
+    }
+
 }
 
 @media (max-width: 1400px) {
@@ -156,21 +170,30 @@
     }
 
     /* .Gamelineup */
-    /* ...? */
-
 
     .Gamelineup .gamecardwrap {
         flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space30);
     }
 
-    .Gamelineup .gamecardwrap li .txt_box .r_25 {
-        font-size: var(--body6-size)
+    .Gamelineup .gamecardwrap li {
+        width: 45%;
     }
 
-    .Gamelineup .gamecardwrap li .txt_box .sb_40 {
-        font-size: var(--body6-size);
+    .Gamelineup .gamecardwrap li a {
+        padding: 0;
+        height: 100%;
+        justify-content: center;
     }
 
+    .Gamelineup .gamecardwrap li img {
+        width: clamp(80px, 15vw, 284px);
+    }
+
+    .magazine{
+        padding: var(--margin-top40) var(--wrap);
+    }
 }
 
 @media (max-width: 834px) {
@@ -281,6 +304,68 @@
     .bethebest ul li img {
         width: clamp(300px, 24vw, 400px);
     }
+
+    .eventlist {
+        flex-direction: column;
+        height: fit-content
+    }
+
+    .eventlist li {
+        flex: none;
+
+    }
+
+    .eventlist li a {
+        height: clamp(100px, 30vh, 218px);
+        padding: var(--space20);
+        gap: var(--margin-top10);
+    }
+
+    .eventlist li a .m_45,
+    .eventlist li a .l_25 {
+        opacity: 100;
+        visibility: visible;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .eventlist li.active {
+        flex: none;
+    }
+
+    .eventlist li.active a {
+        padding: var(--space20);
+        height: clamp(100px, 30vh, 218px);
+    }
+}
+
+@media (max-width: 600px) {
+    .Gamelineup .gamecardwrap {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space30);
+    }
+
+    .Gamelineup .gamecardwrap li {
+        width: 40%;
+    }
+
+    .Gamelineup .gamecardwrap li a {
+        padding: 0;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .Gamelineup .gamecardwrap li img {
+        width: clamp(80px, 15vw, 284px);
+    }
+
+    .Gamelineup .gamecardwrap li .txt_box .r_25 {
+        font-size: var(--body6-size)
+    }
+
+    .Gamelineup .gamecardwrap li .txt_box .sb_40 {
+        font-size: var(--body6-size);
+    }
 }
 
 @media (max-width: 500px) {
@@ -315,4 +400,23 @@
     }
 
     /* ScenehouseTop  */
+    .Gamelineup .gamecardwrap li {
+        width: 60%;
+        padding: var(--space10);
+    }
+
+    .Gamelineup .gamecardwrap li img {
+        display: none;
+    }
+
+    .m_45 {
+        font-size: var(--h5-size);
+    }
+
+    .l_25 {
+        font-size: var(--body8-size);
+    }
+     .magazine{
+        padding: var(--margin-top20) var(--space20);
+    }
 }

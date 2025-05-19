@@ -46,12 +46,14 @@ setTimeout(() => {
   ScrollTrigger.refresh();
 }, 100);
 
-/* event 섹션션 */
+/* event 섹션 */
 const eventItems = document.querySelectorAll('.sceneevent .eventlist li');
 
 eventItems.forEach(item => {
   item.addEventListener('mouseenter', () => {
-    eventItems.forEach(el => el.classList.remove('active'));
-    item.classList.add('active');
+    if (window.innerWidth > 834) { 
+      eventItems.forEach(el => el.classList.remove('active'));
+      item.classList.add('active');
+    }
   });
 });

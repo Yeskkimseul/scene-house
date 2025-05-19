@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-main{
-     padding-bottom:clamp(180px, 30vh, 200px);
+main {
+    padding-bottom: clamp(180px, 30vh, 200px);
 }
 
 /* 메인비주얼 */
@@ -137,11 +137,13 @@ main {
     width: clamp(18px, 2vw, 24px);
     height: auto;
 }
-.mainvisual .info{
+
+.mainvisual .info {
     display: flex;
     flex-direction: column;
     gap: var(--space10);
 }
+
 .mainvisual .bottom .b_rank:nth-child(1) {
     background: url(../img/main/mainvisual_img2.png) center/cover no-repeat;
 }
@@ -186,9 +188,11 @@ main {
 .mainvisual .bottom .b_rank .tit .ab_exb_90 {
     color: var(--point-color);
 }
-.mainvisual .bottom .b_rank .info{
+
+.mainvisual .bottom .b_rank .info {
     display: none;
 }
+
 /* ScenehouseTop */
 
 .ScenehouseTop {
@@ -317,7 +321,7 @@ main {
 
 
 .bethebest ul li img {
-    width: clamp(360px,24vw,400px);
+    width: clamp(360px, 24vw, 400px);
     aspect-ratio: 400 / 594;
     height: auto;
     object-fit: cover;
@@ -392,7 +396,7 @@ main {
 }
 
 .Gamelineup .gamecardwrap li img {
-    width: clamp(80px,15vw,284px);
+    width: clamp(80px, 15vw, 284px);
     aspect-ratio: 1/1;
     object-fit: cover;
     opacity: 30%;
@@ -430,22 +434,25 @@ main {
 .eventlist {
     display: flex;
     width: 100%;
-    height: clamp(300px, 50vw, 600px);
-    gap: 2px;
+    height: clamp(300px, 32vw, 600px);
+    gap: var(--space10);
     overflow: hidden;
 }
 
-.eventlist li {}
+.eventlist li {
+    flex: 1 1 0;
+    min-width: 0;
+    transition: all 0.4s ease;
+}
 
 .eventlist li a {
-    min-width: clamp(100px, 10vw, 140px);
+    /* width: clamp(100px, 10vw, 140px); */
     height: 100%;
     border-radius: 10px;
     background: #ccc;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    transition: all 0.4s ease;
     overflow: hidden;
     color: var(--white);
 }
@@ -457,9 +464,11 @@ main {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
+.eventlist li.active {
+    flex: 6;
+}
+
 .eventlist li.active a {
-    min-width: clamp(600px, 70vw, 995px);
-    height: 100%;
     display: flex;
 
     padding: clamp(30px, 4vw, 60px);
@@ -487,23 +496,23 @@ main {
 }
 
 .eventlist li:nth-child(4) a {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 67.31%, rgba(0, 0, 0, 0.80) 100%), url(../img/main/event3.png) lightgray 50% / cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 67.31%, rgba(0, 0, 0, 0.80) 100%), url(../img/main/event4.png) lightgray 50% / cover no-repeat;
 }
 
 .eventlist li:nth-child(5) a {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 67.31%, rgba(0, 0, 0, 0.80) 100%), url(../img/main/event3.png) lightgray 50% / cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 67.31%, rgba(0, 0, 0, 0.80) 100%), url(../img/main/event5.png) lightgray 50% / cover no-repeat;
 }
 
 .eventlist li:nth-child(6) a {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 67.31%, rgba(0, 0, 0, 0.80) 100%), url(../img/main/event3.png) lightgray 50% / cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 67.31%, rgba(0, 0, 0, 0.80) 100%), url(../img/main/event6.png) lightgray 50% / cover no-repeat;
 }
 
 .magazine {
     width: 100%;
-    height: clamp(400px, 50vw, 674px);
+    height: clamp(130px, 50vw, 674px);
     padding: clamp(60px, 10vh, 114px) var(--wrap);
     color: var(--white);
-    background: url(../img/main/magazine.png);
+    background: url(../img/main/magazine.png) center/cover no-repeat;
 }
 
 .magazine a {
