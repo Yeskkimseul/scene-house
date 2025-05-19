@@ -4,7 +4,7 @@ header {
     left: 0;
     top: 0;
     z-index: 80;
-    background: #fff;
+    background: var(--white-l);
     box-shadow: 0px -4px 30px 0px rgba(71, 69, 62, 0.20);
 }
 
