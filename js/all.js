@@ -16,6 +16,21 @@ window.addEventListener('DOMContentLoaded', function () {
     })
 
 
+    const swiper = new Swiper('.sceneswiper', {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        slidesPerView: 1,
+        spaceBetween: 50,
+        speed: 800,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+    });
 
 
 

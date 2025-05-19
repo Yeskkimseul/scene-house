@@ -1,9 +1,136 @@
 @charset "utf-8";
 
 body {
-    background: var();
+    background: var(--black);
 }
 
 main {
     margin-top: clamp(100px, 12vw, 110px);
+}
+
+.contest {
+    position: relative;
+    width: 100%;
+    padding: clamp(80px, 8vw, 120px) var(--wrap) clamp(150px, 12vw, 250px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(80px, 8vh, 120px);
+    color: var(--sub-color);
+}
+
+.contest::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/all/contest/bg1.jpg);
+    background-repeat: no-repeat;  /* 반복 안되게 */
+    background-size: 100% auto;
+    filter: brightness(0.3);  /* 밝기 줄이기 */
+    z-index: -1;  /* 가상 요소가 콘텐츠 뒤에 오도록 */
+}
+.contest .tit{
+    color: var(--point-color);
+    font-weight: 900;
+    text-align: center;
+}
+
+
+.contest .topwrap{
+    display: flex;
+    flex-direction: row;
+}
+.contest .topwrap li.swiper-slide {
+  width: 100%; /* 한 화면에 하나씩 보이게 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(64px, 8vw, 128px);
+  box-sizing: border-box;
+}
+
+.contest .topwrap li img {
+  width: 100%;
+  max-width: 455px;
+  height: auto; 
+}
+.contest .topwrap li .txtwrap{
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-top10);
+    word-break: keep-all;
+}
+.contest .topwrap li .ab_exb_90, .b4{
+    color: var(--point-color);
+}
+.contestbutton{
+    display: flex;
+    padding: var(--margin-top20) var(--space40);
+    align-items: center;
+    color: var(--black);
+    background-color: var(--point-color);
+    border-radius: 20px;
+    width: fit-content;
+    margin-top: 150px;
+}
+
+/* swiper 전체 컨테이너 */
+.sceneswiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* swiper wrapper */
+.sceneswiper .swiper-wrapper {
+  display: flex;
+}
+
+/* 크기 제한 없애기 */
+.sceneswiper .swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.sceneswiper .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 30px;        
+  padding-left: 370px;
+}
+
+.sceneswiper .swiper-pagination-bullet {
+  background-color: var(--main-color);
+  opacity: 1;
+}
+
+.sceneswiper .swiper-pagination-bullet-active {
+  background-color: var(--point-color);
+}
+
+.academy{
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    
+}
+.academy li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.academy li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: var(--point-color);
 }
