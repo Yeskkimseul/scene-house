@@ -70,6 +70,17 @@
 }
 
 @media (max-width: 834px) {
+    .b_80 {
+        font-size: var(--h2-size);
+        font-weight: 700;
+        line-height: 130%;
+    }
+
+    .b6l {
+        font-size: var(--body7-size);
+        line-height: 150%;
+    }
+
     .mainvisual {
         gap: var(--margin-top10);
     }

@@ -205,7 +205,8 @@ main {
 
 .ScenehouseTop .container {
     width: 100%;
-    justify-content: space-between;
+
+    gap: var(--space40);
     display: flex;
 }
 
@@ -217,7 +218,7 @@ main {
 }
 
 .ScenehouseTop .container .left .img {
-    width: clamp(320px, 70vw, 1015px);
+    width: clamp(320px, 54vw, 1015px);
     aspect-ratio: 1015 / 630;
     padding: clamp(24px, 5vh, 50px) clamp(32px, 6vw, 64px);
     border-radius: 20px;
@@ -250,12 +251,14 @@ main {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    height: fit-content;
+    flex: 1;
 }
 
 .ScenehouseTop .container .right .img {
     display: flex;
     aspect-ratio: 32 / 21;
-    width: clamp(320px, 40vw, 640px);
+    width: 100%;
     padding: clamp(24px, 5vw, 40px) clamp(32px, 6vw, 64px);
     flex-direction: column;
     justify-content: flex-end;
