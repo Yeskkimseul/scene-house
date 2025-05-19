@@ -1,5 +1,4 @@
 header {
-    padding: 0 var(--wrap);
     width: 100%;
     position: fixed;
     left: 0;
@@ -14,7 +13,7 @@ header .top {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: var(--margin-top20) 0;
+    padding: var(--margin-top20) var(--wrap);
 }
 
 .top .nav {
@@ -75,10 +74,26 @@ header .top {
     cursor: pointer;
 }
 
+.top .close {
+    display: none;
+    width: clamp(20px, 4vw, 34px);
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+.top .hamMenu.off {
+    display: none;
+}
+
+.top .close.on {
+    display: block;
+}
+
 @media (max-width: 830px) {
-    header .top{
+    header .top {
         align-items: center;
     }
+
     .top .nav .gnb {
         display: none;
     }
@@ -96,4 +111,76 @@ header .top {
         aspect-ratio: 147 / 70;
         height: auto;
     }
+}
+
+.mobilenav {
+    display: none;
+}
+.mobilenav.on {
+    border-top: 1px solid var(--light-gray1);
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+
+
+.mobilenav .userpofile {
+    padding: var(--margin-top20) var(--wrap);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobilenav .userpofile .user {
+    display: flex;
+    align-items: center;
+    gap: var(--space20);
+}
+
+.mobilenav .userpofile .user img {
+    border-radius: 50%;
+    width: 30px;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.mobilenav .userpofile .user h4 {
+    display: flex;
+}
+
+.mobilenav .userpofile h5 {
+    display: flex;
+    padding: 4px 8px;
+    background: var(--point-color);
+    border-radius: 50px;
+    color: var(--white);
+}
+
+.mobilenav .topnav {
+    padding: var(--margin-top20) var(--wrap);
+    background: var(--main-color);
+    color: var(--white);
+    border-bottom: 1px solid var(--light-gray2);
+}
+
+.mobilenav .topnav ul li a {
+    display: flex;
+    width: 100%;
+    padding: 14px 0;
+}
+
+.mobilenav .bottomnav {
+    padding: var(--margin-top20) var(--wrap);
+    background: var(--main-color);
+    color: var(--white);
+    border-bottom: 1px solid var(--light-gray2);
+    height: 100%;
+}
+
+.mobilenav .bottomnav ul li a {
+    display: flex;
+    width: 100%;
+    padding: 14px 0;
 }
