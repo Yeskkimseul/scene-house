@@ -228,15 +228,15 @@ h6 {
 
 .ab_exb_200 {
     font-family: var(--ab);
-    font-size: clamp(9.375rem, 10vw, 12.5rem);
-    /* 150px~200px */
+    font-size: clamp(3rem, 10vw, 12.5rem);
+    /* 48px~200px */
     font-weight: 800;
 }
 
 .ab_exb_90 {
     font-family: var(--ab);
-    font-size: clamp(5rem, 10vw, 5.625rem);
-    /* 80px, 10vw, 90px */
+    font-size: clamp(2rem, 5vw, 5.625rem);
+    /* 32px, 10vw, 90px */
 }
 
 .pura_60 {

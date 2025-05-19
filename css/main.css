@@ -7,9 +7,10 @@ body {
 
 /* 메인비주얼 */
 
-main{
+main {
     margin-top: clamp(100px, 12vw, 150px)
 }
+
 .mainvisual {
     padding: 0 var(--wrap);
     display: flex;
@@ -34,7 +35,8 @@ main{
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding: clamp(40px, 7vh, 55px) clamp(30px, 5vw, 60px);
+    padding: var(--margin-top50) var(--space60);
+
 }
 
 .mainvisual .top .ott {
@@ -45,24 +47,29 @@ main{
 .mainvisual .top .ott img {
     border-radius: 10px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
-    width: clamp(60px, 10vw, 120px);
-    height: clamp(60px, 10vw, 120px);
+    width: clamp(26px, 6vw, 120px);
+    height: clamp(26px, 6vw, 120px);
     object-fit: cover;
+}
+
+.mainvisual .top .description {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-top50);
 }
 
 .mainvisual .top .description .topcon {
     border-bottom: 2px solid var(--point-color);
-    padding-bottom: 15px;
+    /* padding-bottom: clamp(6px,1vw,15px); */
     display: flex;
-    gap: clamp(40px, 10vw, 204px);
+    gap: clamp(40px, 12vw, 204px);
     width: fit-content;
-    align-items: flex-end;
-    margin-bottom: var(--margin-top80);
+    align-items: center;
 }
 
 .mainvisual .top .description .topcon .tit_num {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     gap: var(--space20);
 }
 
@@ -70,10 +77,49 @@ main{
     color: var(--point-color);
 }
 
+
+
+.description .bottom {
+    word-break: keep-all;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-top30);
+}
+
+.mainvisual .bu2 {
+    font-size: var(--body8-size);
+    font-weight: 200;
+    color: var(--light-gray1);
+}
+
+/* 메인비주얼-bottom */
+.mainvisual .bottom {
+    width: 100%;
+    display: flex;
+    gap: var(--space10);
+}
+
+.mainvisual .bottom .b_rank {
+    display: flex;
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 10;
+    border-radius: 20px;
+    padding: var(--space20);
+    overflow: hidden;
+}
+
 .ratLink {
     display: flex;
     gap: var(--space20);
     color: var(--light-gray1);
+    align-items: center;
+    margin-bottom: var(--margin-top20);
+}
+
+.ratLink .b8 {
+    font-weight: 500;
 }
 
 .star-rating-container {
@@ -92,32 +138,11 @@ main{
     width: clamp(18px, 2vw, 24px);
     height: auto;
 }
-
-.description .bottom {
-    word-break: keep-all;
-    text-align: justify;
+.mainvisual .info{
     display: flex;
     flex-direction: column;
-    gap: var(--margin-top30);
+    gap: var(--space10);
 }
-
-/* 메인비주얼-bottom */
-.mainvisual .bottom {
-    width: 100%;
-    display: flex;
-    gap: var(--space20);
-}
-
-.mainvisual .bottom .b_rank {
-    display: flex;
-    width: 100%;
-    max-width: 560px;
-    aspect-ratio: 16 / 10;
-    border-radius: 20px;
-    padding: var(--space20);
-    overflow: hidden;
-}
-
 .mainvisual .bottom .b_rank:nth-child(1) {
     background: url(../img/main/mainvisual_img2.png) center/cover no-repeat;
 }
@@ -145,24 +170,26 @@ main{
 .mainvisual .bottom .b_rank .ott img {
     border-radius: 10px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
-    width: clamp(60px, 8vw, 80px);
+    width: clamp(26px, 5vw, 80px);
     aspect-ratio: 1 / 1;
 }
 
 .mainvisual .bottom .b_rank .tit {
     width: 100%;
     display: flex;
-    padding: 0 clamp(8px, 2vw, 15px) clamp(8px, 2vw, 10px);
-    gap: clamp(10px, 2vw, 20px);
+    padding: 0 clamp(8px, 2vw, 15px);
+    gap: var(--space20);
     border-bottom: 2px solid var(--point-color);
-    align-items: flex-end;
-    margin-bottom: 10px;
+    align-items: center;
+    width: fit-content;
 }
 
 .mainvisual .bottom .b_rank .tit .ab_exb_90 {
     color: var(--point-color);
 }
-
+.mainvisual .bottom .b_rank .info{
+    display: none;
+}
 /* ScenehouseTop */
 
 .ScenehouseTop {
@@ -471,12 +498,13 @@ main{
     color: var(--white);
     background: url(../img/main/magazine.png);
 }
-.magazine a{
+
+.magazine a {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.magazine a .b_80{
+.magazine a .b_80 {
     margin-bottom: var(--margin-top10);
 }
