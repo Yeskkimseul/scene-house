@@ -115,6 +115,7 @@ main {
     gap: 180px;
     margin-top: 150px;
     margin-bottom: 200px;
+    align-items: flex-end;
 }
 
 .lasttxt .lefttxt {
