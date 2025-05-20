@@ -32,6 +32,22 @@ window.addEventListener('DOMContentLoaded', function () {
         },
     });
 
+    
+   new Swiper('.verticalswiper', {
+        direction: 'vertical', // 세로 고정
+        slidesPerView: 2,
+        spaceBetween: 200,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next-vertical', // 🔧 너가 HTML에 쓴 이름과 동일해야 작동
+            prevEl: '.swiper-button-prev-vertical',
+        }
+    });
+
 
 
 });
