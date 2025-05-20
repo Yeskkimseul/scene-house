@@ -281,6 +281,19 @@ main {
   height: auto;
   object-fit: cover;
 }
-.new .description .txt{
-    
+.new .description .new_left .txt {
+  margin-top: clamp(400px, 10vh, 1000px);
+  margin-left: clamp(20px, 10vw, 50px);
+}
+.new .description .new_left .b5{
+    display: flex;
+    padding: var(--margin-top20) var(--space40);
+    align-items: center;
+    color: var(--black);
+    background-color: var(--point-color);
+    border-radius: 20px;
+    width: fit-content;
+    margin-top: 150px;
+    margin-left: clamp(10px, 10vw, 40px);
+    margin-top: clamp(200px, 10vh, 700px);
 }
