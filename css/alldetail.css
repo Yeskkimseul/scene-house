@@ -79,12 +79,43 @@
 }
 
 .contentBox .description .Topdescription .title .b7 {}
-.contentBox .watchott{
+
+.contentBox .watchott {
     color: var(--gray1);
     display: flex;
     flex-direction: column;
-    
+    justify-content: flex-start;
+    align-items: center;
 }
+
+.contentBox .watchott ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-top10);
+    margin-top: var(--margin-top10);
+}
+
+.contentBox .watchott ul li a {
+    display: block;
+    width: clamp(50px, 5vw, 80px);
+    height: auto;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.contentBox .watchott ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(50%);
+    transition: 0.3s linear;
+}
+
+.contentBox .watchott ul li a:hover img {
+    filter: saturate(100%);
+}
+
 /* 별점 */
 .star-rating-container {
     display: flex;
@@ -256,8 +287,8 @@
 .icons .heart-container {}
 
 .user-icon {
-    width: clamp(60px, 10vw, 100px);
-    height: clamp(60px, 10vw, 100px);
+    width: clamp(40px, 10vw, 80px);
+    height: clamp(40px, 10vw, 80px);
     border-radius: 50%;
     overflow: hidden
 }
@@ -513,61 +544,117 @@
 }
 
 
-/* @media (max-width: 1400px) {
-    .contentBox .video-container{
-        max-width: none;
+@media (max-width: 1400px) {
+    .ContestItemDetail .contentBox {
+        gap: var(--space60);
     }
-    .contentBox .description .Topdescription{
+
+    .contentBox .video-container {
+        max-width: 30%;
+    }
+
+    .contentBox .description .Topdescription {
         gap: var(--margin-top10);
     }
+
     .contentBox .description {
         gap: var(--margin-top30);
     }
-    @media (max-width: 800px){
+
+    @media (max-width: 1100px) {
+        .ContestItemDetail .contentBox {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--margin-top30);
+        }
+
+        .contentBox .video-container {
+            max-width: 40%;
+        }
+
+        .contentBox .watchott {
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            background: var(--white);
+            padding: var(--space20);
+            border-radius: 20px;
+        }
+
+        .contentBox .watchott ul {
+            flex-direction: row;
+            gap: var(--space20);
+        }
+
+        .contentBox .watchott ul li a img {
+            filter: saturate(100%);
+        }
+
+        .contentBox .watchott ul li a:hover img {
+            filter: saturate(100%);
+        }
+    }
+
+    @media (max-width: 800px) {
         .rieview-bg .review {
             padding: var(--margin-top80) var(--wrap);
         }
-        .rieview-bg .review .myReview .user-icon{
+
+        .rieview-bg .review .myReview .user-icon {
             display: none;
         }
-        .rieview-bg .review .myReview input{
+
+        .rieview-bg .review .myReview input {
             font-size: var(--body8-size);
         }
-        .rieview-bg .review .userReview .userReviewContents .userReviewTop .icons{
+
+        .rieview-bg .review .userReview .userReviewContents .userReviewTop .icons {
             display: none;
         }
-        .Cast .castMember{
+
+        .Cast .castMember {
             justify-content: space-evenly;
         }
-        .Cast .castMember li{
+
+        .Cast .castMember li {
             width: clamp(150px, 30vw, 434px);
         }
-        .b4{
+
+        .b4 {
             font-size: var(--body5-size);
         }
-        .contentBox .description .Topdescription .title .b7{
+
+        .contentBox .description .Topdescription .title .b7 {
             font-size: var(--body8-size);
         }
-        .b6{
+
+        .b6 {
             font-size: var(--body7-size);
         }
-        h2{
+
+        h2 {
             font-size: var(--h3-size);
         }
-        .galleryBg .gallery{
+
+        .galleryBg .gallery {
             gap: var(--margin-top40);
         }
-        .Cast h2{
+
+        .Cast h2 {
             margin-bottom: var(--margin-top40);
         }
-        .VideoSlideBg .VideoSlide{
+
+        .VideoSlideBg .VideoSlide {
             gap: var(--margin-top40);
         }
-        .Cast .castMember li .b5{
+
+        .Cast .castMember li .b5 {
             font-size: var(--body6-size);
         }
-        .Cast .castMember li .b7{
+
+        .Cast .castMember li .b7 {
             font-size: var(--body8-size);
         }
     }
-} */
+}

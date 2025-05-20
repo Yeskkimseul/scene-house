@@ -251,8 +251,8 @@
 .icons .heart-container {}
 
 .user-icon {
-    width: clamp(60px, 10vw, 100px);
-    height: clamp(60px, 10vw, 100px);
+    width: clamp(40px, 10vw, 80px);
+    height: clamp(40px, 10vw, 80px);
     border-radius: 50%;
     overflow: hidden
 }
@@ -509,59 +509,76 @@
 
 
 @media (max-width: 1400px) {
-    .contentBox .video-container{
+    .contentBox .video-container {
         max-width: none;
     }
-    .contentBox .description .Topdescription{
+
+    .contentBox .description .Topdescription {
         gap: var(--margin-top10);
     }
+
     .contentBox .description {
         gap: var(--margin-top30);
     }
-    @media (max-width: 800px){
+
+    @media (max-width: 800px) {
         .rieview-bg .review {
             padding: var(--margin-top80) var(--wrap);
         }
-        .rieview-bg .review .myReview .user-icon{
+
+        .rieview-bg .review .myReview .user-icon {
             display: none;
         }
-        .rieview-bg .review .myReview input{
+
+        .rieview-bg .review .myReview input {
             font-size: var(--body8-size);
         }
-        .rieview-bg .review .userReview .userReviewContents .userReviewTop .icons{
+
+        .rieview-bg .review .userReview .userReviewContents .userReviewTop .icons {
             display: none;
         }
-        .Cast .castMember{
+
+        .Cast .castMember {
             justify-content: space-evenly;
         }
-        .Cast .castMember li{
+
+        .Cast .castMember li {
             width: clamp(150px, 30vw, 434px);
         }
-        .b4{
+
+        .b4 {
             font-size: var(--body5-size);
         }
-        .contentBox .description .Topdescription .title .b7{
+
+        .contentBox .description .Topdescription .title .b7 {
             font-size: var(--body8-size);
         }
-        .b6{
+
+        .b6 {
             font-size: var(--body7-size);
         }
-        h2{
+
+        h2 {
             font-size: var(--h3-size);
         }
-        .galleryBg .gallery{
+
+        .galleryBg .gallery {
             gap: var(--margin-top40);
         }
-        .Cast h2{
+
+        .Cast h2 {
             margin-bottom: var(--margin-top40);
         }
-        .VideoSlideBg .VideoSlide{
+
+        .VideoSlideBg .VideoSlide {
             gap: var(--margin-top40);
         }
-        .Cast .castMember li .b5{
+
+        .Cast .castMember li .b5 {
             font-size: var(--body6-size);
         }
-        .Cast .castMember li .b7{
+
+        .Cast .castMember li .b7 {
             font-size: var(--body8-size);
         }
     }
