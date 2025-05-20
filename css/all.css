@@ -315,10 +315,11 @@ main {
 }
 .comingup ul {
     display: flex;
+    width: 100%;
 }
-.comingup .swiper{
+.comingup ul li{
   aspect-ratio: 1 / 1;
-  max-width: 600px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -326,31 +327,32 @@ main {
   box-sizing: border-box;
   color: var(--red);
 }
-.comingup .top {
+.comingup ul li .top {
   display: flex;
+  justify-content: space-between;
   gap: 100px;
 }
-.comingupi .top .ott{
+.comingup ul li .top .ott{
     display: flex;
     gap: 10px;
 }
-.comingup .top .ott img{
+.comingup ul li .top .ott img{
     max-height: 30px;
     aspect-ratio: 1 / 1;
 }
-.comingup .coming1 {
+.comingup ul li.coming1 {
   background: url(../img/all/comming/comming1.png) center/cover no-repeat;
 }
 
-.comingup .coming2{
+.comingup ul li.coming2{
     background: url(../img/all/comming/comming2.png) center/cover no-repeat;
 }
-.comingup .coming3{
+.comingup ul li.coming3{
     background: url(../img/all/comming/comming3.png) center/cover no-repeat;
 }
-.comingup .coming4{
+.comingup ul li.coming4{
     background: url(../img/all/comming/comming4.png) center/cover no-repeat;
 }
-.comingup .coming5{
+.comingup ul li.coming5{
     background: url(../img/all/comming/comming5.png) center/cover no-repeat;
 }
