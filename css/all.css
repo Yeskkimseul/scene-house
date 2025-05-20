@@ -314,73 +314,43 @@ main {
     text-align: left;
 }
 .comingup ul {
-  display: flex;
+    display: flex;
 }
-.comingup ul li .top {
+.comingup .swiper{
+  aspect-ratio: 1 / 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: clamp(16px, 5vw, 24px);
+  box-sizing: border-box;
+  color: var(--red);
+}
+.comingup .top {
   display: flex;
   gap: 100px;
 }
-.comingup ul li .top .ott{
+.comingupi .top .ott{
     display: flex;
     gap: 10px;
 }
-.comingup ul li .top .ott img{
-    max-width: 30px;
+.comingup .top .ott img{
+    max-height: 30px;
+    aspect-ratio: 1 / 1;
 }
-.comingup ul li.coming1 {
+.comingup .coming1 {
   background: url(../img/all/comming/comming1.png) center/cover no-repeat;
-  aspect-ratio: 1 / 1;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: clamp(20px, 3vw, 40px); 
-  box-sizing: border-box;
-  color: white;
 }
 
-
-.comingup ul li.coming2{
+.comingup .coming2{
     background: url(../img/all/comming/comming2.png) center/cover no-repeat;
-  aspect-ratio: 1 / 1;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: clamp(20px, 3vw, 40px); 
-  box-sizing: border-box;
-  color: white;
 }
-.comingup ul li.coming3{
+.comingup .coming3{
     background: url(../img/all/comming/comming3.png) center/cover no-repeat;
-  aspect-ratio: 1 / 1;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: clamp(20px, 3vw, 40px); 
-  box-sizing: border-box;
-  color: white;
 }
-.comingup ul li.coming4{
+.comingup .coming4{
     background: url(../img/all/comming/comming4.png) center/cover no-repeat;
-  aspect-ratio: 1 / 1;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: clamp(20px, 3vw, 40px); 
-  box-sizing: border-box;
-  color: white;
 }
-.comingup ul li.coming5{
+.comingup .coming5{
     background: url(../img/all/comming/comming5.png) center/cover no-repeat;
-  aspect-ratio: 1 / 1;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: clamp(20px, 3vw, 40px); 
-  box-sizing: border-box;
-  color: white;
 }

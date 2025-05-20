@@ -43,11 +43,10 @@ window.addEventListener('DOMContentLoaded', function () {
             disableOnInteraction: false,
         },
         navigation: {
-            nextEl: '.swiper-button-next-vertical', // 🔧 너가 HTML에 쓴 이름과 동일해야 작동
+            nextEl: '.swiper-button-next-vertical', 
             prevEl: '.swiper-button-prev-vertical',
         }
     });
 
-
-
+  
 });
