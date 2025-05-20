@@ -1,0 +1,131 @@
+body {
+    background: var(--white);
+}
+
+footer {
+    background: var(--white-l);
+}
+
+.Uploadtab {
+    font-size: var(--h3-size);
+    font-weight: 500;
+    line-height: 130%;
+    color: var(--gray1);
+    display: flex;
+    width: clamp(120px, 20vw, 150px);
+    height: clamp(40px, 5vh, 52px);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+    transition: background-color 0.3s ease;
+}
+
+
+.Uploadtab.active {
+    color: var(--black);
+    border-bottom-color: var(--black);
+    display: flex;
+}
+
+.Uploadtab-buttons {
+    display: flex;
+    width: 100%;
+    height: clamp(100px, 8vw, 136px);
+    justify-content: center;
+    align-items: center;
+    gap: clamp(50px, 8vw, 100px);
+}
+
+.Uploadtabs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Uploadtab-content {
+    width: 100%;
+    margin-top: clamp(26px, 3vw, 36px);
+    height: fit-content;
+    padding: 0 clamp(16px, 8vw, 100px) clamp(24px, 4vw, 50px);
+}
+
+
+
+.UploadListWrap {
+    width: 100%;
+    padding: var(--margin-top160) var(--wrap);
+}
+
+.UploadListWrap .list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(18px, 5vw, 32px);
+}
+
+.UploadListWrap .list>li {
+    display: flex;
+    flex-direction: column;
+    width: clamp(280px, 80vw, 640px);
+}
+
+.UploadListWrap .list>li>img {
+    width: 100%;
+    max-width: 640px;
+    aspect-ratio: 640/360;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: clamp(16px, 3vw, 24px);
+    cursor: pointer;
+}
+
+.UploadListWrap .list>li .itemcon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.UploadListWrap .list>li .itemcon .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.itemcon .bottom .iconset {
+    display: flex;
+    flex: 1;
+    gap: clamp(12px, 6vw, 24px);
+}
+
+.itemcon .bottom .iconset>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.itemcon .bottom .iconset>li img {
+    width: var(--icon30);
+    height: var(--icon30);
+}
+
+.blackmidbtn {
+    cursor: pointer;
+    border-radius: 10px;
+    aspect-ratio: 2/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(98px, 9vw, 140px);
+    height: clamp(36px, 5vw, 46px);
+    font-size: var(--button2-size);
+    font-weight: 600;
+    color: var(--white);
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+}
