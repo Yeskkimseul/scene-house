@@ -47,15 +47,19 @@ document.addEventListener("DOMContentLoaded", function () {
   /* 비디오 스와이퍼 */
 
   new Swiper(".video-swiper", {
-  spaceBetween: 32,
-  slidesPerView: "auto",
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    bulletClass: "swiper-pagination-bullet",
-    bulletActiveClass: "swiper-pagination-bullet-active",
-  },
-});
+    spaceBetween: 32,
+    slidesPerView: "auto",
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      bulletClass: "swiper-pagination-bullet",
+      bulletActiveClass: "swiper-pagination-bullet-active",
+    },
+  });
 
 });

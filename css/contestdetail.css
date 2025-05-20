@@ -39,16 +39,17 @@
     margin-top: 100px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     padding: clamp(40px, 10vw, 88px) var(--wrap);
     gap: clamp(20px, 5vw, 80px);
 }
 
 .contentBox .video-container {
-    min-width: 900px;
-    /* 
-    height: clamp(100px,60vh,506px); */
+    width: 100%;
+    max-width: clamp(320px, 60vw, 900px);
     aspect-ratio: 900 / 506;
-    cursor: pointer;
+    height: auto;
+    flex-shrink: 0;
 }
 
 .contentBox .video-container img {
@@ -58,15 +59,17 @@
 }
 
 .contentBox .description {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: clamp(20px, 8vh, 40px);
+    gap: var(--margin-top40);
+    min-width: 280px;
 }
 
 .contentBox .description .Topdescription {
     display: flex;
     flex-direction: column;
-    gap: clamp(10px, 5vh, 30px);
+    gap: var(--margin-top30);
 }
 
 .contentBox .description .Topdescription .title {}
@@ -139,8 +142,8 @@
 .heart-icon {
     position: relative;
     z-index: 2;
-    width: clamp(20px, 4vw, 34px);
-    height: clamp(20px, 4vw, 34px);
+    width: clamp(30px, 4vw, 34px);
+    height: clamp(30px, 4vw, 34px);
     cursor: pointer;
     background: url(../img/icon/heartempty.svg) no-repeat center/cover;
 }
@@ -502,4 +505,64 @@
     background-color: var(--white-l);
     /* 원하는 활성화 색상 */
     opacity: 1;
+}
+
+
+@media (max-width: 1400px) {
+    .contentBox .video-container{
+        max-width: none;
+    }
+    .contentBox .description .Topdescription{
+        gap: var(--margin-top10);
+    }
+    .contentBox .description {
+        gap: var(--margin-top30);
+    }
+    @media (max-width: 800px){
+        .rieview-bg .review {
+            padding: var(--margin-top80) var(--wrap);
+        }
+        .rieview-bg .review .myReview .user-icon{
+            display: none;
+        }
+        .rieview-bg .review .myReview input{
+            font-size: var(--body8-size);
+        }
+        .rieview-bg .review .userReview .userReviewContents .userReviewTop .icons{
+            display: none;
+        }
+        .Cast .castMember{
+            justify-content: space-evenly;
+        }
+        .Cast .castMember li{
+            width: clamp(150px, 30vw, 434px);
+        }
+        .b4{
+            font-size: var(--body5-size);
+        }
+        .contentBox .description .Topdescription .title .b7{
+            font-size: var(--body8-size);
+        }
+        .b6{
+            font-size: var(--body7-size);
+        }
+        h2{
+            font-size: var(--h3-size);
+        }
+        .galleryBg .gallery{
+            gap: var(--margin-top40);
+        }
+        .Cast h2{
+            margin-bottom: var(--margin-top40);
+        }
+        .VideoSlideBg .VideoSlide{
+            gap: var(--margin-top40);
+        }
+        .Cast .castMember li .b5{
+            font-size: var(--body6-size);
+        }
+        .Cast .castMember li .b7{
+            font-size: var(--body8-size);
+        }
+    }
 }
