@@ -63,9 +63,11 @@ main {
     position: relative;
     display: inline-block;
     width: 100%;
+
 }
 
 .eventinfo2 img {
+    position: relative;
     width: 100%;
     height: auto;
     display: block;
@@ -79,10 +81,14 @@ main {
     z-index: 2;
     bottom: 100px;
     left: 1000px;
+         object-fit: cover;
 }
 .eventinfo2 .tit2 .b3{
     margin-bottom: 20px;
 }
 .eventinfo2 .tit2 h3{
     margin-bottom: 80px;
+}
+.eventinfo2 .tit2 .b5{
+    text-align: right;
 }
