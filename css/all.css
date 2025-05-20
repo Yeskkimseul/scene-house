@@ -356,3 +356,67 @@ main {
 .comingup ul li.coming5{
     background: url(../img/all/comming/comming5.png) center/cover no-repeat;
 }
+
+/* review */
+.review{
+    padding: 0 var(--wrap);
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--margin-top160);
+    margin-bottom: var(--margin-top160);
+    gap: var(--margin-top20);
+    justify-content: center;
+    align-items: center;
+    color: var(--sub-color);
+}
+
+.review .tit{
+    margin-bottom: 100px;
+    width: 100%;
+    color: var(--white);
+    text-align: left;
+}
+.review ul{
+     display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.review ul li.user .profile {
+  margin-bottom: -180px; /* 카드 위로 겹치게 */
+  margin-left: 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.review ul li.user .profile img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.review ul li.user .txtbox{
+    max-width: 500px;
+    margin: 150px auto 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--margin-top60) var(--space80);
+    align-items: center;
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 20px;
+    width: fit-content;
+    margin-top: 150px;
+    gap: 20px;
+}
+.review ul li.user .txtbox .txt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.review ul li.user .txtbox .ratLink{
+    display: flex;
+    gap: 20px;
+}
