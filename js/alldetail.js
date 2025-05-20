@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     new Swiper(".recommendswiper", {
     spaceBetween: 30,
-    slidesPerView: 5,
+    slidesPerView: "auto",
     loop: true,
     autoplay: {
       delay: 3500,
