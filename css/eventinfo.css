@@ -16,7 +16,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .titbox h3 {
@@ -59,36 +59,101 @@ main {
     gap: 20px;
 }
 
-.eventinfo2 {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-
-}
-
-.eventinfo2 img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    /* 선택 사항 */
-}
-
-.eventinfo2 .tit2 {
+.titbox2 {
     position: absolute;
-    color: white;
-    z-index: 2;
-    bottom: 100px;
-    left: 1000px;
-         object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/event/event_infoimg2.png) center/cover no-repeat;
+    object-fit: cover;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: end;
+    margin-top: 100px;
 }
-.eventinfo2 .tit2 .b3{
-    margin-bottom: 20px;
+
+.titbox2 .tit2 {
+    position: relative;
+    /* 기준 */
+    padding-right: 100px;
+    padding-bottom: 50px;
 }
-.eventinfo2 .tit2 h3{
-    margin-bottom: 80px;
+
+.titbox2 .tit2 .b3 {
+    padding-bottom: 20px;
+    color: var(--white-l);
 }
-.eventinfo2 .tit2 .b5{
-    text-align: right;
+
+.titbox2 .tit2 h3 {
+    padding-bottom: 80px;
+    color: var(--white-l);
+}
+
+.btn {
+    display: flex;
+    justify-content: right;
+}
+
+.titbox2 .tit2 .b5 {
+    right: 0;
+    bottom: 0;
+    background: var(--main-color);
+    white-space: nowrap;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-l);
+}
+
+/* last txt */
+.lasttxt {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.lasttxt .lefttxt {
+    display: flex;
+    gap: 90px;
+}
+
+.lasttxt .lefttxt ul.b5 {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lasttxt .lefttxt ul.b5 li {
+    color: var(--point-color);
+}
+
+.lasttxt .lefttxt ul.right {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lasttxt .lefttxt ul.right li {
+    color: var(--black);
+}
+
+.righttxt {
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.righttxt h3 {
+    color: var(--black);
+}
+
+.righttxt .b6 {
+    display: flex;
+    flex-direction: column;
+    color: var(--light-gray2);
 }
