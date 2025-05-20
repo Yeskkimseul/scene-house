@@ -243,7 +243,7 @@ main {
 }
 
 .new .description .new_left {
-  width: 60%;
+  width: 70%;
   height: auto;
   aspect-ratio: auto;
   background: url(../img/all/new/new1.png) center/cover no-repeat;
@@ -252,7 +252,6 @@ main {
   padding: var(--margin-top50) var(--space60);
   border: 3px solid var(--point-color);
   gap: clamp(40px, 6vh, 70px);
-  box-sizing: border-box;
   flex-shrink: 0;
 }
 .new .description .new_left .txt {
@@ -297,3 +296,88 @@ main {
 }
 
 /* coming up */
+.comingup{
+    padding: 0 var(--wrap);
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--margin-top160);
+    margin-bottom: var(--margin-top160);
+    gap: var(--margin-top20);
+    justify-content: center;
+    align-items: center;
+    color: var(--sub-color);
+}
+.comingup .tit{
+    margin-bottom: 100px;
+    width: 100%;
+    color: var(--white);
+    text-align: left;
+}
+.comingup ul {
+  
+}
+.comingup ul li .top {
+  display: flex;
+  gap: 100px;
+}
+.comingup ul li .top .ott{
+    display: flex;
+    gap: 10px;
+}
+.comingup ul li.coming1 {
+  background: url(../img/all/comming/comming1.png) center/cover no-repeat;
+  aspect-ratio: 1 / 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: clamp(20px, 3vw, 40px); 
+  box-sizing: border-box;
+  color: white;
+}
+
+
+.comingup ul li.coming2{
+    background: url(../img/all/comming/comming1.png) center/cover no-repeat;
+  aspect-ratio: 1 / 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: clamp(20px, 3vw, 40px); 
+  box-sizing: border-box;
+  color: white;
+}
+.comingup ul li.coming3{
+    background: url(../img/all/comming/comming1.png) center/cover no-repeat;
+  aspect-ratio: 1 / 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: clamp(20px, 3vw, 40px); 
+  box-sizing: border-box;
+  color: white;
+}
+.comingup ul li.coming4{
+    background: url(../img/all/comming/comming1.png) center/cover no-repeat;
+  aspect-ratio: 1 / 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: clamp(20px, 3vw, 40px); 
+  box-sizing: border-box;
+  color: white;
+}
+.comingup ul li.coming5{
+    background: url(../img/all/comming/comming1.png) center/cover no-repeat;
+  aspect-ratio: 1 / 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: clamp(20px, 3vw, 40px); 
+  box-sizing: border-box;
+  color: white;
+}
