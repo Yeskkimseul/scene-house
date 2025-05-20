@@ -2,6 +2,7 @@
 
 .main_visual {
     width: 100%;
+    padding: var(--margin-top160) var(--wrap);
 }
 
 .main_visual .h3 {
@@ -24,16 +25,29 @@
 .main_box ul li {
     position: relative;
     display: inline-block;
+    transition: opacity 0.4s ease;
+}
+
+.main_box ul li:hover {
+    opacity: .5;
+}
+
+.main_box ul.list1 {
+    margin-top: var(--margin-top40);
 }
 
 .main_box ul li img {
     border-radius: 10px;
     display: block;
     width: 100%;
-    /* 이미지가 꽉 차게 */
     height: auto;
 }
 
 .main_box ul li h4 {
     position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    white-space: nowrap;
 }
