@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/alldetail.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="../js/alldetail.js"></script>
 </head>
 
 <body>
@@ -22,78 +24,420 @@
         <header>
             <div class="top">
                 <div class="nav">
-                    <a href="../index.html" class="MainLogo"><img src="../img/scenelogo.svg" alt="scene house"></a>
+                    <a href="../index.html" class="MainLogo"><img src="../img/scenehouse_logo.png"
+                            alt="scene house"></a>
                     <div class="gnb">
-                        <a href="../index.html" class="">
-                            <h5>HOME</h5>
-                        </a>
-                        <a href="../all.html" class="active">
-                            <h5>전체보기</h5>
-                        </a>
+                        <!-- 공모전 -->
                         <a href="../contest.html" class="">
-                            <h5>공모전</h5>
+                            <div class="b6">@씬하우스</div>
                         </a>
+                        <!-- 공모전 업로드 -->
+                        <a href="../upload.html" class="">
+                            <div class="b6">업스테이지</div>
+                        </a>
+                        <!-- ott모아보기 -->
+                        <a href="../all.html" class="active">
+                            <div class="b6">OTT룸</div>
+                        </a>
+                        <!-- 포인트존 -->
                         <a href="../scenehouseplay.html" class="">
-                            <h5>@씬하우스</h5>
+                            <div class="b6">골든키룸</div>
                         </a>
                     </div>
                 </div>
                 <div class="lefticon">
                     <img src="../img/icon/search.svg" alt="search">
                     <img src="../img/icon/alarm.svg" alt="alarm">
-                    <a href="../setting.html"><img src="../img/icon/user.svg" alt="user"></a>
+                    <a href=""><img src="../img/icon/user.svg" alt="user"></a>
                 </div>
                 <div class="hamMenu"><img src="../img/icon/ham.svg" alt=""></div>
+                <div class="close"><img src="../img/icon/close.svg" alt="close"></div>
             </div>
+            <!-- 모바일 gnb -->
+            <div class="mobilenav">
+                <div class="userpofile">
+                    <div class="user">
+                        <img src="../img/moblienavusericon.png" alt="">
+                        <h4>씬스타터<div class="b7">님</div>
+                        </h4>
+                    </div>
+                    <h5>100key</h5>
+                </div><!-- userpofile -->
+                <div class="topnav">
+                    <ul>
+                        <li><a href="../contest.html">
+                                <h4>씬하우스</h4>
+                            </a></li>
+                        <li><a href="../upload.html">
+                                <h4>업스테이지</h4>
+                            </a></li>
+                        <li><a href="../all.html">
+                                <h4>OTT룸</h4>
+                            </a></li>
+                        <li><a href="../scenehouseplay.html">
+                                <h4>골든키룸</h4>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="bottomnav">
+                    <ul>
+                        <li><a href="#">
+                                <div class="bu1">마이 프로필</div>
+                            </a></li>
+                        <li><a href="#">
+                                <div class="bu1">내 찜 목록</div>
+                            </a></li>
+                        <li><a href="#">
+                                <div class="bu1">MY LIST</div>
+                            </a></li>
+                        <li><a href="#">
+                                <div class="bu1">환경 설정</div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div><!-- mobilenav -->
         </header>
 
 
         <main>
-              상세페이지
-        </main>
+
+            <!-- 콘텐츠 -->
+            <section class="ContestItemDetail">
+                <div class="contentBox">
+                    <div class="video-container">
+                        <img src="../img/alldetail/mainposterimg.png" alt="">
+                    </div><!-- video-container -->
+                    <div class="description">
+                        <div class="Topdescription">
+                            <div class="watchott">
+
+                            </div><!-- watchott -->
+                            <div class="title">
+                                <div class="b4">스포트라이트</div>
+                                <div class="b7">2016년  • 사회고발/영화 • 2시간 8분  </div>
+                            </div>
+                            <!-- 별점 -->
+                            <div class="star-rating-container" data-rating="3">
+                                <div class="star-rating">
+                                    <img src="../img/icon/starfill.svg" alt="" class="star-icon">
+                                    <img src="../img/icon/starfill.svg" alt="" class="star-icon">
+                                    <img src="../img/icon/starfill.svg" alt="" class="star-icon">
+                                    <img src="../img/icon/starempty.svg" alt="" class="star-icon">
+                                    <img src="../img/icon/starempty.svg" alt="" class="star-icon">
+                                </div>
+                                <div class="star-score">
+                                    <div class="b7">3.0점</div>
+                                </div>
+                            </div><!-- star-rating-container -->
+
+                        </div><!-- Topdescription -->
+                        <!-- 아이콘셋 -->
+                        <ul class="iconset">
+                            <li>
+                                <div class="heart-icon"></div>
+                                <div class="b8">찜하기</div>
+                            </li>
+                            <li>
+                                <img src="../img/icon/pen.svg" alt="pen" />
+                                <div class="b8">리스트에 추가</div>
+                            </li>
+                        </ul>
+                        <div class="descriptionText">
+                            미국의 3대 일간지 중 하나인 보스턴 글로브 내 ‘스포트라이트’팀은 가톨릭 보스턴 교구 사제들의 아동 성추행 사건을 취재한다. 하지만 사건을 파헤치려 할수록 더욱
+                            굳건히 닫히는 진실의 장벽. 결코 좌절할 수 없었던 끈질긴 ‘스포트라이트’팀은 추적을 멈추지 않고, 마침내 성스러운 이름 속에 감춰졌던 사제들의 얼굴이 드러나는데…
+                        </div>
+                    </div><!-- description -->
+            </section><!-- contentBox -->
+            <section class="review-Wrapper">
+                <div class="rieview-bg">
+                    <div class="review">
+                        <div class="num_more">
+                            <h4>댓글 426개</h4>
+                            <a class="more-text-btn" href="#">
+                                <div class="bu2">더 보기 +</div>
+                            </a>
+                        </div>
+                        <div class="myReview">
+                            <!-- UserIcon 대체 -->
+                            <img src="../img/usericon/usericon1.png" alt="사용자 아이콘" class="user-icon" />
+                            <input type="text" placeholder="댓글 추가..." />
+                            <!-- Button 대체 -->
+                            <div class="btn-sm_check">등록</div>
+                        </div>
+                        <ul class="userReview">
+                            <li>
+                                <img src="../img/usericon/usericon2.png" alt="사용자 아이콘" class="user-icon" />
+                                <div class="userReviewContents">
+                                    <div class="userReviewTop">
+                                        <div class="b6">홍혜주</div>
+                                        <div class="icons">
+                                            <div class="star-rating">
+                                                <img src="../img/icon/starfill.svg" alt="별" />
+                                                <img src="../img/icon/starfill.svg" alt="별" />
+                                                <img src="../img/icon/starempty.svg" alt="별" />
+                                                <img src="../img/icon/starempty.svg" alt="별" />
+                                                <img src="../img/icon/starempty.svg" alt="빈 별" />
+                                            </div>
+
+                                            <div class="heart-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="b7">
+                                        작품에 대한 전체적인 개연성이 부족합니다.
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="../img/usericon/usericon3.png" alt="사용자 아이콘" class="user-icon" />
+                                <div class="userReviewContents">
+                                    <div class="userReviewTop">
+                                        <div class="b6">김도윤</div>
+                                        <div class="icons">
+                                            <div class="star-rating">
+                                                <img src="../img/icon/starfill.svg" alt="별" />
+                                                <img src="../img/icon/starfill.svg" alt="별" />
+                                                <img src="../img/icon/starfill.svg" alt="별" />
+                                                <img src="../img/icon/starempty.svg" alt="별" />
+                                                <img src="../img/icon/starempty.svg" alt="빈 별" />
+                                            </div>
+                                            <div class="heart-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="b7">
+                                        시각적으로는 훌륭하지만 스토리 전달력이 아쉬웠어요.
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <img src="../img/usericon/usericon4.png" alt="사용자 아이콘" class="user-icon" />
+                                <div class="userReviewContents">
+                                    <div class="userReviewTop">
+                                        <div class="b6">오수빈</div>
+                                        <div class="icons">
+                                            <div class="star-rating">
+                                                <img src="../img/icon/starfill.svg" alt="별" />
+                                                <img src="../img/icon/starfill.svg" alt="별" />
+                                                <img src="../img/icon/starfill.svg" alt="별" />
+                                                <img src="../img/icon/starfill.svg" alt="별" />
+                                                <img src="../img/icon/starempty.svg" alt="빈 별" />
+                                            </div>
+                                            <div class="heart-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="b7">
+                                        주제가 뚜렷하고 전달력이 강해서 좋았어요.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section><!-- review-Wrapper -->
+            <section class="VideoSlide-wrapper">
+                <div class="VideoSlideBg">
+                    <div class="VideoSlide">
+                        <h2>동영상</h2>
+                        <div class="swiper video-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="imgbox">
+                                        <img src="../img/contestdetail/videoslide1.png" alt="slide-0">
+                                        <div class="b5">푸르른 감정들</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="imgbox">
+                                        <img src="../img/contestdetail/videoslide2.png" alt="slide-1" />
+                                        <div class="b5">흐름의 경계 스릴러</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="imgbox">
+                                        <img src="../img/contestdetail/videoslide3.png" alt="slide-1" />
+                                        <div class="b5">파랑, 그리고 너</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="imgbox">
+                                        <img src="../img/contestdetail/videoslide4.png" alt="slide-1" />
+                                        <div class="b5">고요한 폭풍</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="imgbox">
+                                        <img src="../img/contestdetail/videoslide5.png" alt="slide-1" />
+                                        <div class="b5">아쿠아리움 속 우리는</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="imgbox">
+                                        <img src="../img/contestdetail/videoslide6.png" alt="slide-1" />
+                                        <div class="b5">택배</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 페이지네이션 -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- VideoSlide-wrapper -->
+            <section class="gallery-wrapper">
+                <div class="galleryBg">
+                    <div class="gallery">
+                        <h2>갤러리</h2>
+                        <div class="swiper galleryswiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="imgbox">
+                                        <img src="../img/contestdetail/galleryimg1.png" alt="slide-0" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="imgbox">
+                                        <img src="../img/contestdetail/galleryimg2.png" alt="slide-1" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="imgbox">
+                                        <img src="../img/contestdetail/galleryimg3.png" alt="slide-2" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="imgbox">
+                                        <img src="../img/contestdetail/galleryimg4.png" alt="slide-3" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="imgbox">
+                                        <img src="../img/contestdetail/galleryimg5.png" alt="slide-4" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="imgbox">
+                                        <img src="../img/contestdetail/galleryimg6.png" alt="slide-5" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 페이지네이션 -->
+                            <div class="swiper-pagination"></div>
+
+                        </div><!-- swiper galleryswiper -->
+                    </div>
+                </div>
+            </section><!-- gallery-wrapper -->
+            <section class="Cast-Wrapper">
+                <div class="Cast-bg">
+                    <div class="Cast">
+                        <h2>출연/제작</h2>
+                        <a href="#" class="bu2">더 보기 +</a>
+                        <ul class="castMember">
+                            <li>
+                                <div class="imgbox">
+                                    <img src="../img/castmember/castmember1.png" alt="정도영" />
+                                </div>
+                                <div class="b5">정도영</div>
+                                <div class="b7">감독</div>
+                            </li>
+                            <li>
+                                <div class="imgbox">
+                                    <img src="../img/castmember/castmember2.png" alt="김혜진" />
+                                </div>
+                                <div class="b5">김혜진</div>
+                                <div class="b7">한나현 역 / 주연</div>
+                            </li>
+                            <li>
+                                <div class="imgbox">
+                                    <img src="../img/castmember/castmember3.png" alt="이서윤" />
+                                </div>
+                                <div class="b5">이서윤</div>
+                                <div class="b7">친구1 / 단역</div>
+                            </li>
+                            <li>
+                                <div class="imgbox">
+                                    <img src="../img/castmember/castmember4.png" alt="정하준" />
+                                </div>
+                                <div class="b5">정하준</div>
+                                <div class="b7">친구2 / 단역</div>
+                            </li>
+                            <li>
+                                <div class="imgbox">
+                                    <img src="../img/castmember/castmember5.png" alt="장준서" />
+                                </div>
+                                <div class="b5">장준서</div>
+                                <div class="b7">촬영</div>
+                            </li>
+                            <li>
+                                <div class="imgbox">
+                                    <img src="../img/castmember/castmember6.png" alt="노지호" />
+                                </div>
+                                <div class="b5">노지호</div>
+                                <div class="b7">음향 감독</div>
+                            </li>
+                            <li>
+                                <div class="imgbox">
+                                    <img src="../img/castmember/castmember7.png" alt="정우진" />
+                                </div>
+                                <div class="b5">정우진</div>
+                                <div class="b7">작가</div>
+                            </li>
+                            <li>
+                                <div class="imgbox">
+                                    <img src="../img/castmember/castmember8.png" alt="오지율" />
+                                </div>
+                                <div class="b5">오지율</div>
+                                <div class="b7">분장감독</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section><!-- Cast-Wrapper -->
 
 
-        <!-- footer -->
-        <footer>
-            <div class="topfooter">
-                <img src="../img/scenelogo.svg" alt="scene house">
-                <ul class="info">
-                    <li><img src="../img/icon/mapicon.svg" alt="location">
-                        <div class="bu1">서울특별시 강남구 역삼로 210,5층</div>
-                    </li>
-                    <li><img src="../img/icon/phoneicon.svg" alt="call">
-                        <div class="bu1">(123)456-7800</div>
-                    </li>
-                </ul>
-                <div class="right">
-                    <ul class="fnavTop">
-                        <li>
-                            <h6>About us</h6>
-                        </li>
-                        <li>
-                            <h6>Contact us</h6>
-                        </li>
-                        <li>
-                            <h6>Help</h6>
-                        </li>
-                    </ul>
-                    <ul class="fnavBot">
-                        <li>
-                            <h6>Privacy Policy</h6>
-                        </li>
-                        <li>
-                            <h6>Disclaimer</h6>
-                        </li>
-                    </ul>
-                </div>
+
+    </div><!-- ContestItemDetail -->
+
+
+
+
+    <!--
+  <VideoSlide
+    imgList={[
+      { src: vidoslide1, text: '슬라이드 1 설명 텍스트' },
+      ...
+    ]}
+  />
+  -->
+
+    <!-- footer -->
+    <footer data-scroll-section>
+        <div class="topfooter">
+            <img src="../img/scenehouse_logo.png" alt="scene house">
+            <ul>
+                <li><a href="#" class="bu1">서비스 이용약관</a></li>
+                <li><a href="#" class="bu1">개인정보 처리방침</a></li>
+                <li><a href="#" class="bu1">고객센터</a></li>
+                <li><a href="#" class="bu1">광고 문의</a></li>
+            </ul>
+            <div class="ft">
+                상호명: 헤라과자점 ｜ 대표자: 김헤라 ｜ 사업자등록번호: 123-45-67890
+                통신판매업신고번호: 2025-서울강남-01234 ｜ 주소: 서울특별시 서초구 서초대로77길 41 대동2빌딩 9층
+                이메일: contact@hera-snacks.com ｜ 전화번호: 010-1234-5678
             </div>
-            <div class="copy">
-                <div class="ft">
-                    Copyright © 2025 • Scene House
-                </div>
+        </div>
+        <div class="copy">
+            <div class="ft">
+                Copyright © 2025 • Scene House
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
+    </main>
+
+
 </body>
 
 </html>
