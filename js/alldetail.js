@@ -51,7 +51,23 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: "auto",
     loop: true,
     autoplay: {
-      delay: 2500,
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      bulletClass: "swiper-pagination-bullet",
+      bulletActiveClass: "swiper-pagination-bullet-active",
+    },
+  });
+
+    new Swiper(".recommendswiper", {
+    spaceBetween: 30,
+    slidesPerView: 5,
+    loop: true,
+    autoplay: {
+      delay: 3500,
       disableOnInteraction: false,
     },
     pagination: {

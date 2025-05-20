@@ -398,7 +398,7 @@
 }
 
 .Cast .castMember li .imgbox {
-    width: clamp(120px, 20vw, 200px);
+    width: clamp(60px, 15vw, 100px);
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: 50%;
