@@ -461,7 +461,33 @@ main {
     color: var(--white);
     text-align: left;
 }
-
+.b4, .b7{
+    color: var(--white);
+}
+.actor ul.top li:nth-child(1) a .imgbox{
+    position: relative;
+}
+.actor ul.top li:nth-child(1) a .imgbox .txtbox{
+    position:absolute;
+    left: 30px;
+    top: 30px;
+}
+.actor ul.top li:nth-child(1) a .imgbox .txtbox .txt{
+    padding-bottom: 350px;
+}
+.actor ul.top li:nth-child(2) a .imgbox{
+    position: relative;
+}
+.actor ul.top li:nth-child(2) a .imgbox .txtbox{
+    position:absolute;
+    right: 30px;
+    top: 30px;
+    text-align: right;
+}
+.actor ul.top li:nth-child(2) a .imgbox .txtbox .txt{
+    padding-bottom: 300px;
+}
+.actor ul li,
 .actor ul.top{
     display: flex;
     gap: 20px;
@@ -474,6 +500,78 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.actor .bottom ul.bottom_left li:nth-child(1) a .imgbox{
+    position: relative;
+}
+.actor .bottom ul.bottom_left li:nth-child(1) a .txtbox{
+    position:absolute;
+    left: 30px;
+    top: 30px;
+}
+.actor .bottom ul.bottom_left li:nth-child(1) a .txtbox .txt{
+    padding-bottom: 100px;
+}
+
+.actor .bottom ul.bottom_left li:nth-child(2) a .imgbox{
+    position: relative;
+}
+.actor .bottom ul.bottom_left li:nth-child(2) a .txtbox{
+    position:absolute;
+    left: 30px;
+    top: 30px;
+}
+.actor .bottom .bottom_right a .imgbox{
+    position: relative;
+}
+.actor .bottom .bottom_right a .txtbox{
+    position:absolute;
+    right: 30px;
+    top: 30px;
+    text-align: right;
+}
+.actor .bottom .bottom_right a .txtbox .txt{
+    padding-bottom: 350px;
+}
+.actor .bottom .bottom_right a .txtbox .b5{
+    margin-left: auto;
+}
+.actor ul.top .txtbox .b5,
+.actor .bottom .txtbox .b5
+{
+    display: flex;
+    padding: var(--margin-top20) var(--space40);
+    align-items: center;
+    color: var(--black);
+    background-color: var(--point-color);
+    border-radius: 20px;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.actor .imgbox {
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s ease;
+  border: 0 solid transparent; /* 초기엔 테두리 없음 */
+}
+
+/* 이미지 흑백만 적용 (테두리엔 영향 X) */
+.actor .imgbox:hover {
+  border: 4px solid var(--point-color); /* 테두리는 바깥 div에 */
+}
+
+.actor .imgbox:hover img {
+  filter: grayscale(100%); /* 이미지에만 흑백 효과 */
+}
+
+.actor .txtbox {
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.actor .imgbox:hover .txtbox {
+  opacity: 1;
 }
 
 /* pd */

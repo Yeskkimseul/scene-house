@@ -470,10 +470,8 @@ main {
 
 .eventlist li.active a {
     display: flex;
-
     padding: clamp(30px, 4vw, 60px);
     gap: clamp(10px, 2vw, 20px);
-
     border-radius: 10px;
 }
 
