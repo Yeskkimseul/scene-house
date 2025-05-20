@@ -38,19 +38,19 @@ header .top {
 }
 
 .top .nav .gnb a .b6 {
-    transition: 0.5s linear;
+    transition: 0.2s linear;
 }
 
-.top .nav .gnb a:first-child {
+.top .nav .gnb a:first-child {}
+
+.top .nav .gnb a:hover .b6 {
+    /* font-weight: 700; */
     color: var(--point-color);
 }
 
-.top .nav .gnb a:hover .b6 {
-    font-weight: 700;
-}
-
 .top .nav .gnb .active .b6 {
-    font-weight: 700;
+    /* font-weight: 700; */
+    color: var(--point-color);
 }
 
 .top .lefticon {
@@ -116,6 +116,7 @@ header .top {
 .mobilenav {
     display: none;
 }
+
 .mobilenav.on {
     border-top: 1px solid var(--light-gray1);
     position: sticky;
