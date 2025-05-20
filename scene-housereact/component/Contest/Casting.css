@@ -65,7 +65,6 @@ body.Casting {
     height: fit-content;
     padding: clamp(12px, 3vw, 32px);
     position: relative;
-    cursor: pointer;
     background: var(--white);
 }
 
