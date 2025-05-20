@@ -314,7 +314,7 @@ main {
     text-align: left;
 }
 .comingup ul {
-  
+  display: flex;
 }
 .comingup ul li .top {
   display: flex;
@@ -323,6 +323,9 @@ main {
 .comingup ul li .top .ott{
     display: flex;
     gap: 10px;
+}
+.comingup ul li .top .ott img{
+    max-width: 30px;
 }
 .comingup ul li.coming1 {
   background: url(../img/all/comming/comming1.png) center/cover no-repeat;
@@ -338,7 +341,7 @@ main {
 
 
 .comingup ul li.coming2{
-    background: url(../img/all/comming/comming1.png) center/cover no-repeat;
+    background: url(../img/all/comming/comming2.png) center/cover no-repeat;
   aspect-ratio: 1 / 1;
   max-width: 600px;
   display: flex;
@@ -349,7 +352,7 @@ main {
   color: white;
 }
 .comingup ul li.coming3{
-    background: url(../img/all/comming/comming1.png) center/cover no-repeat;
+    background: url(../img/all/comming/comming3.png) center/cover no-repeat;
   aspect-ratio: 1 / 1;
   max-width: 600px;
   display: flex;
@@ -360,7 +363,7 @@ main {
   color: white;
 }
 .comingup ul li.coming4{
-    background: url(../img/all/comming/comming1.png) center/cover no-repeat;
+    background: url(../img/all/comming/comming4.png) center/cover no-repeat;
   aspect-ratio: 1 / 1;
   max-width: 600px;
   display: flex;
@@ -371,7 +374,7 @@ main {
   color: white;
 }
 .comingup ul li.coming5{
-    background: url(../img/all/comming/comming1.png) center/cover no-repeat;
+    background: url(../img/all/comming/comming5.png) center/cover no-repeat;
   aspect-ratio: 1 / 1;
   max-width: 600px;
   display: flex;
