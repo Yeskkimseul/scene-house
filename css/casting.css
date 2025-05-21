@@ -130,8 +130,17 @@
     color: var(--white);
 }
 
+.castinglist>li:last-child {
+    background: var(--light-gray1);
+}
+
 .castinglist>li:last-child .num {
     background: var(--light-gray2);
+}
+
+.castinglist>li:last-child .b6,
+.b7 {
+    color: var(--gray1);
 }
 
 .castinglist>li .txt {}
