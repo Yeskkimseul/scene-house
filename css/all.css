@@ -180,7 +180,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: var(--margin-top160);
-    margin-bottom: var(--margin-top160);
+    margin-bottom: 200px;
     gap: var(--margin-top20);
     justify-content: center;
     align-items: center;
@@ -246,7 +246,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: var(--margin-top160);
-    margin-bottom: var(--margin-top160);
+    margin-bottom: 200px;
     gap: var(--margin-top20);
     justify-content: center;
     align-items: center;
@@ -267,9 +267,6 @@ main {
     width: 100%;
     gap: 150px;
     align-items: stretch;
-    max-height: 1000px;
-    /* 왼쪽 이미지 기준 높이로 잘라버림 */
-    overflow: hidden;
 }
 
 .new .description .new_left {
@@ -304,28 +301,27 @@ main {
 }
 
 .verticalswiper {
-    flex: 1;
+    height: auto; /* 초기화 */
+    aspect-ratio: 2/3; 
     display: flex;
     flex-direction: column;
     justify-content: start;
-    max-height: 100%;
-    overflow: hidden;
-
+    overflow: visible;
 }
 
 .verticalswiper .swiper-slide {
-    max-width: 400px;
-    width: 100%;
+    width: 90%;
+    height: 40%;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
 }
 
 .verticalswiper .swiper-slide img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover; 
 }
 
 /* coming up */
@@ -334,7 +330,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: var(--margin-top160);
-    margin-bottom: var(--margin-top160);
+    margin-bottom: 200px;
     gap: var(--margin-top20);
     justify-content: center;
     align-items: center;
@@ -479,7 +475,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: var(--margin-top160);
-    margin-bottom: var(--margin-top160);
+    margin-bottom: 200px;
     gap: var(--margin-top20);
     justify-content: center;
     align-items: center;
@@ -548,7 +544,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: var(--margin-top160);
-    margin-bottom: var(--margin-top160);
+    margin-bottom: 200px;
     gap: var(--margin-top20);
     justify-content: center;
     align-items: center;

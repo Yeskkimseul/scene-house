@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', function () {
    new Swiper('.verticalswiper', {
         direction: 'vertical', // 세로 고정
         slidesPerView: 2,
-        spaceBetween: 100,
+        spaceBetween: 50,
         loop: true,
         autoplay: {
             delay: 3000,
