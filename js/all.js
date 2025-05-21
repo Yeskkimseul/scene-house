@@ -124,4 +124,6 @@ window.addEventListener('DOMContentLoaded', function () {
         wrapperClass: 'defaultswiper-wrapper',
         slideClass: 'defaultswiper-slide',
     });
+
 });
+

@@ -118,8 +118,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: clamp(300px, 33vw, 636px);
-    height: clamp(80px, 10vw, 140px);
+    width: clamp(200px, 26vw, 400px);
+    height: clamp(60px, 8vw, 100px);
     border-radius: 0px 140px;
     border-bottom: 10px solid var(--point-color);
 }
