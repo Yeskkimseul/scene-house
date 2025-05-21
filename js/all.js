@@ -44,7 +44,7 @@ document.addEventListener('click', function () {
 
     const swiper = new Swiper('.sceneswiper', {
         direction: 'horizontal',
-        loop: false,
+        loop: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -105,23 +105,21 @@ document.addEventListener('click', function () {
         }
         });
 
+        
         /* pd */
-            new Swiper('.defaultswiper', {
-        loop: true,
-        slidesPerView: 5,
-        spaceBetween: 20,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-        }
-        });
-
+           new Swiper('.defaultswiper-swiper', {
+    loop: true,
+    slidesPerView: 5,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.pd-next',
+        prevEl: '.pd-prev',
+    },
+    wrapperClass: 'defaultswiper-wrapper',
+    slideClass: 'defaultswiper-slide',
 });
+        });
