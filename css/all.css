@@ -32,7 +32,7 @@ main {
 } */
 .contest .swiper-button-prev::after,
 .contest .swiper-button-next::after {
-    font-size: 40px; 
+    font-size: 60px; 
     color: var(--point-color); 
 }
 /* contest */
@@ -464,7 +464,7 @@ main {
 } */
 .comingup .swiper-button-prev::after,
 .comingup .swiper-button-next::after {
-    font-size: 40px; 
+    font-size: 60px; 
     color: var(--point-color); 
 }
 
@@ -726,29 +726,7 @@ main {
   max-width: 400px;
   flex-shrink: 0;
 }
-.pd .swiper-button-prev,
-.pd .swiper-button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  z-index: 10;
-  cursor: pointer;
-}
 
-.pd .swiper-button-prev {
-  left: 0;
-}
-.pd .swiper-button-next {
-  right: 0;
-}
-
-.pd-prev::after,
-.pd-next::after {
-  font-size: 20px;
-  color: var(--point-color);
-}
 footer{
     background-color: var(--white-l);
 }
