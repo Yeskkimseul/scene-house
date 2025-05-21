@@ -67,6 +67,59 @@ header .top {
     cursor: pointer;
 }
 
+.top .lefticon .alarm {
+    position: relative;
+}
+
+.top .lefticon .alarm > img {
+    display: none;
+}
+
+.top .lefticon .alarm > img.active {
+    display: block;
+}
+
+.top .lefticon .alarm .alarmbox {
+    position: absolute;
+    top: 150%;
+    right: 0;
+    background: var(--white);
+    width: clamp(280px, 80vw, 360px);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    display: none;
+}
+
+.top .lefticon .alarm .alarmbox.active{
+    display: block;
+}
+
+.top .lefticon .alarm .alarmbox li {
+    padding: var(--margin-top20) var(--space20);
+    border-bottom: 1px solid var(--light-gray1);
+    color: var(--gray1);
+    transform: 0.5s linear;
+}
+.top .lefticon .alarm .alarmbox li a{
+    display: flex;
+    align-items: center;
+    gap: var(--space10);
+}
+.top .lefticon .alarm .alarmbox li:hover{
+    color: var(--black);
+}
+.top .lefticon .alarm .alarmbox li:first-child{
+    color: var(--point-color);
+     border-bottom: 1px solid var(--point-color);
+}
+.top .lefticon .alarm .alarmbox li img{
+    width: 100%;
+    max-width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
 .top .hamMenu {
     display: none;
     width: clamp(20px, 4vw, 34px);
