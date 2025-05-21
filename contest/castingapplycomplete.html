@@ -5,22 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>scene-house</title>
-    <link rel="icon" href="img/faviconblack.ico">
-    <meta property="og:image" content="img/ogimg.jpg" />
+    <link rel="icon" href="../img/faviconblack.ico">
+    <meta property="og:image" content="../img/ogimg.jpg" />
     <meta property="og:title" content="scene-house : 장면(scene)을 담아내는 따뜻한 공간" />
     <meta property="og:description" content="OTT 콘텐츠 통합검색 기능과 실감나는 공모전 제작 경험을 결합한, 신인 창작자 발굴형 미디어 플랫폼" />
     <meta name="keywords" content="영화,예능,드라마,OTT,공모전">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/45.0.0/ckeditor5.css">
+    <link rel="stylesheet" href="../css/editcomplete.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-    <script src="js/setting.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+    <script src="../js/castingedit.js"></script>
+
+
 </head>
 
 <body>
@@ -29,62 +35,63 @@
         <header>
             <div class="top">
                 <div class="nav">
-                    <a href="index.html" class="MainLogo"><img src="img/scenehouse_logo.png" alt="scene house"></a>
+                    <a href="../index.html" class="MainLogo"><img src="../img/scenehouse_logo.png"
+                            alt="scene house"></a>
                     <div class="gnb">
                         <!-- 공모전 -->
-                        <a href="contest.html" class="">
+                        <a href="../contest.html" class="active">
                             <div class="b6">@씬하우스</div>
                         </a>
                         <!-- 공모전 업로드 -->
-                        <a href="upload.html" class="">
+                        <a href="../upload.html" class="">
                             <div class="b6">업스테이지</div>
                         </a>
                         <!-- ott모아보기 -->
-                        <a href="all.html" class="">
+                        <a href="../all.html" class="">
                             <div class="b6">OTT룸</div>
                         </a>
                         <!-- 포인트존 -->
-                        <a href="scenehouseplay.html" class="">
+                        <a href="../scenehouseplay.html" class="">
                             <div class="b6">골든키룸</div>
                         </a>
                     </div>
                 </div>
                 <div class="lefticon">
-                    <img src="img/icon/search.svg" alt="search">
-                    
-                     <!-- 알람 -->
+                    <img src="../img/icon/search.svg" alt="search">
+
+                    <!-- 알람 -->
                     <div class="alarm">
-                        <img src="img/icon/alarmactive.svg" alt="alarm" class="">
-                        <img src="img/icon/alarm.svg" alt="alarm" class="active">
+                        <img src="../img/icon/alarmactive.svg" alt="alarm" class="">
+                        <img src="../img/icon/alarm.svg" alt="alarm" class="active">
                         <ul class="alarmbox">
                             <li>
                                 <h5>소식함</h5>
                             </li>
                             <li><a href="#">
-                                    <img src="img/netfilx.png" alt="">
+                                    <img src="../img/netfilx.png" alt="">
                                     <div class="bu2">넷플릭스 청춘 드라마 추천 리스트!</div>
                                 </a></li>
                             <li><a href="#">
-                                    <img src="img/wave.png" alt="">
+                                    <img src="../img/wave.png" alt="">
                                     <div class="bu2">이번 여름 개봉할 영화 리스트!</div>
                                 </a></li>
                             <li><a href="#">
-                                    <img src="img/alarmimg.png" alt="">
+                                    <img src="../img/alarmimg.png" alt="">
                                     <div class="bu2">크리에티어 추천 작품 리스트!</div>
                                 </a></li>
                         </ul>
                     </div>
-                    
-                    <a href=""><img src="img/icon/user.svg" alt="user"></a>
+
+                    <a href=""><img src="../img/icon/user.svg" alt="user"></a>
                 </div>
-                <div class="hamMenu"><img src="img/icon/ham.svg" alt=""></div>
-                <div class="close"><img src="img/icon/close.svg" alt="close"></div>
+                <div class="hamMenu"><img src="../img/icon/ham.svg" alt=""></div>
+                <div class="close"><img src="../img/icon/close.svg" alt="close"></div>
             </div>
             <!-- 모바일 gnb -->
             <div class="mobilenav">
                 <div class="userpofile">
                     <div class="user">
-                        <img src="img/moblienavusericon.png" alt="">
+                        <img src="../img/moblienavusericon.png" alt="">
                         <h4>씬스타터<div class="b7">님</div>
                         </h4>
                     </div>
@@ -92,16 +99,16 @@
                 </div><!-- userpofile -->
                 <div class="topnav">
                     <ul>
-                        <li><a href="contest.html">
+                        <li><a href="../contest.html">
                                 <h4>씬하우스</h4>
                             </a></li>
-                        <li><a href="upload.html">
+                        <li><a href="../upload.html">
                                 <h4>업스테이지</h4>
                             </a></li>
-                        <li><a href="all.html">
+                        <li><a href="../all.html">
                                 <h4>OTT룸</h4>
                             </a></li>
-                        <li><a href="scenehouseplay.html">
+                        <li><a href="../scenehouseplay.html">
                                 <h4>골든키룸</h4>
                             </a></li>
                     </ul>
@@ -123,38 +130,54 @@
                     </ul>
                 </div>
             </div><!-- mobilenav -->
-
         </header>
-
 
         <main>
 
+            <!-- tabbar -->
+            <div class="toptabs">
+                <ul class="tabbar">
+                    <li class=""><a href="../contest.html">
+                            <h6>공모 작품집</h6>
+                        </a></li>
+                    <li class="active"><a href="casting.html">
+                            <h6>팀원 모집</h6>
+                        </a></li>
+                </ul>
+            </div>
 
-
-
-            <!-- footer -->
-            <footer data-scroll-section>
-                <div class="topfooter">
-                    <img src="img/scenehouse_logo.png" alt="scene house">
-                    <ul>
-                        <li><a href="#" class="bu1">서비스 이용약관</a></li>
-                        <li><a href="#" class="bu1">개인정보 처리방침</a></li>
-                        <li><a href="#" class="bu1">고객센터</a></li>
-                        <li><a href="#" class="bu1">광고 문의</a></li>
-                    </ul>
-                    <div class="ft">
-                        상호명: 헤라과자점 ｜ 대표자: 김헤라 ｜ 사업자등록번호: 123-45-67890
-                        통신판매업신고번호: 2025-서울강남-01234 ｜ 주소: 서울특별시 서초구 서초대로77길 41 대동2빌딩 9층
-                        이메일: contact@hera-snacks.com ｜ 전화번호: 010-1234-5678
-                    </div>
+            <div class="completwrap">
+                <div class="inner">
+                    <div class="b5">지원이 완료되었습니다.</div>
+                    <img src="../img/icon/check.png" alt="">
                 </div>
-                <div class="copy">
-                    <div class="ft">
-                        Copyright © 2025 • Scene House
-                    </div>
-                </div>
-            </footer>
+                <a href="casting.html" class="bigbt_pos">목록으로</a>
+            </div><!-- completwrap -->
+
+
         </main>
+        <!-- footer -->
+        <footer data-scroll-section>
+            <div class="topfooter">
+                <img src="../img/scenehouse_logo.png" alt="scene house">
+                <ul>
+                    <li><a href="#" class="bu1">서비스 이용약관</a></li>
+                    <li><a href="#" class="bu1">개인정보 처리방침</a></li>
+                    <li><a href="#" class="bu1">고객센터</a></li>
+                    <li><a href="#" class="bu1">광고 문의</a></li>
+                </ul>
+                <div class="ft">
+                    상호명: 헤라과자점 ｜ 대표자: 김헤라 ｜ 사업자등록번호: 123-45-67890
+                    통신판매업신고번호: 2025-서울강남-01234 ｜ 주소: 서울특별시 서초구 서초대로77길 41 대동2빌딩 9층
+                    이메일: contact@hera-snacks.com ｜ 전화번호: 010-1234-5678
+                </div>
+            </div>
+            <div class="copy">
+                <div class="ft">
+                    Copyright © 2025 • Scene House
+                </div>
+            </div>
+        </footer>
     </div><!-- wrap -->
 </body>
 

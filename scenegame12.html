@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="css/scenegame.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-    <script src="js/upload.js"></script>
+    <script src="js/contest.js"></script>
 </head>
 
 <body>
@@ -45,14 +45,14 @@
                             <div class="b6">OTT룸</div>
                         </a>
                         <!-- 포인트존 -->
-                        <a href="scenehouseplay.html" class="">
+                        <a href="scenehouseplay.html" class="active">
                             <div class="b6">골든키룸</div>
                         </a>
                     </div>
                 </div>
                 <div class="lefticon">
                     <img src="img/icon/search.svg" alt="search">
-                 
+                    
                      <!-- 알람 -->
                     <div class="alarm">
                         <img src="img/icon/alarmactive.svg" alt="alarm" class="">
@@ -127,121 +127,46 @@
 
         </header>
 
-
         <main>
+            <!-- tabbar -->
+            <div class="top_btn">
+                <div class="toptabs">
+                    <ul class="tabbar">
+                        <li class="active"><a href="./scenegame.html">
+                                <h6>장면의 조각</h6>
+                            </a></li>
+                        <li class=""><a href="./scenegame2.html">
+                                <h6>시퀀스 게임</h6>
+                            </a></li>
+                        <li class=""><a href="./scenegame3.html">
+                                <h6>영화 초성 게임</h6>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
             <section class="main_visual">
-                <h3>Event</h3>
-                <div class="mainbox">
-                    <div class="list1">
-                        <div class="listall">
-                            <img src="./img/event/eventimg1.png" alt="event1">
-                            <article class="txtbox">
-                                <div class="day">D-8</div>
-                                <div class="tit">
-                                    <퍼스트클래스>굿즈패키지
-                                </div>
-
-                                <div class="calendar">
-                                    <img src="./img/icon/calendar.svg" alt="">
-                                    <div class="bu1">2025년 05월 21일(수) 19:30</div>
-                                </div>
-
-                                <div class="map">
-                                    <img src="./img/icon/map2.svg" alt="icon">
-                                    <div class="bu1">신촌 메가박스</div>
-                                </div><!-- //.map -->
-                            </article>
-                        </div><!--  -->
-                        <a class="gobtn" href="./eventinfo.html">응모하기</a>
-                    </div><!-- //.list1 -->
-
-                    <div class="list1">
-                        <div class="listall">
-                            <img src="./img/event/eventimg2.png" alt="event1">
-                            <article class="txtbox">
-                                <div class="day">D-11</div>
-                                <div class="tit">
-                                    <유캔두잇> 10주년 상영회
-                                </div>
-
-                                <div class="calendar">
-                                    <img src="./img/icon/calendar.svg" alt="">
-                                    <div class="bu1">2025년 05월 24일(토) 14:30</div>
-                                </div>
-
-                                <div class="map">
-                                    <img src="./img/icon/map2.svg" alt="icon">
-                                    <div class="bu1">CGV용산아이파크몰</div>
-                                </div><!-- //.map -->
-                            </article>
-                        </div><!--  -->
-                        <a class="gobtn" href="./eventinfo.html">응모하기</a>
-                    </div><!-- //.list1 -->
-
-                    <div class="list1">
-                        <div class="listall">
-                            <img src="./img/event/eventimg3.png" alt="event1">
-                            <article class="txtbox">
-                                <div class="day">D-18</div>
-                                <div class="tit">Tasty of popcorn!</div>
-
-                                <div class="calendar">
-                                    <img src="./img/icon/calendar.svg" alt="">
-                                    <div class="bu1">2025년 05월 31일(토) 21:00</div>
-                                </div>
-
-                                <div class="map">
-                                    <img src="./img/icon/map2.svg" alt="icon">
-                                    <div class="bu1">롯데시네마 강남</div>
-                                </div><!-- //.map -->
-                            </article>
-                        </div><!--  -->
-                        <a class="gobtn" href="./eventinfo.html">응모하기</a>
-                    </div><!-- //.list1 -->
-
-                    <div class="list1">
-                        <div class="listall">
-                            <img src="./img/event/eventimg4.png" alt="event1">
-                            <article class="txtbox">
-                                <div class="day">D-21</div>
-                                <div class="tit">분수 상영쇼 예매 오픈</div>
-
-                                <div class="calendar">
-                                    <img src="./img/icon/calendar.svg" alt="">
-                                    <div class="bu1">2025년 06월 3일(화) 19:20</div>
-                                </div>
-
-                                <div class="map">
-                                    <img src="./img/icon/map2.svg" alt="icon">
-                                    <div class="bu1">CGV 강변점</div>
-                                </div><!-- //.map -->
-                            </article>
-                        </div><!--  -->
-                        <a class="gobtn" href="./eventinfo.html">응모하기</a>
-                    </div><!-- //.list1 -->
-
-                    <div class="list1">
-                        <div class="listall">
-                            <img src="./img/event/eventimg5.png" alt="event1">
-                            <article class="txtbox">
-                                <div class="day">D+4</div>
-                                <div class="tit">마틸다의 초코케이크 증정</div>
-
-                                <div class="calendar">
-                                    <img src="./img/icon/calendar.svg" alt="">
-                                    <div class="bu1">2025년 05월 9일(금) 11:00</div>
-                                </div>
-
-                                <div class="map">
-                                    <img src="./img/icon/map2.svg" alt="icon">
-                                    <div class="bu1">롯데시네마 건대입구점</div>
-                                </div><!-- //.map -->
-                            </article>
-                        </div><!--  -->
-                        <a class="gobtn" href="#">마감</a>
-                    </div><!-- //.list1 -->
-
-                </div><!-- //.mainbox -->
+                <div class="txtbox">
+                    <div class="box">
+                    <h2>KEY GAME 01.</h2>
+                    <div class="b4">장면의 조각</div>
+                    </div><!-- //.box -->
+                    <div class="txthead">
+                        <h5>Q. 3</h5>
+                        <div class="r_25">다음 일부 화면을 보고 콘텐츠 제목을 작성하세요.</div>
+                    </div><!-- //.txthead  -->
+                    <div class="txtfoot">
+                        <img src="./img/scenegame/dang.png" alt="">
+                        <div class="text_input_wrap">
+                            <div class="b5">A.</div>
+                            <input type="text" placeholder="정답을 작성해주세요">
+                        </div><!-- //.text_input_wrap -->
+                        <div class="last">
+                           <a href="#"><h6>확인하기</h6></a>
+                            <h5>*게임은 총 3문제로 구성되어있으며,<br>
+                                모든 정답을 맞히신 분에게는 5key를 드립니다</h5>
+                        </div><!-- //.last -->
+                    </div><!-- //.txtfoot -->
+                </div><!-- //.txtbox -->
             </section>
 
             <!-- footer -->

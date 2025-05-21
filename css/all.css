@@ -671,48 +671,90 @@ main {
 }
 
 /* pd */
-.pd{
-    padding: 0 var(--wrap);
-    display: flex;
-    flex-direction: column;
-    margin-top: var(--margin-top160);
-    margin-bottom: var(--margin-top160);
-    gap: var(--margin-top20);
-    justify-content: center;
-    align-items: center;
-    color: var(--sub-color);
+.pd {
+  padding: 0 var(--wrap);
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--margin-top160);
+  margin-bottom: var(--margin-top160);
+  gap: var(--margin-top20);
+  justify-content: center;
+  align-items: center;
+  color: var(--sub-color);
 }
 
-.pd .tit{
-    margin-bottom: 100px;
-    width: 100%;
-    color: var(--white);
-    text-align: left;
-}
-
-.pd ul{
-    display: flex;
-    gap: 55px;
-}
-.pd>ul>li{
-    max-width: 300px; /* 원하는 카드 너비 */
-  flex-shrink: 0;
-}
-.pd>ul>li>a>img {
+.pd .tit {
+  margin-bottom: 100px;
   width: 100%;
+  color: var(--white);
+  text-align: left;
+}
+
+.pd .poster {
+  max-width: 300px;
   height: auto;
   aspect-ratio: 2 / 3;
   object-fit: cover;
   border-radius: 5px;
 }
-.pd>ul>li .txtbox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    padding-top: var(--margin-top10);
+
+.pd .txtbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding-top: var(--margin-top10);
 }
-.ratLink{
-    display: flex;
-    gap: 20px;
+
+.ratLink {
+  display: flex;
+  gap: 20px;
+}
+
+.defaultswiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.defaultswiper .swiper-wrapper {
+  display: flex;
+  gap: 10px;
+  
+}
+
+.defaultswiper .swiper-slide {
+  max-width: 400px;
+  flex-shrink: 0;
+}
+.pd .swiper-button-prev,
+.pd .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.pd .swiper-button-prev {
+    left: 10px;
+    color: var(--sub-color);
+
+}
+.pd .swiper-button-next {
+    right: 10px;
+    color: var(--sub-color);
+
+}
+.pd .swiper-button-prev::after,
+.pd .swiper-button-next::after {
+    font-size: 20px; 
+    color: var(--sub-color); 
+}
+
+footer{
+    background: var(--white-l);
 }

@@ -101,5 +101,19 @@ document.addEventListener('click', function () {
         }
         });
 
-  
+        /* pd */
+            new Swiper('.defaultswiper', {
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        });
+
 });
