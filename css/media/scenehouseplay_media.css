@@ -1,4 +1,8 @@
 @media (max-width: 1700px) {
+    .main_visual .top_txt strong {
+        font-size: var(--body2-size);
+    }
+
     .scenehouse .scenehousebg .imgwrap .left img {
         width: clamp(320px, 28vw, 500px);
         height: calc(clamp(320px, 28vw, 560px) * 820 / 560);
@@ -11,6 +15,7 @@
 }
 
 @media (max-width: 1230px) {
+
     .scenehouse .scenehousebg {
         min-height: 1500px;
         height: clamp(900px, 90vh, 1786px);
@@ -147,6 +152,7 @@
 }
 
 @media (max-width: 500px) {
+    
     .main_visual br {
         display: none;
     }
@@ -154,7 +160,8 @@
     .scenehouse .scenehousebg {
         height: clamp(800px, 10vh, 1786px);
     }
-    .gamelineup{
+
+    .gamelineup {
         gap: var(--margin-top60);
     }
 }
