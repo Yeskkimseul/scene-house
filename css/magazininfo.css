@@ -3,16 +3,62 @@
 .main_visual {
     width: 100%;
     padding: var(--margin-top160) var(--wrap);
+
 }
 
 .main_visual .h3 {
     color: var(--black);
 }
-.tit{
+
+.tit {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
     padding-top: 20px;
+    /* background-color: darkblue; */
+}
+
+.tit h4 {
+    margin-bottom: 20px;
+}
+
+.tit .linebar {
+    width: 100%;
+    height: 1px;
+    /* color: var(--light-gray2); */
+    margin-top: 10px;
+    background-color: var(--light-gray2);
+}
+
+.magazinpic {
+    width: 100%;
+    height: 926px;
+    background-image: url(../img/magazininfo/man.jpg);
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+.ft {
+    text-align: right;
+    margin-bottom: 46px;
+}
+
+.b6l {
+    width: 1140px;
+    height: 940px;
+    /* background-color: darkblue; */
+    display: flex;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+h6{
+    width: 1140px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
