@@ -55,8 +55,7 @@ window.addEventListener('DOMContentLoaded', function () {
         centeredSlides: true,
         loop: true,
         loopedSlides: 5,
-        initialSlide: 2,
-        spaceBetween: -150,
+        spaceBetween: -120,
         effect: 'coverflow',
         coverflowEffect: {
                 rotate: 0,

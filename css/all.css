@@ -337,7 +337,7 @@ main {
 .comingup .comingup-swiper .swiper-wrapper .swiper-slide {
     position: relative;
     aspect-ratio: 2 / 3; /* 또는 3 / 4 */
-    width: 400px; /* 너비 조정 */
+    width: 300px; /* 너비 조정 */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -366,6 +366,16 @@ main {
 
 .comingup .swiper-slide-active::before {
   opacity: 0; /* 활성화된 슬라이드는 밝게 */
+}
+.comingup .comingup-swiper .swiper-slide:nth-child(1),
+.comingup .comingup-swiper .swiper-slide:nth-child(5)
+{
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.comingup .comingup-swiper .swiper-slide-active {
+  opacity: 1;
 }
 
 
