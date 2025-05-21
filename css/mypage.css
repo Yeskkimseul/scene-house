@@ -1,24 +1,24 @@
 @charset "utf-8";
-.main{
-    width: 100%;
-    display: flex;
-    position: relative;
+.wrap {
+  display: flex;
 }
-.bk{
-    height: 100%;
-    background: yellow;
-    width: calc(100% - 270px);
+
+main {
+  width: 100%;
+  height: 1500px;
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
 }
-.mypageul{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    padding-top: 90px;
-    gap: 20px;
-    width: 270px;
-    background: #ccc;
-    height: 1535px;
+
+nav {
+  width: 270px;
+  height: 100%;
+  background-color: darkblue;
 }
-.mypageul a img{
-    padding-bottom: 20px;
+
+.container {
+  width: calc(100% - 270px);
+  height: 100%;
+  background-color: darkolivegreen;
 }
