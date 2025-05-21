@@ -197,6 +197,7 @@
 }
 
 @media (max-width: 834px) {
+    
     .b_80 {
         font-size: var(--h2-size);
         font-weight: 700;
@@ -257,6 +258,9 @@
     }
 
     /* ScenehouseTop  */
+    .ScenehouseTop{
+        gap: var(--margin-top40);
+    }
     .ScenehouseTop .container .left {}
 
     .ScenehouseTop .container .left .img {
@@ -303,6 +307,9 @@
 
     .bethebest ul li img {
         width: clamp(300px, 24vw, 400px);
+    }
+    .sceneevent .tit{
+        margin-bottom: var(--margin-top40);
     }
 
     .eventlist {
