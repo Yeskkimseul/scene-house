@@ -33,6 +33,7 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 
     
+    /* ott_new */
    new Swiper('.verticalswiper', {
         direction: 'vertical', // 세로 고정
         slidesPerView: 2,
@@ -47,6 +48,33 @@ window.addEventListener('DOMContentLoaded', function () {
             prevEl: '.swiper-button-prev-vertical',
         }
     });
+
+    /* coming up */
+    new Swiper('.comingup-swiper', {
+        slidesPerView: 5,
+        centeredSlides: true,
+        loop: true,
+        loopedSlides: 5,
+        initialSlide: 2,
+        spaceBetween: -150,
+        effect: 'coverflow',
+        coverflowEffect: {
+                rotate: 0,
+                stretch: -150,
+                depth: 200,
+                modifier: 1,
+                scale: 0.9,
+                slideShadows: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+        });
 
   
 });
