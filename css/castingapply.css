@@ -30,7 +30,7 @@ main {
     gap: var(--margin-top60);
 }
 
-.cont >div {
+.cont > div {
     display: flex;
     flex-direction: column;
     gap: var(--space20);
@@ -53,6 +53,16 @@ span {
     line-height: 130%;
 }
 
+.cont .txt textarea:focus {
+    border-color: var(--point-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(238, 184, 49, 0.8);
+}
+
+.cont .phonemail{
+    display: flex;
+    
+}
 
 
 .forms {

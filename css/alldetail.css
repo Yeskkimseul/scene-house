@@ -651,7 +651,7 @@
     display: flex;
     flex-direction: column;
     padding: var(--margin-top160) var(--wrap);
-    gap: var(--margin-top80);
+    gap: var(--margin-top30);
 }
 .list .listwrap{
     display: flex;
