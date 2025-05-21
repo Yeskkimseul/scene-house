@@ -38,9 +38,8 @@ main {
 /*  contestlistall  */
 
 .contestFilter-container {
-    display: flex;
-    gap: clamp(6px, 2vw, 30px);
-    height: clamp(40px, 5vw, 46px);
+    position: relative;
+    display: inline-block;
 }
 
 /* 
@@ -66,13 +65,34 @@ main {
 } */
 
 .year-select {
-    padding: clamp(6px, 1.5vw, 8px) clamp(12px, 4vw, 16px);
-    font-size: var(--button2-size);
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    color: #333;
+    font-family: var(--pretendard);
+    width: clamp(60px, 10vw, 100px);
+    padding: var(--space10);
+    font-size: var(--body8-size);
+    border: 2px solid var(--light-gray2);
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--black);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../img/icon/dropdown.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
 }
+
+select:focus {
+    border-color: var(--point-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(238, 184, 49, 0.8);
+    background-image: url(../img/icon/dropdownactive.svg);
+}
+
+option {
+    padding: 10px;
+}
+
 
 .contestWrap {
     margin-top: clamp(14px, 5vh, 26px);
