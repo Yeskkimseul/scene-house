@@ -345,9 +345,10 @@ main {
 }
 
 .comingup .comingup-swiper {
+    position: relative;
     width: 100%;
-    position: relative; 
-    padding: 0 60px;
+    padding: 0 80px; 
+    overflow: visible;
 }
 
 .comingup .comingup-swiper .swiper-wrapper{
@@ -359,8 +360,8 @@ main {
 }
 .comingup .comingup-swiper .swiper-wrapper .swiper-slide {
     position: relative;
-    aspect-ratio: 2 / 3; /* 또는 3 / 4 */
-    width: 300px; /* 너비 조정 */
+    aspect-ratio: 2 / 3;
+    width: 300px; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -370,25 +371,22 @@ main {
     flex-shrink: 0;
     transition: transform 0.3s ease;
     transform-origin: center center;
-    /* filter: brightness(0.5); /* 기본 어두움 */
 }
 .comingup .comingup-swiper .swiper-slide-active {
     transform: scale(2.0);
-   /*  filter: brightness(1);
-    z-index: 2; */
 }
 
 .comingup .swiper-slide::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* 어두운 레이어 */
+  background: rgba(0, 0, 0, 0.5); 
   z-index: 1;
   transition: opacity 0.3s;
 }
 
 .comingup .swiper-slide-active::before {
-  opacity: 0; /* 활성화된 슬라이드는 밝게 */
+  opacity: 0; 
 }
 .comingup .comingup-swiper .swiper-slide:nth-child(1),
 .comingup .comingup-swiper .swiper-slide:nth-child(5)
@@ -439,6 +437,7 @@ main {
     background: url(../img/all/comming/comming5.png) center/cover no-repeat;
 }
 
+
 /* .comingup .swiper-button-prev,
 .comingup .swiper-button-next {
     position: absolute;
@@ -462,6 +461,7 @@ main {
     color: var(--sub-color);
 
 } */
+ 
 .comingup .swiper-button-prev::after,
 .comingup .swiper-button-next::after {
     font-size: 60px; 

@@ -82,9 +82,11 @@ document.addEventListener('click', function () {
     /* coming up */
     new Swiper('.comingup-swiper', {
         slidesPerView: 5,
+        initialSlide: 2,
         centeredSlides: true,
         loop: true,
         loopedSlides: 5,
+        watchSlidesProgress: true,
         spaceBetween: -120,
         effect: 'coverflow',
         coverflowEffect: {
@@ -107,19 +109,19 @@ document.addEventListener('click', function () {
 
         
         /* pd */
-           new Swiper('.defaultswiper-swiper', {
-    loop: true,
-    slidesPerView: 5,
-    spaceBetween: 20,
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: '.pd-next',
-        prevEl: '.pd-prev',
-    },
-    wrapperClass: 'defaultswiper-wrapper',
-    slideClass: 'defaultswiper-slide',
-});
+                new Swiper('.defaultswiper-swiper', {
+                loop: true,
+                slidesPerView: 5,
+                spaceBetween: 20,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: '.pd-next',
+                    prevEl: '.pd-prev',
+                },
+                wrapperClass: 'defaultswiper-wrapper',
+                slideClass: 'defaultswiper-slide',
+            });
         });
