@@ -66,7 +66,7 @@ footer{
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: var(--space80);
+    gap: var(--space40);
 }
 
 .uploadsetting {
@@ -225,6 +225,8 @@ input:focus {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: var(--margin-top40);
+    margin-bottom: var(--margin-top80);
 }
 
 .sm_check {

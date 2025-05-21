@@ -137,6 +137,7 @@ input:focus {
 }
 
 .btns {
+    margin-top: var(--margin-top80);
     display: flex;
     gap: var(--space40);
     margin-bottom: var(--margin-top160);
