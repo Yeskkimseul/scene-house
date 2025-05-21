@@ -45,15 +45,21 @@ document.addEventListener('click', function () {
   
 });
 
+ const fileInput = document.querySelector('.fileinput input[type="file"]');
+  const fileButton = document.querySelector('.fileinput .file-btn');
+  const fileName = document.querySelector('.fileinput .file-name');
+
+  // 버튼 클릭 시 input[type="file"]을 클릭
+  fileButton.addEventListener('click', function () {
+    fileInput.click();
+  });
+
+  // 파일 선택 시 파일명 출력
+  fileInput.addEventListener('change', function () {
+    const selectedFile = fileInput.files[0];
+    fileName.textContent = selectedFile ? selectedFile.name : '선택된 파일이 없습니다.';
+  });
 
 
 
-
-});
-document.addEventListener("DOMContentLoaded", function () {
-    ClassicEditor
-        .create(document.querySelector('#editor'))
-        .catch(error => {
-            console.error(error);
-        });
 });

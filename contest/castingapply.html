@@ -24,7 +24,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
-    <script src="../js/castingedit.js"></script>
+    <script src="../js/castingapply.js"></script>
 
 
 </head>
@@ -149,20 +149,36 @@
                         <div class="phonemail">
                             <div class="phone">
                                 <div class="b5">휴대폰<span>*</span></div>
-                                <input type="text" placeholder="휴대폰 번호 입력('-'제외 11자리 입력)">
+                                <input type="text" placeholder="휴대폰 번호 입력">
+                            </div>
+
+                            <div class="email">
+                                <div class="b5">이메일</div>
+                                <input type="text" placeholder="address@sample.com">
                             </div>
                         </div>
+                        <div class="etc">
+                            <div class="b5">요청사항</div>
+                            <input type="text" placeholder="근무 시간 중 전화 어려우니 문자로 문의 부탁드립니다.">
+                        </div><!-- etc -->
+                        <div class="file">
+                            <div class="b5">파일첨부</div>
+                            <div class="fileinput">
+                                <input type="file">
+                                <button type="button" class="file-btn">파일 선택</button>
+                                <span class="file-name">선택된 파일이 없습니다.</span>
+                            </div>
+                        </div><!-- file -->
+                    </div><!-- top -->
+
+                    <div class="btns">
+                        <a href="mycasting.html" class="bigbt_neg">취소하기</a>
+                        <a href="castingapplycomplete.html" class="bigbt_pos ">등록하기</a>
                     </div>
-                </div><!-- top -->
-
-                <div class="btns">
-                    <a href="mycasting.html" class="bigbt_neg">취소하기</a>
-                    <a href="castingapplycomplete.html" class="bigbt_pos ">등록하기</a>
-                </div>
 
 
 
-            </div><!-- editwrap -->
+                </div><!-- editwrap -->
 
 
 

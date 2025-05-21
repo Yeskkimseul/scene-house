@@ -5,7 +5,8 @@ main {
 }
 
 .editwrap {
-    margin: var(--margin-top80) var(--wrap);
+    margin: var(--margin-top80) clamp(16px, 15vw, 200px) var(--margin-top150) clamp(16px, 15vw, 200px);
+    ;
     background: var(--white);
     padding: var(--margin-top40) var(--space80);
     display: flex;
@@ -30,10 +31,10 @@ main {
     gap: var(--margin-top60);
 }
 
-.cont > div {
+.cont>div {
     display: flex;
     flex-direction: column;
-    gap: var(--space20);
+    gap: var(--margin-top20);
 }
 
 span {
@@ -59,11 +60,81 @@ span {
     box-shadow: 0 0 5px rgba(238, 184, 49, 0.8);
 }
 
-.cont .phonemail{
+.cont .phonemail {
     display: flex;
-    
+    gap: var(--space80);
+    flex-direction: row;
 }
 
+.cont .phonemail>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-top20);
+}
+
+.cont .phonemail>div input {
+    width: 100%;
+}
+
+input {
+    height: clamp(30px, 10vh, 50px);
+    display: flex;
+    align-items: center;
+    padding: var(--space10);
+    font-size: var(--body8-size);
+    border: 2px solid var(--light-gray2);
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+input:focus {
+    border-color: var(--point-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(238, 184, 49, 0.8);
+}
+.file input{
+    display: none;
+}
+.fileinput {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: var(--pretendard);
+}
+
+.file-btn {
+    height: clamp(30px, 10vh, 50px);
+    display: flex;
+    align-items: center;
+    padding: var(--space10);
+    background-color: var(--light-gray2);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: var(--body8-size);
+    transition: background-color 0.3s;
+    font-family: var(--pretendard);
+}
+
+.file-btn:hover {
+    background-color: var(--point-color);
+}
+
+.file-name {
+    height: clamp(30px, 10vh, 50px);
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--light-gray2);
+    border-radius: 5px;
+    padding: var(--space10);
+    flex: 1;
+    color: var(--gray2);
+    font-size: var(--body8-size);
+}
 
 .forms {
     width: 100%;
