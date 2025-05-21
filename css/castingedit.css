@@ -38,6 +38,7 @@ main{
 }
 
 .forms select {
+    height: clamp(30px, 10vh, 50px);
     width: clamp(150px, 18vw, 200px);
     padding: var(--space10);
     font-size: var(--body8-size);
@@ -76,6 +77,7 @@ option {
 }
 
 .forms input {
+    height: clamp(30px, 10vh, 50px);
     width: clamp(200px, 24vw, 300px);
     padding: var(--space10);
     font-size: var(--body8-size);
