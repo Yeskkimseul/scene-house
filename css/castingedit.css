@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+
+
+/* tabbar */
+
+.toptabs {
+    width: 100%;
+    position: relative;
+    padding: 0 var(--wrap);
+}
+
+.tabbar {
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+}
+
+.tabbar li {
+    display: flex;
+    width: clamp(80px, 12vw, 145px);
+    padding: 8px 0;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray1);
+}
+
+.tabbar li.active {
+    color: var(--brown);
+    border-bottom: 2px solid var(--brown);
+}
+
+
