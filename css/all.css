@@ -719,10 +719,11 @@ main {
 .defaultswiper .swiper-wrapper {
   display: flex;
   gap: 10px;
+  
 }
 
 .defaultswiper .swiper-slide {
-  max-width: 300px;
+  max-width: 400px;
   flex-shrink: 0;
 }
 .pd .swiper-button-prev,
@@ -752,4 +753,8 @@ main {
 .pd .swiper-button-next::after {
     font-size: 20px; 
     color: var(--sub-color); 
+}
+
+footer{
+    background: var(--white-l);
 }
