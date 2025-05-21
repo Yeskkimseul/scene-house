@@ -321,57 +321,120 @@ main {
     text-align: left;
 }
 
-.comingup ul {
-    display: flex;
+.comingup .comingup-swiper {
     width: 100%;
+    position: relative; 
+    padding: 0 60px;
 }
 
-.comingup ul li {
-    aspect-ratio: 1 / 1;
-    max-width: 400px;
+.comingup .comingup-swiper .swiper-wrapper{
+    display: flex;
+}
+.comingup .comingup-swiper,
+.comingup .comingup-swiper .swiper-wrapper {
+  overflow: visible;
+}
+.comingup .comingup-swiper .swiper-wrapper .swiper-slide {
+    position: relative;
+    aspect-ratio: 2 / 3; /* 또는 3 / 4 */
+    width: 400px; /* 너비 조정 */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: clamp(16px, 5vw, 24px);
     box-sizing: border-box;
     color: var(--red);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    /* filter: brightness(0.5); /* 기본 어두움 */
+}
+.comingup .comingup-swiper .swiper-slide-active {
+    transform: scale(2.0);
+   /*  filter: brightness(1);
+    z-index: 2; */
 }
 
-.comingup ul li .top {
+.comingup .swiper-slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* 어두운 레이어 */
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+
+.comingup .swiper-slide-active::before {
+  opacity: 0; /* 활성화된 슬라이드는 밝게 */
+}
+
+
+
+.comingup .comingup-swiper .swiper-wrapper .swiper-slide .top {
     display: flex;
     justify-content: space-between;
     gap: 100px;
 }
 
-.comingup ul li .top .ott {
+.comingup .comingup-swiper .swiper-wrapper .swiper-slide .top .ott {
     display: flex;
     gap: 10px;
 }
 
-.comingup ul li .top .ott img {
+.comingup .comingup-swiper .swiper-wrapper .swiper-slide .top .ott img {
     max-height: 30px;
     aspect-ratio: 1 / 1;
 }
 
-.comingup ul li.coming1 {
+.comingup .comingup-swiper .swiper-wrapper .coming1 {
     background: url(../img/all/comming/comming1.png) center/cover no-repeat;
 }
 
-.comingup ul li.coming2 {
+.comingup .comingup-swiper .swiper-wrapper .coming2 {
     background: url(../img/all/comming/comming2.png) center/cover no-repeat;
 }
 
-.comingup ul li.coming3 {
+.comingup .comingup-swiper .swiper-wrapper .coming3 {
     background: url(../img/all/comming/comming3.png) center/cover no-repeat;
 }
 
-.comingup ul li.coming4 {
+.comingup .comingup-swiper .swiper-wrapper .coming4 {
     background: url(../img/all/comming/comming4.png) center/cover no-repeat;
 }
 
-.comingup ul li.coming5 {
+.comingup .comingup-swiper .swiper-wrapper .coming5 {
     background: url(../img/all/comming/comming5.png) center/cover no-repeat;
 }
+
+.comingup .swiper-button-prev,
+.comingup .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.comingup .swiper-button-prev {
+    left: 10px;
+    color: var(--sub-color);
+
+}
+.comingup .swiper-button-next {
+    right: 10px;
+    color: var(--sub-color);
+
+}
+.comingup .swiper-button-prev::after,
+.comingup .swiper-button-next::after {
+    font-size: 20px; 
+    color: var(--sub-color); 
+}
+
 
 /* review */
 .review {
