@@ -21,7 +21,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-    <script src="../js/casting.js"></script>
+    <script src="../js/uploaddashboard.js"></script>
 </head>
 
 <body>
@@ -53,8 +53,8 @@
                 </div>
                 <div class="lefticon">
                     <img src="../img/icon/search.svg" alt="search">
-                    
-                         <!-- 알람 -->
+
+                    <!-- 알람 -->
                     <div class="alarm">
                         <img src="../img/icon/alarmactive.svg" alt="alarm" class="">
                         <img src="../img/icon/alarm.svg" alt="alarm" class="active">
@@ -76,7 +76,7 @@
                                 </a></li>
                         </ul>
                     </div>
-                    
+
                     <a href=""><img src="../img/icon/user.svg" alt="user"></a>
                 </div>
                 <div class="hamMenu"><img src="../img/icon/ham.svg" alt=""></div>
@@ -213,14 +213,14 @@
 
                         <!-- 작품 업로드 -->
                         <section class="uploadfile">
-                            <div class="b5">작품 업로드</div>
-                            <div class="inputlink">
-                                <img src="../img/icon/link.svg" alt="link" />
-                                <div class="input_btn">
-                                    <input class="textinput" placeholder="url을 입력하세요" />
-                                    <div class="btn sm_check">확인</div>
+                            <div class="file">
+                                <div class="b5">파일첨부</div>
+                                <div class="fileinput">
+                                    <input type="file">
+                                    <button type="button" class="file-btn">파일 선택</button>
+                                    <span class="file-name">선택된 파일이 없습니다.</span>
                                 </div>
-                            </div>
+                            </div><!-- file -->
                         </section>
 
                     </div>
