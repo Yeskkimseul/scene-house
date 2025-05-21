@@ -1,7 +1,6 @@
 @charset "utf-8";
 
-
-main{
+main {
     padding: 2px 0;
 }
 
@@ -28,8 +27,33 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: var(--margin-top20);
+    gap: var(--margin-top60);
 }
+
+.cont >div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space20);
+}
+
+span {
+    margin-left: var(--space10);
+    color: var(--red);
+}
+
+.cont .txt textarea {
+    padding: var(--space10);
+    height: 30vh;
+    font-size: var(--body8-size);
+    border: 2px solid var(--light-gray2);
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: var(--pretendard);
+    line-height: 130%;
+}
+
+
 
 .forms {
     width: 100%;
