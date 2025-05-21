@@ -44,7 +44,7 @@ document.addEventListener('click', function () {
 
     const swiper = new Swiper('.sceneswiper', {
         direction: 'horizontal',
-        loop: true,
+        loop: false,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -56,6 +56,10 @@ document.addEventListener('click', function () {
             delay: 4000,
             disableOnInteraction: false,
         },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
     });
 
     
@@ -114,6 +118,10 @@ document.addEventListener('click', function () {
             el: '.swiper-pagination',
             clickable: true,
         },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        }
         });
 
 });

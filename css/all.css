@@ -7,33 +7,11 @@ body {
 main {
     margin-top: clamp(100px, 12vw, 110px);
 }
-.contest .swiper-button-prev,
-.contest .swiper-button-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    z-index: 10;
-    cursor: pointer;
-}
 
-.contest .swiper-button-prev {
-    left: 10px;
-    color: var(--sub-color);
-
-}
-.contest .swiper-button-next {
-    right: 10px;
-    color: var(--sub-color);
-
-}
 .contest .swiper-button-prev::after,
 .contest .swiper-button-next::after {
     font-size: 20px; 
-    color: var(--sub-color); 
+    color: var(--point-color); 
 }
 /* contest */
 .contest {
@@ -439,7 +417,7 @@ main {
     background: url(../img/all/comming/comming5.png) center/cover no-repeat;
 }
 
-.comingup .swiper-button-prev,
+/* .comingup .swiper-button-prev,
 .comingup .swiper-button-next {
     position: absolute;
     top: 50%;
@@ -461,11 +439,11 @@ main {
     right: 10px;
     color: var(--sub-color);
 
-}
+} */
 .comingup .swiper-button-prev::after,
 .comingup .swiper-button-next::after {
     font-size: 20px; 
-    color: var(--sub-color); 
+    color: var(--point-color); 
 }
 
 
@@ -676,7 +654,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: var(--margin-top160);
-  margin-bottom: var(--margin-top160);
+  margin-bottom: 200px;
   gap: var(--margin-top20);
   justify-content: center;
   align-items: center;
@@ -726,33 +704,11 @@ main {
   max-width: 400px;
   flex-shrink: 0;
 }
-.pd .swiper-button-prev,
-.pd .swiper-button-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    z-index: 10;
-    cursor: pointer;
-}
 
-.pd .swiper-button-prev {
-    left: 10px;
-    color: var(--sub-color);
-
-}
-.pd .swiper-button-next {
-    right: 10px;
-    color: var(--sub-color);
-
-}
 .pd .swiper-button-prev::after,
 .pd .swiper-button-next::after {
     font-size: 20px; 
-    color: var(--sub-color); 
+    color: var(--point-color); 
 }
 
 footer{
