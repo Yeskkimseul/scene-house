@@ -16,30 +16,30 @@ window.addEventListener('DOMContentLoaded', function () {
     })
 
     /* 알람박스 */
-const alarm = document.querySelector('.top .lefticon .alarm');
-const alarmImgs = alarm.querySelectorAll('img');
-const alarmBox = alarm.querySelector('.alarmbox');
+    const alarm = document.querySelector('.top .lefticon .alarm');
+    const alarmImgs = alarm.querySelectorAll('img');
+    const alarmBox = alarm.querySelector('.alarmbox');
 
-alarm.addEventListener('click', function (e) {
-  e.stopPropagation(); // 클릭이 document까지 전파되지 않게
+    alarm.addEventListener('click', function (e) {
+        e.stopPropagation(); // 클릭이 document까지 전파되지 않게
 
-  // 이미지 toggle
-  alarmImgs.forEach(img => img.classList.toggle('active'));
+        // 이미지 toggle
+        alarmImgs.forEach(img => img.classList.toggle('active'));
 
-  // alarmbox toggle
-  alarmBox.classList.toggle('active');
-});
+        // alarmbox toggle
+        alarmBox.classList.toggle('active');
+    });
 
-// 외부 클릭 시 알림창 닫기
-document.addEventListener('click', function () {
-  // 만약 alarmBox가 열려있으면 닫기
-  if (alarmBox.classList.contains('active')) {
-    alarmBox.classList.remove('active');
+    // 외부 클릭 시 알림창 닫기
+    document.addEventListener('click', function () {
+        // 만약 alarmBox가 열려있으면 닫기
+        if (alarmBox.classList.contains('active')) {
+            alarmBox.classList.remove('active');
 
-    // 이미지 원래 상태로 되돌리기
-    alarmImgs.forEach(img => img.classList.toggle('active'));
-  }
-});
+            // 이미지 원래 상태로 되돌리기
+            alarmImgs.forEach(img => img.classList.toggle('active'));
+        }
+    });
 
 
     const swiper = new Swiper('.sceneswiper', {
@@ -57,14 +57,14 @@ document.addEventListener('click', function () {
             disableOnInteraction: false,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.sceneswiper .swiper-button-next',
+            prevEl: '.sceneswiper .swiper-button-prev',
         }
     });
 
-    
+
     /* ott_new */
-   new Swiper('.verticalswiper', {
+    new Swiper('.verticalswiper', {
         direction: 'vertical', // 세로 고정
         slidesPerView: 2,
         spaceBetween: 50,
@@ -74,7 +74,7 @@ document.addEventListener('click', function () {
             disableOnInteraction: false,
         },
         navigation: {
-            nextEl: '.swiper-button-next-vertical', 
+            nextEl: '.swiper-button-next-vertical',
             prevEl: '.swiper-button-prev-vertical',
         }
     });
@@ -90,38 +90,38 @@ document.addEventListener('click', function () {
         spaceBetween: -120,
         effect: 'coverflow',
         coverflowEffect: {
-                rotate: 0,
-                stretch: -150,
-                depth: 200,
-                modifier: 1,
-                scale: 0.9,
-                slideShadows: false
+            rotate: 0,
+            stretch: -150,
+            depth: 200,
+            modifier: 1,
+            scale: 0.9,
+            slideShadows: false
         },
         pagination: {
-            el: '.swiper-pagination',
+            el: '.comingup-swiper .swiper-pagination',
             clickable: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.comingup-swiper .swiper-button-next',
+            prevEl: '.comingup-swiper .swiper-button-prev',
         }
-        });
+    });
 
-        
-        /* pd */
-                new Swiper('.defaultswiper-swiper', {
-                loop: true,
-                slidesPerView: 5,
-                spaceBetween: 20,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                navigation: {
-                    nextEl: '.pd-next',
-                    prevEl: '.pd-prev',
-                },
-                wrapperClass: 'defaultswiper-wrapper',
-                slideClass: 'defaultswiper-slide',
-            });
-        });
+
+    /* pd */
+    new Swiper('.defaultswiper-swiper', {
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.pd-next',
+            prevEl: '.pd-prev',
+        },
+        wrapperClass: 'defaultswiper-wrapper',
+        slideClass: 'defaultswiper-slide',
+    });
+});
