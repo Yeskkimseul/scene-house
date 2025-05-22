@@ -24,6 +24,18 @@ main {
     padding: var(--space20);
 }
 
+.main_visual .top{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: var(--space10);
+}
+.main_visual .top >img{
+    width: 100%;
+    max-width: 120px;
+    aspect-ratio: 156/287;
+}
+
 .main_visual .top_txt h3 span {
     color: var(--point-color);
 }

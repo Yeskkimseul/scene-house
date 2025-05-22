@@ -89,6 +89,10 @@
         padding: var(--margin-top80) var(--space50);
     }
 
+    .main_visual .top>img {
+        display: none;
+    }
+
     h3 {
         font-size: var(--body6-size);
         font-weight: 600;
@@ -152,7 +156,7 @@
 }
 
 @media (max-width: 500px) {
-    
+
     .main_visual br {
         display: none;
     }
