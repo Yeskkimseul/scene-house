@@ -107,7 +107,7 @@
 .contentBox .watchott ul li a img {
     width: 100%;
     height: 100%;
-   
+
 
     object-fit: cover;
     filter: saturate(50%);
@@ -554,9 +554,11 @@
     flex-direction: column;
     gap: var(--margin-top80);
 }
-.recommend h2{
+
+.recommend h2 {
     padding: 0 var(--wrap);
 }
+
 .recommend .recommendswiper {
     width: 100%;
     position: relative;
@@ -653,45 +655,50 @@
     padding: var(--margin-top160) var(--wrap);
     gap: var(--margin-top30);
 }
-.list .listwrap{
+
+.list .listwrap {
     display: flex;
     flex-direction: column;
     gap: var(--space20);
     align-items: flex-end;
 }
 
-.list .listwrap ul{
+.list .listwrap ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: var(--space10);
 }
-.list .listwrap ul li{
+
+.list .listwrap ul li {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
-.list .listwrap ul li a .top{
+
+.list .listwrap ul li a .top {
     display: flex;
     padding: var(--space10);
     gap: var(--space10);
     background: var(--main-color);
 }
 
-.list .listwrap ul li a .top img{
+.list .listwrap ul li a .top img {
     width: 100%;
     max-width: 120px;
     aspect-ratio: 120/165;
     object-fit: cover;
     border-radius: 10px;
 }
-.list .listwrap ul li a .bottom{
+
+.list .listwrap ul li a .bottom {
     display: flex;
     padding: var(--margin-top20) var(--space20);
     gap: var(--space30);
     background: var(--white-l);
 }
-.list .listwrap ul li a .bottom img{
+
+.list .listwrap ul li a .bottom img {
     aspect-ratio: 1/1;
     max-width: 50px;
     height: auto;
@@ -699,9 +706,11 @@
     width: 100%;
     object-fit: cover;
 }
-.list .listwrap ul li a .bottom .b8{
+
+.list .listwrap ul li a .bottom .b8 {
     color: var(--gray1);
 }
+
 @media (max-width: 1400px) {
     .ContestItemDetail .contentBox {
         gap: var(--space60);
@@ -719,6 +728,29 @@
         gap: var(--margin-top30);
     }
 
+    .list .listwrap ul li:last-child {
+        display: none;
+    }
+
+    .list .listwrap ul li a .top img {
+        width: 100%;
+        max-width: 100px;
+        aspect-ratio: 120 / 165;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+@media (max-width: 1200px){
+     .list .listwrap ul li a .top img {
+        width: 100%;
+        max-width: 90px;
+        aspect-ratio: 120 / 165;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .list .listwrap ul li a .bottom img{
+        display: none;
+    }
+}
     @media (max-width: 1100px) {
         .ContestItemDetail .contentBox {
             flex-wrap: nowrap;
@@ -752,6 +784,12 @@
         .contentBox .watchott ul li a:hover img {
             filter: saturate(100%);
         }
+             .list .listwrap ul li a .top img {
+        width: var(--space80);
+        aspect-ratio: 120 / 165;
+        object-fit: cover;
+        border-radius: 10px;
+    }
     }
 
 
@@ -816,11 +854,22 @@
         .Cast .castMember li .b7 {
             font-size: var(--body8-size);
         }
-        .recommend{
+
+        .recommend {
             gap: var(--margin-top40);
         }
+
         .list {
             gap: var(--margin-top40);
+        }
+        .list .listwrap ul li:nth-child(3){
+            display: none;
+        }
+        .list .listwrap ul li{
+            width: 100%;
+        }
+        .list .listwrap ul li a .top img{
+            width: 100%;
         }
     }
 }
