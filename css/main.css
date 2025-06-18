@@ -457,8 +457,8 @@ main {
     color: var(--white);
 }
 
-.eventlist li a .m_45,
-.eventlist li a .l_25 {
+.eventlist li a h4,
+.eventlist li a .l_22 {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -471,12 +471,12 @@ main {
 .eventlist li.active a {
     display: flex;
     padding: clamp(30px, 4vw, 60px);
-    gap: clamp(10px, 2vw, 20px);
+    gap: clamp(4px, 2vw, 10px);
     border-radius: 10px;
 }
 
-.eventlist li.active a .m_45,
-.eventlist li.active a .l_25 {
+.eventlist li.active a h4,
+.eventlist li.active a .l_22 {
     opacity: 1;
     visibility: visible;
 }

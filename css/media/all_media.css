@@ -1,0 +1,87 @@
+@media (max-width: 1500px) {
+    .b5 {
+        font-size: var(--body6-size);
+    }
+
+    .b6 {
+        font-size: var(--body7-size);
+    }
+
+    .r_22 {
+        font-size: var(--body7-size);
+    }
+
+    .b6l {
+        font-size: var(--body7-size);
+    }
+}
+
+@media (max-width: 1050px) {
+    .academy {
+        display: none;
+        opacity: 0;
+    }
+
+    .contest .topwrap li img {
+        max-width: 350px;
+    }
+
+    .b_80 {
+        font-size: var(--h2-size);
+    }
+
+    .Ranking .tit {
+    margin-bottom: var(--margin-top40);
+}
+
+}
+
+@media (max-width: 868px) {
+    .contest {
+        gap: var(--margin-top30);
+    }
+
+    .contest::before {
+        background-image: none;
+    }
+
+    .contest .topwrap li.swiper-slide {
+        flex-direction: column;
+    }
+
+    .contest .topwrap li img {
+        max-width: 240px;
+    }
+
+    .contest .topwrap li .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contest .topwrap li .txtwrap {
+        align-items: center;
+        text-align: center;
+    }
+
+    .contestbutton {
+        margin-top: var(--margin-top20);
+    }
+
+    .contest .topwrap li .right {
+        padding-bottom: clamp(20px, 8vh, 80px);
+    }
+
+    .sceneswiper .swiper-pagination {
+        margin-top: 0;
+        padding-left: 0;
+        position: absolute;
+        top: 100%;
+    }
+    .Ranking .b7{
+        display: none;
+    }
+    .Ranking ul.first{
+        margin-bottom: 0;
+    }
+}
